@@ -1,0 +1,702 @@
+[
+  {
+    "query_id": "FAR_OOD_0001",
+    "query_text": "The character Wario was first introduced in which game of the Mario video game franchise?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0002",
+    "query_text": "Which of these African regions does *not* directly border the Democratic Republic of The Congo?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0003",
+    "query_text": "Who designed the Chupa Chups logo?",
+    "label": "FAR_OOD",
+    "category": "Art",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0004",
+    "query_text": "What is not a wind instrument?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0005",
+    "query_text": "Which is the national animal of India?",
+    "label": "FAR_OOD",
+    "category": "Animals",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0006",
+    "query_text": "When did Norway get its constitution?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0007",
+    "query_text": "In 2014, this new top 100 rapper who featured in \"Computers\" and \"Body Dance\" was arrested in a NYPD sting for murder.",
+    "label": "FAR_OOD",
+    "category": "Celebrities",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0008",
+    "query_text": "What is the name of the town in which Lily and James Potter are buried?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0009",
+    "query_text": "The now extinct species \"Thylacine\" was native to where?",
+    "label": "FAR_OOD",
+    "category": "Animals",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0010",
+    "query_text": "In \"A Hat In Time\" who is the final boss?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0011",
+    "query_text": "Which of these characters from Final Fantasy VIII primarily spoke in one word sentences?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0012",
+    "query_text": "In Call Of Duty: Black Ops II, who is the main antagonist?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0013",
+    "query_text": "In \"Fallout 4\", what is the name of the dog you find at Red Rocket truck stop?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0014",
+    "query_text": "Which of these movies is NOT considered to be part of the Marvel Cinematic Universe?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0015",
+    "query_text": "Which of the following spacecraft never touched the moon?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0016",
+    "query_text": "What's the name of Batman's parents?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Comics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0017",
+    "query_text": "When did Jamaica receive its independence from England? ",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0018",
+    "query_text": "On a standard Monopoly board, how much do you have to pay for Tennessee Ave?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Board Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0019",
+    "query_text": "In which year was League of Legends released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0020",
+    "query_text": "Who is the second person to take up the mantle of Night Owl in the Watchmen graphic novel?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Comics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0021",
+    "query_text": "Which of these cities has a 4\u00b0 East longitude. ",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0022",
+    "query_text": "What immense structure is referred to in Norse Mythology as the Yggdrasil.",
+    "label": "FAR_OOD",
+    "category": "Mythology",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0023",
+    "query_text": "How many soccer players should be on the field at the same time?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0024",
+    "query_text": "Which is the longest bone in the human body? ",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0025",
+    "query_text": "In what year was the first Transformers movie released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0026",
+    "query_text": "What is the capital of Lithuania?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0027",
+    "query_text": "How many games are there in the \"Colony Wars\" series for the PlayStation?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0028",
+    "query_text": "Which of these is not a single by Pink Floyd guitarist, David Gilmour?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0029",
+    "query_text": "What superhero has been played in film by actors Michael Keaton, Val Kilmer, George Clooney and Christian Bale?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0030",
+    "query_text": "What did the name of the Tor Anonymity Network orignially stand for?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0031",
+    "query_text": "In \"Inuyasha\", what are the heros are looking to collect?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Japanese Anime &amp; Manga",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0032",
+    "query_text": " What is the chemical symbol for Helium?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0033",
+    "query_text": "An organism described as \"heliotropic\" has a tendancy to move towards which of these things?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0034",
+    "query_text": "What sport is being played in the Anime Eyeshield 21?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Japanese Anime &amp; Manga",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0035",
+    "query_text": "Who is the \"dumb blonde\" character in Nickelodeon's \"The Loud House\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Cartoon &amp; Animations",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0036",
+    "query_text": "The computer OEM manufacturer Clevo, known for its Sager notebook line, is based in which country?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0037",
+    "query_text": "In what year did Neil Armstrong and Buzz Aldrin land on the moon?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0038",
+    "query_text": "What was the religion of famous singer \"Freddie Mercury\"?",
+    "label": "FAR_OOD",
+    "category": "Celebrities",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0039",
+    "query_text": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0040",
+    "query_text": "Who is attributed credit for recording the epic poem The Odyssey?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0041",
+    "query_text": "What is the Linnean name of the domestic apple tree?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0042",
+    "query_text": "Where is Hadrian's Wall located?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0043",
+    "query_text": "Which sci-fi cult films plot concerns aliens attempting to prevent humans from creating a doomsday weapon?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0044",
+    "query_text": "What is the \"Mitsubishi Wakamaru\"?",
+    "label": "FAR_OOD",
+    "category": "Science: Gadgets",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0045",
+    "query_text": "What Led Zeppelin album contains \"Stairway to Heaven\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0046",
+    "query_text": "Approximately how long is a year on Uranus?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0047",
+    "query_text": "According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0048",
+    "query_text": "Which is the smallest country in the world?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0049",
+    "query_text": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0050",
+    "query_text": "Which company has exclusive rights to air episodes of the \"The Grand Tour\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0051",
+    "query_text": "In the 2014 FIFA World Cup, what was the final score in the match Brazil - Germany?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0052",
+    "query_text": "Neptune's greek name was...",
+    "label": "FAR_OOD",
+    "category": "Mythology",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0053",
+    "query_text": "The Herero genocide was perpetrated in Africa by which of the following colonial nations?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0054",
+    "query_text": "Which band is the longest active band in the world with no breaks or line-up changes?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0055",
+    "query_text": "Which band, with Boy George on lead vocals, won the Brit Awards in 1984?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0056",
+    "query_text": "In which film does Humphrey Bogart say the famous line, \"Here's looking at you, kid\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0057",
+    "query_text": "In \"Earthbound\", how does one enter \"Master Belch's\" factory?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0058",
+    "query_text": "Which of these characters in \"Stranger Things\" has the power of Telekinesis?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0059",
+    "query_text": "In the show Stranger Things, what is Eleven's favorite breakfast food?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0060",
+    "query_text": "How many playable characters are there in Yakuza 5?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0061",
+    "query_text": "How many degrees make a full circle?",
+    "label": "FAR_OOD",
+    "category": "Science: Mathematics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0062",
+    "query_text": "What is the name of Layer 7 of the OSI model?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0063",
+    "query_text": "Which of the following is NOT a work done by Shakespeare?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0064",
+    "query_text": "What is the unit of electrical inductance?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0065",
+    "query_text": "In the Hellboy universe, who founded the BPRD?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Comics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0066",
+    "query_text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0067",
+    "query_text": "When did the United States formally declare war on Japan, entering World War II?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0068",
+    "query_text": "According to Bram Stoker's novel, in which British coastal town did Dracula come ashore?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0069",
+    "query_text": "What is the capital of Estonia?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0070",
+    "query_text": "When was the game \"Roblox\" released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0071",
+    "query_text": "How many planets are there in the Solar System?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0072",
+    "query_text": "In the \"Jurassic Park\" universe, what was the first dinosaur cloned by InGen in 1986?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0073",
+    "query_text": "All of the following are names of the Seven Warring States EXCEPT:",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0074",
+    "query_text": "Which actor played the main character in the 1990 film \"Edward Scissorhands\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0075",
+    "query_text": "In the server hosting industry IaaS stands for...",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0076",
+    "query_text": "Which member of the English band \"The xx\" released their solo album \"In Colour\" in 2015?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0077",
+    "query_text": "Who won the \"Champions League\" in 1999?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0078",
+    "query_text": "The file hosting service, \"Google Drive\" was launched on what day?",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0079",
+    "query_text": "What numbers are in the 5th row of Pascal's Triangle?",
+    "label": "FAR_OOD",
+    "category": "Science: Mathematics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0080",
+    "query_text": "Scotch whisky and Drambuie make up which cocktail?",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0081",
+    "query_text": "What was the code name for the \"Nintendo Gamecube\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0082",
+    "query_text": "In \"Little Women\", which of the March sisters married Laurie?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0083",
+    "query_text": "What city did the Lakers represent before relocating to Los Angeles?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0084",
+    "query_text": "What Sims console game featured the Black Eyed Peas in the game?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0085",
+    "query_text": "In what year was Hearthstone released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0086",
+    "query_text": "Where is the fast food chain \"Panda Express\" headquartered?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0087",
+    "query_text": "What episode of \"Mr. Bean\" saw him trying to prevent people from seeing him naked?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0088",
+    "query_text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1993)?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0089",
+    "query_text": "In what year was the first Indian movie submitted for an Oscar?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0090",
+    "query_text": "What was the name of the German offensive operation in October 1941 to take Moscow before winter?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0091",
+    "query_text": "Which of his six wives was Henry VIII married to the longest?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0092",
+    "query_text": "What's the square root of 49?",
+    "label": "FAR_OOD",
+    "category": "Science: Mathematics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0093",
+    "query_text": "Which car manufacturer won the 2017 24 Hours of Le Mans?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0094",
+    "query_text": "The 2016 Disney animated film 'Moana' is based on which culture?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0095",
+    "query_text": "Which Shakespeare play features the stage direction \"Enter a messenger, with two heads and a hand\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Musicals &amp; Theatres",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0096",
+    "query_text": "In Night In The Woods, what is Mae Borowski mother's name?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0097",
+    "query_text": "In the first Left 4 Dead, you can play as either of these four characters.",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0098",
+    "query_text": "The games Cry of Fear, Natural Selection and Counter-Strike were originally mods for what video game?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0099",
+    "query_text": "In Splatoon, what is the age that inklings can freely change between squid and humanoid forms?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0100",
+    "query_text": "In World of Warcraft, which raid instance features a chess event?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  }
+]

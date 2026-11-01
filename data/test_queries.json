@@ -1,0 +1,2552 @@
+[
+  {
+    "query_id": "ID_0001",
+    "query_text": "What are Apple's principal products and services disclosed in Item 1 of Form 10-K?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0002",
+    "query_text": "How does Apple define its Services segment net sales in Management's Discussion and Analysis?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0003",
+    "query_text": "What are the primary factors affecting Apple's gross margin according to its financial statements?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0004",
+    "query_text": "What risk factors does Apple identify regarding international operations and global supply chain?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0005",
+    "query_text": "What was the impact of foreign currency exchange rate fluctuations on Apple's reported revenue?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0006",
+    "query_text": "How does Apple describe its research and development expenditure strategy?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0007",
+    "query_text": "What accounting policies does Apple follow for revenue recognition under ASC 606?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0008",
+    "query_text": "What are Apple's legal proceedings disclosed regarding App Store developer terms and litigation?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0009",
+    "query_text": "How does Apple manage customer credit risk and vendor financing arrangements?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0010",
+    "query_text": "What information is disclosed regarding Apple's share repurchase program and cash dividends?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0011",
+    "query_text": "What are the key terms of Apple's commercial paper program and outstanding term debt?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0012",
+    "query_text": "How does Apple evaluate the useful lives of its property, plant and equipment?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0013",
+    "query_text": "What is Apple's effective tax rate and what factors contributed to changes in the tax provision?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0014",
+    "query_text": "What information is provided regarding executive compensation in Apple's executive officer section?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0015",
+    "query_text": "What are Apple's commitments for manufacturing purchase obligations and component contracts?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0016",
+    "query_text": "How does Apple describe risks associated with third-party intellectual property infringement claims?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0017",
+    "query_text": "What segment reporting disclosures are made for Americas, Europe, Greater China, Japan, and Rest of Asia Pacific?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0018",
+    "query_text": "What are Apple's policies regarding restricted stock units and employee stock purchase plans?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0019",
+    "query_text": "How does Apple account for warranty obligations and product defect liabilities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0020",
+    "query_text": "What market risk disclosures are made regarding interest rate sensitivity on Apple's marketable securities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0021",
+    "query_text": "What does Apple report regarding cybersecurity threats, network disruptions, and unauthorized data access?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0022",
+    "query_text": "How does Apple describe its retail store operations and lease commitments across jurisdictions?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AAPL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0023",
+    "query_text": "What are Microsoft's three primary reporting segments: Productivity and Business Processes, Intelligent Cloud, and More Personal Computing?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0024",
+    "query_text": "How does Microsoft describe the commercial cloud revenue growth in Azure and other cloud services?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0025",
+    "query_text": "What was the impact of the Activision Blizzard acquisition on Microsoft's reported financial results?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0026",
+    "query_text": "What are the main risk factors Microsoft faces concerning artificial intelligence technologies and data privacy regulations?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0027",
+    "query_text": "How does Microsoft disclose goodwill and intangible assets associated with past business acquisitions?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0028",
+    "query_text": "What are Microsoft's capital expenditures related to global datacenter capacity and cloud infrastructure?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0029",
+    "query_text": "How does Microsoft define its performance obligations for multi-year software licensing contracts?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0030",
+    "query_text": "What legal proceedings does Microsoft disclose with regulatory bodies concerning cloud computing and competition?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0031",
+    "query_text": "What is Microsoft's policy regarding research and development expenses for Windows and Office 365?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0032",
+    "query_text": "How does Microsoft report revenue from Xbox content and gaming services in More Personal Computing?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0033",
+    "query_text": "What are Microsoft's cash management and investment strategies regarding U.S. government securities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0034",
+    "query_text": "What segment disclosures are provided for Server products and cloud services growth rates?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0035",
+    "query_text": "How does Microsoft manage foreign exchange exposure across its international subsidiaries?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0036",
+    "query_text": "What are Microsoft's pension and retirement plan disclosures for its global employee base?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0037",
+    "query_text": "What details are provided on Microsoft's effective tax rate and international income tax reserves?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0038",
+    "query_text": "How does Microsoft evaluate impairment of long-lived assets including cloud server hardware?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0039",
+    "query_text": "What risk factors are identified regarding security vulnerabilities in software and operating system updates?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0040",
+    "query_text": "What is Microsoft's dividend policy and total cash returned to shareholders through buybacks?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0041",
+    "query_text": "How does Microsoft disclose stock-based compensation expense across cost of revenue and operating expenses?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0042",
+    "query_text": "What are the major terms of Microsoft's senior notes debt issuances and maturities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0043",
+    "query_text": "What is Microsoft's discussion of competitive pressures in enterprise enterprise search and productivity suites?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0044",
+    "query_text": "How does Microsoft describe risks relating to intellectual property litigation and open source dependencies?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "MSFT",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0045",
+    "query_text": "How does Alphabet classify its Google Services and Google Cloud reporting segments?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0046",
+    "query_text": "What constitutes Google Services revenue including Search, YouTube advertising, and Google Network?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0047",
+    "query_text": "What are Alphabet's disclosures regarding traffic acquisition costs (TAC) paid to distribution partners?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0048",
+    "query_text": "How does Alphabet account for revenue from YouTube subscriptions and hardware sales in Google Services?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0049",
+    "query_text": "What operating losses are reported for Alphabet's Other Bets segment including Waymo and Verily?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0050",
+    "query_text": "What are the primary antitrust and competition legal matters disclosed by Alphabet in Part I?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0051",
+    "query_text": "How does Alphabet describe risks regarding user privacy, cookie deprecation, and digital advertising regulations?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0052",
+    "query_text": "What capital expenditures did Alphabet incur for servers, network equipment, and office facilities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0053",
+    "query_text": "What accounting policies does Alphabet apply for investments in non-marketable equity securities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0054",
+    "query_text": "How does Alphabet report stock-based compensation and its impact on operating income?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0055",
+    "query_text": "What disclosures are provided regarding Alphabet's Class A, Class B, and Class C capital structure?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0056",
+    "query_text": "What are the risks disclosed regarding reliance on mobile operating systems and web browser distribution?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0057",
+    "query_text": "How does Alphabet evaluate the estimated useful lives of its production servers and networking equipment?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0058",
+    "query_text": "What is Alphabet's provision for income taxes and the breakdown between domestic and foreign income?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0059",
+    "query_text": "What are Alphabet's lease commitments for corporate campuses, data center real estate, and co-locations?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0060",
+    "query_text": "How does Alphabet describe competitive dynamics in generative artificial intelligence and enterprise cloud services?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0061",
+    "query_text": "What market risk disclosures are made regarding equity price risk on Alphabet's investment portfolio?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0062",
+    "query_text": "What are the principal risk factors identified regarding international tax law changes such as the OECD global minimum tax?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0063",
+    "query_text": "How does Alphabet define performance obligations for Google Cloud Platform usage and multi-cloud agreements?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0064",
+    "query_text": "What is the reported headcount and employee turnover risk disclosed in Alphabet's human capital management section?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0065",
+    "query_text": "What are the details of Alphabet's share repurchase authorizations approved by the Board of Directors?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "GOOGL",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0066",
+    "query_text": "What are NVIDIA's two primary operating segments: Compute & Networking and Graphics?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0067",
+    "query_text": "How does NVIDIA describe demand trends for Hopper and Blackwell GPU architecture in data center markets?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0068",
+    "query_text": "What risk factors does NVIDIA cite regarding U.S. government export controls on advanced semiconductor products?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0069",
+    "query_text": "What are NVIDIA's customer concentration disclosures regarding significant cloud service provider customers?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0070",
+    "query_text": "How does NVIDIA account for inventory valuation and reserves for excess chip inventory?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0071",
+    "query_text": "What disclosures are made regarding foundry partners like TSMC for semiconductor wafer manufacturing and packaging?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0072",
+    "query_text": "How does NVIDIA describe the role of CUDA software in its competitive moat and platform strategy?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0073",
+    "query_text": "What are NVIDIA's research and development expenditures on autonomous vehicles and robotics chips?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0074",
+    "query_text": "What legal proceedings does NVIDIA report regarding patent disputes and class action securities lawsuits?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0075",
+    "query_text": "How does NVIDIA disclose gross margins across its Compute & Networking and Gaming businesses?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0076",
+    "query_text": "What are the terms of NVIDIA's debt obligations and revolving credit facility commitments?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0077",
+    "query_text": "What are the main risks associated with supply chain bottlenecks, HBM memory availability, and substrate shortages?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0078",
+    "query_text": "How does NVIDIA report stock-based compensation and employee stock purchase program expenses?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0079",
+    "query_text": "What is NVIDIA's capital allocation policy regarding cash dividends and common stock repurchases?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0080",
+    "query_text": "What disclosures are provided for revenue recognized from software licenses and enterprise AI support contracts?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0081",
+    "query_text": "How does NVIDIA manage foreign currency exchange risks associated with international operating expenses?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0082",
+    "query_text": "What are the disclosures concerning fair value measurements of marketable cash equivalent securities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0083",
+    "query_text": "How does NVIDIA define its automotive market opportunity for DRIVE Orin and centralized compute platforms?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0084",
+    "query_text": "What are the primary operational risks identified concerning manufacturing facility concentration in Taiwan?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0085",
+    "query_text": "How does NVIDIA address risks of rapid technological obsolescence in artificial intelligence accelerators?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0086",
+    "query_text": "What are the tax rate effects of international earnings and state tax credits disclosed in NVIDIA's tax footnote?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "NVDA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0087",
+    "query_text": "What are Amazon's three reporting segments: North America, International, and Amazon Web Services (AWS)?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0088",
+    "query_text": "How does Amazon describe net sales growth in AWS compared to retail and third-party seller services?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0089",
+    "query_text": "What are the main operational expenses comprising Amazon's fulfillment and shipping costs?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0090",
+    "query_text": "What risk factors does Amazon highlight regarding third-party merchant marketplace fraud and product liability?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0091",
+    "query_text": "How does Amazon account for leased fulfillment centers, sortation facilities, and delivery stations under ASC 842?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0092",
+    "query_text": "What are Amazon's advertising services revenues and growth drivers across its retail web properties?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0093",
+    "query_text": "What does Amazon report regarding capital expenditures on fulfillment capacity versus technology infrastructure?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0094",
+    "query_text": "What are Amazon's major antitrust investigations and regulatory proceedings in the United States and European Union?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0095",
+    "query_text": "How does Amazon manage seasonal inventory fluctuations and working capital requirements for fourth-quarter holiday sales?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0096",
+    "query_text": "What are the terms and interest rates of Amazon's unsecured senior notes and commercial paper borrowings?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0097",
+    "query_text": "How does Amazon disclose free cash flow calculations and equipment finance lease obligations?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0098",
+    "query_text": "What risk factors are identified regarding collective bargaining, labor organizing, and fulfillment workforce retention?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0099",
+    "query_text": "How does Amazon define performance obligations for Prime subscription fees and amortized membership revenue?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0100",
+    "query_text": "What is Amazon's foreign currency translation adjustment reported in accumulated other comprehensive income?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0101",
+    "query_text": "What disclosures does Amazon make regarding digital content amortization for Prime Video and Studios productions?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0102",
+    "query_text": "How does Amazon evaluate goodwill impairment across its acquired businesses like Whole Foods Market?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0103",
+    "query_text": "What are the cybersecurity and customer privacy risk factors disclosed for consumer connected devices like Echo and Ring?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0104",
+    "query_text": "What is Amazon's effective corporate income tax rate and valuation allowances on deferred tax assets?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0105",
+    "query_text": "How does Amazon describe international regulatory compliance risks relating to cross-border duties and customs?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0106",
+    "query_text": "What commitments exist for unconditional purchase obligations for transportation capacity and green energy contracts?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0107",
+    "query_text": "What are the disclosures on executive compensation and founder equity holdings in Amazon's proxy references?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "AMZN",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0108",
+    "query_text": "What are Meta's two reportable segments: Family of Apps (FoA) and Reality Labs (RL)?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0109",
+    "query_text": "How does Meta define daily active people (DAP) and monthly active people (MAP) across its Family of Apps?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0110",
+    "query_text": "What are the operating losses and revenue disclosures reported for the Reality Labs segment?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0111",
+    "query_text": "What percentage of Meta's total revenue is derived from digital advertising services across Facebook and Instagram?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0112",
+    "query_text": "How does Meta describe the financial impact of Apple's App Tracking Transparency and privacy changes?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0113",
+    "query_text": "What are Meta's capital expenditures dedicated to artificial intelligence server hardware and data centers?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0114",
+    "query_text": "What legal proceedings are disclosed regarding FTC antitrust litigation and state attorneys general consumer protection suits?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0115",
+    "query_text": "How does Meta manage data privacy compliance under the EU General Data Protection Regulation (GDPR) and Digital Markets Act?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0116",
+    "query_text": "What are Meta's disclosures regarding share repurchases and inaugural quarterly cash dividend distributions?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0117",
+    "query_text": "What accounting policies does Meta follow for stock-based compensation and restricted stock unit vesting?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0118",
+    "query_text": "What is Meta's effective tax rate and the impact of the 2017 Tax Cuts and Jobs Act transition provisions?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0119",
+    "query_text": "What are the primary risk factors disclosed concerning content moderation, misinformation, and teen safety regulations?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0120",
+    "query_text": "How does Meta report average revenue per person (ARPP) across geographical regions including US & Canada and Europe?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0121",
+    "query_text": "What are the details of Meta's outstanding senior notes and credit facility arrangements?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0122",
+    "query_text": "How does Meta evaluate lease commitments for data center properties and corporate offices under ASC 842?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0123",
+    "query_text": "What disclosures are made regarding investments in open-source AI infrastructure including Llama model architectures?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0124",
+    "query_text": "What are the operational risks cited regarding undersea telecommunications cable infrastructure maintenance?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0125",
+    "query_text": "How does Meta disclose human capital resources, employee retention, and headcount restructuring programs?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0126",
+    "query_text": "What market risk exposures does Meta report regarding foreign exchange volatility in advertising revenue?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0127",
+    "query_text": "What are the credit risks associated with advertising accounts receivable and corporate credit allowances?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0128",
+    "query_text": "How does Meta define performance obligations for contract commitments with large enterprise advertisers?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "META",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0129",
+    "query_text": "What are Tesla's primary business segments: Automotive and Energy Generation and Storage?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0130",
+    "query_text": "How does Tesla describe automotive regulatory credit sales and their impact on gross margins?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0131",
+    "query_text": "What are the production and delivery figures reported for Model 3/Y and other vehicle models?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0132",
+    "query_text": "What disclosures are provided regarding Tesla Energy storage deployments including Megapack and Powerwall?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0133",
+    "query_text": "What are the risk factors Tesla faces regarding lithium-ion battery raw material costs and cell manufacturing constraints?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0134",
+    "query_text": "How does Tesla account for deferred revenue associated with Full Self-Driving (FSD) feature capabilities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0135",
+    "query_text": "What legal matters does Tesla report regarding autonomous vehicle driver assistance investigations by NHTSA and DOJ?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0136",
+    "query_text": "What are the capital expenditures disclosed for scaling production at Gigafactory Texas, Berlin, and Shanghai?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0137",
+    "query_text": "What accounting policies are applied for automotive warranty reserves and product recalls?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0138",
+    "query_text": "How does Tesla account for digital asset holdings including bitcoin purchases and impairment losses?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0139",
+    "query_text": "What is Tesla's revenue recognition policy for vehicles sold with residual value guarantees or lease buybacks?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0140",
+    "query_text": "What risk factors are identified regarding high executive dependency on Chief Executive Officer Elon Musk?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0141",
+    "query_text": "What are the details of Tesla's term loan borrowings, vehicle financing credit facilities, and interest expenses?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0142",
+    "query_text": "How does Tesla describe its direct-to-consumer sales model and state legislative restrictions on dealership franchise laws?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0143",
+    "query_text": "What are Tesla's disclosures regarding research and development expenses on humanoid robotics and Dojo supercomputing?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0144",
+    "query_text": "What is Tesla's provision for income taxes and the release of valuation allowances on domestic deferred tax assets?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0145",
+    "query_text": "How does Tesla disclose solar roof and commercial energy installation contract terms and net metering policies?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0146",
+    "query_text": "What are the major terms of supplier purchasing commitments for semiconductor microcontrollers and raw battery metals?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0147",
+    "query_text": "How does Tesla report segment gross margins for Automotive sales versus Automotive leasing?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0148",
+    "query_text": "What market risk disclosures are made regarding interest rate sensitivity on customer vehicle financing portfolios?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0149",
+    "query_text": "What are the environmental regulation compliance credits earned in California and European emission pools?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "ID_0150",
+    "query_text": "How does Tesla disclose foreign exchange gains and losses across European and Chinese operating entities?",
+    "label": "IN_DISTRIBUTION",
+    "target_company": "TSLA",
+    "expected_behavior": "PASS_TO_RETRIEVER"
+  },
+  {
+    "query_id": "NEAR_OOD_0001",
+    "query_text": "What was Apple's total net revenue from the Apple Car Titan project in fiscal year 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Product",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0002",
+    "query_text": "How much profit did Apple report from its holographic eyewear subscription service?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Product",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0003",
+    "query_text": "What were Apple's capital expenditures for nuclear fusion powered data centers in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Tech",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0004",
+    "query_text": "How many units of the foldable iPad Ultra were shipped during the fourth quarter of 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0005",
+    "query_text": "What did Apple state regarding the acquisition of Boeing for autonomous drone logistics?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0006",
+    "query_text": "How did Apple's quantum encryption subsidiary perform financially in fiscal 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Division",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0007",
+    "query_text": "What dividend was paid to holders of Apple Class C preferred voting stock in 2022?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Stock Class",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0008",
+    "query_text": "What were Apple's operational losses from its commercial space telescope initiative?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Division",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0009",
+    "query_text": "How much did Apple pay in licensing fees to Sony for PlayStation exclusivity on macOS?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Licensing",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0010",
+    "query_text": "What was the impact of European antitrust fines on Apple's lunar mining royalties?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Legal",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0011",
+    "query_text": "What was Apple's projected revenue for the titanium supply chain disruption in fiscal 2011?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Year",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0012",
+    "query_text": "How many Apple Vision Pro units were manufactured in Antarctica in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Logistics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0013",
+    "query_text": "What was Apple's total research spend on teleportation algorithms in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual Research",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0014",
+    "query_text": "How did Apple's partnership with Nintendo affect its quarterly wearable gross margins?",
+    "label": "NEAR_OOD",
+    "company_context": "Apple Inc.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0015",
+    "query_text": "What was Microsoft's revenue from the physical holographic HoloLens 5 in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0016",
+    "query_text": "How much revenue did Microsoft Azure generate from seabed underwater server pods in 2019?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Cloud",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0017",
+    "query_text": "What was Microsoft's net income contribution from Windows Mobile 12 in fiscal 2026?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Software",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0018",
+    "query_text": "What penalty did Microsoft pay to the FTC regarding Minecraft cryptocurrency trading in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Legal",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0019",
+    "query_text": "How many commercial quantum computing qubits did Microsoft sell to general enterprise in 2021?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Tech",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0020",
+    "query_text": "What did Microsoft disclose about the hostile takeover of Valve Software in fiscal 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0021",
+    "query_text": "What was the revenue impact of Microsoft Xbox Series Z handheld consoles in Europe?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Gaming",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0022",
+    "query_text": "How much did Microsoft spend acquiring the Linux kernel foundation in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0023",
+    "query_text": "What were Microsoft's recorded royalties from selling proprietary COBOL compilers in 2026?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Software",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0024",
+    "query_text": "What was the gross margin of Microsoft's orbital satellite broadband network in fiscal 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Cloud",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0025",
+    "query_text": "How did Microsoft account for losses incurred by the LinkedIn metaverse office network?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Platform",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0026",
+    "query_text": "What was Microsoft's tax credit for deploying nuclear-powered microgrids in Redmond in 2015?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Energy",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0027",
+    "query_text": "How much goodwill did Microsoft write off from the Skype interplanetary communication division?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Division",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0028",
+    "query_text": "What was the financial settlement between Microsoft and Atari regarding flight simulators in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Microsoft Corp.",
+    "sub_category": "Counterfactual Legal",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0029",
+    "query_text": "What was Google's net ad revenue from the Google Glass 3 consumer edition in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0030",
+    "query_text": "How much did Alphabet invest in underwater submarine fiber repair drones in fiscal 2020?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Infrastructure",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0031",
+    "query_text": "What was the total profit generated by Google Stadia Cloud Gaming Pro in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Gaming",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0032",
+    "query_text": "How did Alphabet account for the commercial sale of Boston Dynamics military quadruped robots in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Robotics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0033",
+    "query_text": "What were the licensing revenues from Android running on Tesla infotainment systems in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0034",
+    "query_text": "What was Google Search's market share across interplanetary research vessels in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Search",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0035",
+    "query_text": "How much revenue did YouTube generate from olfactory aroma-streaming technology in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Media",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0036",
+    "query_text": "What did Alphabet disclose regarding its secret cold fusion power generation plant in Nevada?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Energy",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0037",
+    "query_text": "How much did Waymo charge per passenger mile on Mars colony test tracks in fiscal 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Autonomous",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0038",
+    "query_text": "What were Alphabet's legal expenses from the patent infringement lawsuit against Bell Labs in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Legal",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0039",
+    "query_text": "How many Google Pixel 20 ultra smartphones were manufactured in Germany in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0040",
+    "query_text": "What were the total losses recorded by Google Fiber in Tokyo during the third quarter of 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Telecom",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0041",
+    "query_text": "What was the dividend yield paid out by Alphabet to Class F shares in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual Stock Class",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0042",
+    "query_text": "What was Google DeepMind's commercial revenue from predicting national lottery numbers in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Alphabet Inc.",
+    "sub_category": "Counterfactual AI",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0043",
+    "query_text": "What were NVIDIA's total revenues from the GeForce RTX 9090 Super quantum card in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0044",
+    "query_text": "How much did NVIDIA spend developing RISC-V smartphone graphics chips for Apple in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Chips",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0045",
+    "query_text": "What was NVIDIA's operating margin on residential solar micro-inverter microprocessors?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Energy",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0046",
+    "query_text": "How many Hopper H100 GPUs were sold directly to commercial airline autopilot manufacturers in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0047",
+    "query_text": "What was NVIDIA's net income from its proprietary bitcoin mining server farms in Iceland in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Crypto",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0048",
+    "query_text": "What did NVIDIA report concerning the antitrust settlement for acquiring Intel Corporation in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0049",
+    "query_text": "What were NVIDIA's licensing revenues from Tegra processors powering Nintendo Game Boy in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Gaming",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0050",
+    "query_text": "How much did NVIDIA spend on biological neural mesh computing research in fiscal 2026?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Research",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0051",
+    "query_text": "What was NVIDIA's total market cap loss attributable to counterfeit GPU silicon in 2018?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Security",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0052",
+    "query_text": "How many Grace CPU modules were deployed on commercial maritime shipping vessels in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Deployment",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0053",
+    "query_text": "What was the total dividend paid by NVIDIA to preferred sovereign wealth fund shareholders in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Financials",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0054",
+    "query_text": "How much did NVIDIA write down in excess inventory for its smart home refrigerator processors in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Appliances",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0055",
+    "query_text": "What was NVIDIA Omniverse's recorded revenue from virtual wedding ceremonies in fiscal 2026?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Software",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0056",
+    "query_text": "What was NVIDIA's operational profit from manufacturing silicon wafers on the International Space Station?",
+    "label": "NEAR_OOD",
+    "company_context": "NVIDIA Corp.",
+    "sub_category": "Counterfactual Aerospace",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0057",
+    "query_text": "What was Amazon's total operating profit from Amazon Prime Rocket Delivery to orbital habitats in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Logistics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0058",
+    "query_text": "How much did Amazon Web Services (AWS) earn from hosting decentralized Martian weather models in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Cloud",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0059",
+    "query_text": "What were Amazon's gross losses from the Amazon Fire Phone 3 release in fourth quarter 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0060",
+    "query_text": "How many physical grocery stores did Amazon operate in Zurich, Switzerland in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Retail",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0061",
+    "query_text": "What were the recorded revenues from Amazon Pharmacy's gene therapy distribution in fiscal 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Healthcare",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0062",
+    "query_text": "How much goodwill did Amazon recognize upon completing the acquisition of Target Corporation in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0063",
+    "query_text": "What was the total electricity generated by Amazon's floating offshore wind turbines in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Sustainability",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0064",
+    "query_text": "What was the return on invested capital for Amazon Studios' interactive dream projection movies?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Media",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0065",
+    "query_text": "How much did Amazon charge third-party sellers for warehouse space on the Moon in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Fulfillment",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0066",
+    "query_text": "What were the legal defense costs in Amazon's antitrust suit regarding drone air traffic control in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Legal",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0067",
+    "query_text": "What was Amazon's operating income from the Kindle Color e-reader subscription service in 2012?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0068",
+    "query_text": "How did Amazon account for inventory shrinkage due to pirate attacks on container ships in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Logistics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0069",
+    "query_text": "What was AWS revenue from its private 6G cellular network launched in Antarctica in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Telecom",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0070",
+    "query_text": "What were Amazon's revenue shares paid to drone couriers operating in Tokyo in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Amazon.com Inc.",
+    "sub_category": "Counterfactual Logistics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0071",
+    "query_text": "What was Meta's total revenue from selling physical robotic avatars for workplace telepresence in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Robotics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0072",
+    "query_text": "How much did Meta earn from brain-computer interface neural implants sold to gamers in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0073",
+    "query_text": "What was the net loss recorded by Reality Labs on selling holographic contact lenses in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0074",
+    "query_text": "What dividend was declared by Meta's board of directors to Class B super-voting shareholders in 2017?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Financials",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0075",
+    "query_text": "How much advertising revenue did Meta generate from Instagram posts viewed on Tesla windshields in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0076",
+    "query_text": "What was Meta's tax liability for operating decentralized sovereign digital currency Diem in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Crypto",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0077",
+    "query_text": "What did Meta disclose regarding the acquisition of Sony Pictures for Horizon Worlds content in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0078",
+    "query_text": "How many monthly active users accessed WhatsApp via shortwave radio frequencies in Africa in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Telecom",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0079",
+    "query_text": "What was Meta's recorded impairment charge on underwater optic fiber eaten by marine life in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Infrastructure",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0080",
+    "query_text": "How much revenue did Meta AI earn from licensing conversational bots to the United Nations in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual AI",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0081",
+    "query_text": "What was the gross margin on Meta Quest Pro headsets manufactured in Vancouver in fiscal 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Hardware",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0082",
+    "query_text": "What fines did Meta pay to the Federal Reserve for algorithmic trading manipulation in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Legal",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0083",
+    "query_text": "How many Oculus VR headsets were leased to public school systems in the UK during 2022?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual VR",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0084",
+    "query_text": "What was Meta's capital expenditure on quantum teleportation server clusters in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Meta Platforms Inc.",
+    "sub_category": "Counterfactual Computing",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0085",
+    "query_text": "What was Tesla's total automotive revenue from the Tesla CyberSubmarine in fiscal year 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0086",
+    "query_text": "How many humanoid Tesla Optimus robots were working as air traffic controllers in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Robotics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0087",
+    "query_text": "What was Tesla Energy's operating income from deploying fusion reactors on cargo ships in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Energy",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0088",
+    "query_text": "How much revenue did Tesla recognize from regulatory automotive credits sold to Boeing in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Credits",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0089",
+    "query_text": "What was the warranty reserve per vehicle for Tesla Cybertrucks delivered to Singapore in 2021?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0090",
+    "query_text": "How many units of the Tesla Model 2 compact car were delivered in the third quarter of 2022?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0091",
+    "query_text": "What were Tesla's recorded losses from deploying Full Self-Driving software on commercial aircraft in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0092",
+    "query_text": "How much did Tesla spend on acquiring supersonic hyperloop tunneling rights from NASA in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual M&A",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0093",
+    "query_text": "What was Tesla's gross margin on commercial semi-trucks operating in the Sahara Desert in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Automotive",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0094",
+    "query_text": "What was the total value of Dogecoin held in Tesla's treasury reserves at the end of fiscal 2019?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Crypto",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0095",
+    "query_text": "How did Tesla account for revenue from solar roof tiles installed on the Sydney Opera House in 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Energy",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0096",
+    "query_text": "What was Tesla's insurance revenue from insuring autonomous flying taxis in Dubai in fiscal 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Insurance",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0097",
+    "query_text": "What penalty did Tesla pay to the National Highway Traffic Safety Administration for Cybertruck amphibious tests in 2023?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Legal",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0098",
+    "query_text": "How many Tesla Gigafactories were operational in Greenland at the close of fiscal 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Manufacturing",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0099",
+    "query_text": "What was the total research expenditure allocated to anti-gravity propulsion research in 2025?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Research",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "NEAR_OOD_0100",
+    "query_text": "How much did Tesla collect in Supercharger fees from electric lunar rovers during 2024?",
+    "label": "NEAR_OOD",
+    "company_context": "Tesla Inc.",
+    "sub_category": "Counterfactual Infrastructure",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0001",
+    "query_text": "The character Wario was first introduced in which game of the Mario video game franchise?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0002",
+    "query_text": "Which of these African regions does *not* directly border the Democratic Republic of The Congo?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0003",
+    "query_text": "Who designed the Chupa Chups logo?",
+    "label": "FAR_OOD",
+    "category": "Art",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0004",
+    "query_text": "What is not a wind instrument?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0005",
+    "query_text": "Which is the national animal of India?",
+    "label": "FAR_OOD",
+    "category": "Animals",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0006",
+    "query_text": "When did Norway get its constitution?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0007",
+    "query_text": "In 2014, this new top 100 rapper who featured in \"Computers\" and \"Body Dance\" was arrested in a NYPD sting for murder.",
+    "label": "FAR_OOD",
+    "category": "Celebrities",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0008",
+    "query_text": "What is the name of the town in which Lily and James Potter are buried?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0009",
+    "query_text": "The now extinct species \"Thylacine\" was native to where?",
+    "label": "FAR_OOD",
+    "category": "Animals",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0010",
+    "query_text": "In \"A Hat In Time\" who is the final boss?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0011",
+    "query_text": "Which of these characters from Final Fantasy VIII primarily spoke in one word sentences?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0012",
+    "query_text": "In Call Of Duty: Black Ops II, who is the main antagonist?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0013",
+    "query_text": "In \"Fallout 4\", what is the name of the dog you find at Red Rocket truck stop?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0014",
+    "query_text": "Which of these movies is NOT considered to be part of the Marvel Cinematic Universe?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0015",
+    "query_text": "Which of the following spacecraft never touched the moon?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0016",
+    "query_text": "What's the name of Batman's parents?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Comics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0017",
+    "query_text": "When did Jamaica receive its independence from England? ",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0018",
+    "query_text": "On a standard Monopoly board, how much do you have to pay for Tennessee Ave?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Board Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0019",
+    "query_text": "In which year was League of Legends released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0020",
+    "query_text": "Who is the second person to take up the mantle of Night Owl in the Watchmen graphic novel?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Comics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0021",
+    "query_text": "Which of these cities has a 4\u00b0 East longitude. ",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0022",
+    "query_text": "What immense structure is referred to in Norse Mythology as the Yggdrasil.",
+    "label": "FAR_OOD",
+    "category": "Mythology",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0023",
+    "query_text": "How many soccer players should be on the field at the same time?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0024",
+    "query_text": "Which is the longest bone in the human body? ",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0025",
+    "query_text": "In what year was the first Transformers movie released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0026",
+    "query_text": "What is the capital of Lithuania?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0027",
+    "query_text": "How many games are there in the \"Colony Wars\" series for the PlayStation?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0028",
+    "query_text": "Which of these is not a single by Pink Floyd guitarist, David Gilmour?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0029",
+    "query_text": "What superhero has been played in film by actors Michael Keaton, Val Kilmer, George Clooney and Christian Bale?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0030",
+    "query_text": "What did the name of the Tor Anonymity Network orignially stand for?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0031",
+    "query_text": "In \"Inuyasha\", what are the heros are looking to collect?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Japanese Anime &amp; Manga",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0032",
+    "query_text": " What is the chemical symbol for Helium?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0033",
+    "query_text": "An organism described as \"heliotropic\" has a tendancy to move towards which of these things?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0034",
+    "query_text": "What sport is being played in the Anime Eyeshield 21?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Japanese Anime &amp; Manga",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0035",
+    "query_text": "Who is the \"dumb blonde\" character in Nickelodeon's \"The Loud House\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Cartoon &amp; Animations",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0036",
+    "query_text": "The computer OEM manufacturer Clevo, known for its Sager notebook line, is based in which country?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0037",
+    "query_text": "In what year did Neil Armstrong and Buzz Aldrin land on the moon?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0038",
+    "query_text": "What was the religion of famous singer \"Freddie Mercury\"?",
+    "label": "FAR_OOD",
+    "category": "Celebrities",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0039",
+    "query_text": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0040",
+    "query_text": "Who is attributed credit for recording the epic poem The Odyssey?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0041",
+    "query_text": "What is the Linnean name of the domestic apple tree?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0042",
+    "query_text": "Where is Hadrian's Wall located?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0043",
+    "query_text": "Which sci-fi cult films plot concerns aliens attempting to prevent humans from creating a doomsday weapon?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0044",
+    "query_text": "What is the \"Mitsubishi Wakamaru\"?",
+    "label": "FAR_OOD",
+    "category": "Science: Gadgets",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0045",
+    "query_text": "What Led Zeppelin album contains \"Stairway to Heaven\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0046",
+    "query_text": "Approximately how long is a year on Uranus?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0047",
+    "query_text": "According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0048",
+    "query_text": "Which is the smallest country in the world?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0049",
+    "query_text": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0050",
+    "query_text": "Which company has exclusive rights to air episodes of the \"The Grand Tour\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0051",
+    "query_text": "In the 2014 FIFA World Cup, what was the final score in the match Brazil - Germany?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0052",
+    "query_text": "Neptune's greek name was...",
+    "label": "FAR_OOD",
+    "category": "Mythology",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0053",
+    "query_text": "The Herero genocide was perpetrated in Africa by which of the following colonial nations?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0054",
+    "query_text": "Which band is the longest active band in the world with no breaks or line-up changes?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0055",
+    "query_text": "Which band, with Boy George on lead vocals, won the Brit Awards in 1984?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0056",
+    "query_text": "In which film does Humphrey Bogart say the famous line, \"Here's looking at you, kid\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0057",
+    "query_text": "In \"Earthbound\", how does one enter \"Master Belch's\" factory?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0058",
+    "query_text": "Which of these characters in \"Stranger Things\" has the power of Telekinesis?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0059",
+    "query_text": "In the show Stranger Things, what is Eleven's favorite breakfast food?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0060",
+    "query_text": "How many playable characters are there in Yakuza 5?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0061",
+    "query_text": "How many degrees make a full circle?",
+    "label": "FAR_OOD",
+    "category": "Science: Mathematics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0062",
+    "query_text": "What is the name of Layer 7 of the OSI model?",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0063",
+    "query_text": "Which of the following is NOT a work done by Shakespeare?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0064",
+    "query_text": "What is the unit of electrical inductance?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0065",
+    "query_text": "In the Hellboy universe, who founded the BPRD?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Comics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0066",
+    "query_text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0067",
+    "query_text": "When did the United States formally declare war on Japan, entering World War II?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0068",
+    "query_text": "According to Bram Stoker's novel, in which British coastal town did Dracula come ashore?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0069",
+    "query_text": "What is the capital of Estonia?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0070",
+    "query_text": "When was the game \"Roblox\" released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0071",
+    "query_text": "How many planets are there in the Solar System?",
+    "label": "FAR_OOD",
+    "category": "Science &amp; Nature",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0072",
+    "query_text": "In the \"Jurassic Park\" universe, what was the first dinosaur cloned by InGen in 1986?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0073",
+    "query_text": "All of the following are names of the Seven Warring States EXCEPT:",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0074",
+    "query_text": "Which actor played the main character in the 1990 film \"Edward Scissorhands\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0075",
+    "query_text": "In the server hosting industry IaaS stands for...",
+    "label": "FAR_OOD",
+    "category": "Science: Computers",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0076",
+    "query_text": "Which member of the English band \"The xx\" released their solo album \"In Colour\" in 2015?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Music",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0077",
+    "query_text": "Who won the \"Champions League\" in 1999?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0078",
+    "query_text": "The file hosting service, \"Google Drive\" was launched on what day?",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0079",
+    "query_text": "What numbers are in the 5th row of Pascal's Triangle?",
+    "label": "FAR_OOD",
+    "category": "Science: Mathematics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0080",
+    "query_text": "Scotch whisky and Drambuie make up which cocktail?",
+    "label": "FAR_OOD",
+    "category": "General Knowledge",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0081",
+    "query_text": "What was the code name for the \"Nintendo Gamecube\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0082",
+    "query_text": "In \"Little Women\", which of the March sisters married Laurie?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Books",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0083",
+    "query_text": "What city did the Lakers represent before relocating to Los Angeles?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0084",
+    "query_text": "What Sims console game featured the Black Eyed Peas in the game?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0085",
+    "query_text": "In what year was Hearthstone released?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0086",
+    "query_text": "Where is the fast food chain \"Panda Express\" headquartered?",
+    "label": "FAR_OOD",
+    "category": "Geography",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0087",
+    "query_text": "What episode of \"Mr. Bean\" saw him trying to prevent people from seeing him naked?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Television",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0088",
+    "query_text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1993)?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0089",
+    "query_text": "In what year was the first Indian movie submitted for an Oscar?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0090",
+    "query_text": "What was the name of the German offensive operation in October 1941 to take Moscow before winter?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0091",
+    "query_text": "Which of his six wives was Henry VIII married to the longest?",
+    "label": "FAR_OOD",
+    "category": "History",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0092",
+    "query_text": "What's the square root of 49?",
+    "label": "FAR_OOD",
+    "category": "Science: Mathematics",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0093",
+    "query_text": "Which car manufacturer won the 2017 24 Hours of Le Mans?",
+    "label": "FAR_OOD",
+    "category": "Sports",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0094",
+    "query_text": "The 2016 Disney animated film 'Moana' is based on which culture?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Film",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0095",
+    "query_text": "Which Shakespeare play features the stage direction \"Enter a messenger, with two heads and a hand\"?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Musicals &amp; Theatres",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0096",
+    "query_text": "In Night In The Woods, what is Mae Borowski mother's name?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0097",
+    "query_text": "In the first Left 4 Dead, you can play as either of these four characters.",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0098",
+    "query_text": "The games Cry of Fear, Natural Selection and Counter-Strike were originally mods for what video game?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0099",
+    "query_text": "In Splatoon, what is the age that inklings can freely change between squid and humanoid forms?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  },
+  {
+    "query_id": "FAR_OOD_0100",
+    "query_text": "In World of Warcraft, which raid instance features a chess event?",
+    "label": "FAR_OOD",
+    "category": "Entertainment: Video Games",
+    "expected_behavior": "REJECT_OOD"
+  }
+]
