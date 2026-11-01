@@ -1,0 +1,39 @@
+source,method,rule,ID pass rate,Near-OOD reject rate,Far-OOD reject rate
+passage,MFA min-Mahalanobis D²,val 99th pct,0.9933333333333333,0.18,1.0
+passage,MFA neg. log-likelihood,val 99th pct,0.9933333333333333,0.18,1.0
+passage,Cosine NN (FAISS),val 99th pct,0.9333333333333333,0.7,1.0
+passage,K-Means Euclidean,val 99th pct,0.9933333333333333,0.05,0.95
+passage,Diagonal GMM,val 99th pct,0.9933333333333333,0.07,0.94
+passage,Full-cov GMM,val 99th pct,0.9866666666666667,0.36,1.0
+passage,Single Gaussian (Ledoit-Wolf),val 99th pct,0.9866666666666667,0.29,1.0
+passage,MFA + EVT (proposed),S(q) < 0.5,0.92,0.57,1.0
+passage,MFA + EVT (proposed),S(q) < 0.2,0.98,0.27,1.0
+passage,MFA + EVT (proposed),S(q) < 0.1,0.9933333333333333,0.16,0.99
+passage,MFA + EVT (proposed),S(q) < 0.05,0.9933333333333333,0.06,0.96
+passage,MFA + EVT (proposed),S(q) < 0.01,1.0,0.01,0.89
+passage,MFA + EVT (proposed),S(q) < 0.001,1.0,0.0,0.72
+passage,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.5 (3-fold CV),0.74,0.82,1.0
+passage,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.2 (3-fold CV),0.9066666666666666,0.65,1.0
+passage,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.1 (3-fold CV),0.9533333333333334,0.47,1.0
+passage,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.05 (3-fold CV),0.9733333333333334,0.31,1.0
+passage,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.01 (3-fold CV),0.9933333333333333,0.15,1.0
+passage,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.001 (3-fold CV),0.9933333333333333,0.03,0.95
+query,MFA min-Mahalanobis D²,val 99th pct,1.0,0.0,0.58
+query,MFA neg. log-likelihood,val 99th pct,1.0,0.0,0.61
+query,Cosine NN (FAISS),val 99th pct,1.0,0.04,0.83
+query,K-Means Euclidean,val 99th pct,1.0,0.0,0.52
+query,Diagonal GMM,val 99th pct,1.0,0.0,0.51
+query,Full-cov GMM,val 99th pct,1.0,0.0,0.61
+query,Single Gaussian (Ledoit-Wolf),val 99th pct,1.0,0.01,0.74
+query,MFA + EVT (proposed),S(q) < 0.5,1.0,0.01,0.85
+query,MFA + EVT (proposed),S(q) < 0.2,1.0,0.0,0.68
+query,MFA + EVT (proposed),S(q) < 0.1,1.0,0.0,0.59
+query,MFA + EVT (proposed),S(q) < 0.05,1.0,0.0,0.42
+query,MFA + EVT (proposed),S(q) < 0.01,1.0,0.0,0.03
+query,MFA + EVT (proposed),S(q) < 0.001,1.0,0.0,0.0
+query,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.5 (3-fold CV),0.74,0.51,1.0
+query,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.2 (3-fold CV),0.9,0.27,0.97
+query,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.1 (3-fold CV),0.94,0.15,0.93
+query,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.05 (3-fold CV),0.9733333333333334,0.1,0.92
+query,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.01 (3-fold CV),1.0,0.01,0.88
+query,MFA + EVT (proposed) · ID-question calibrated,S(q) < 0.001 (3-fold CV),1.0,0.0,0.69

@@ -1,0 +1,14 @@
+Prompt,Metric,Unguarded RAG,"Guarded (EVT, α=0.01)","Guarded (question-calibrated EVT, α=0.1)"
+strict,"Faithfulness, ID (answered queries)",0.5082089552238805,0.5082089552238805,0.50859375
+strict,ID answer rate,0.9,0.9,0.8533333333333334
+strict,ID queries wrongly blocked,0.0,0.0,0.04666666666666667
+strict,OOD queries blocked by guardrail,0.0,0.45,0.735
+strict,"Hallucination rate, all OOD",0.015,0.01,0.01
+strict,"Hallucination rate, Near-OOD",0.02,0.02,0.02
+strict,"Hallucination rate, Far-OOD",0.01,0.0,0.0
+strict,"Unsupported answers (NLI), all OOD",0.01,0.005,0.005
+naive,OOD queries blocked by guardrail,0.0,0.45,0.735
+naive,"Hallucination rate, all OOD",0.39,0.07,0.025
+naive,"Hallucination rate, Near-OOD",0.08,0.08,0.05
+naive,"Hallucination rate, Far-OOD",0.7,0.06,0.0
+naive,"Unsupported answers (NLI), all OOD",0.35,0.065,0.02

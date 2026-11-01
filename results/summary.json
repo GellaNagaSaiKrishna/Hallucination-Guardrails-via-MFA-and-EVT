@@ -1,0 +1,74 @@
+{
+  "alpha": 0.01,
+  "sources": {
+    "passage": {
+      "K": 2,
+      "r": 64,
+      "n_train": 5095,
+      "n_val": 1273,
+      "mfa_params": 46657,
+      "full_gmm_params": 148609,
+      "evt": {
+        "tau0": 584.042018179798,
+        "kappa": 1.0112160453753845,
+        "lambda": 92.48814475572411,
+        "ks_pvalue": 0.4871416200569223,
+        "threshold_at_alpha": 1002.8117358972966
+      },
+      "em_iterations": 20,
+      "em_converged": true
+    },
+    "query": {
+      "K": 4,
+      "r": 64,
+      "n_train": 10135,
+      "n_val": 2533,
+      "mfa_params": 93315,
+      "full_gmm_params": 297219,
+      "evt": {
+        "tau0": 501.8868260440485,
+        "kappa": 1.0574919291775382,
+        "lambda": 52.91170735749897,
+        "ks_pvalue": 0.7359552891002347,
+        "threshold_at_alpha": 726.140332538467
+      },
+      "em_iterations": 45,
+      "em_converged": true
+    }
+  },
+  "main_source": "passage",
+  "latency": [
+    {
+      "component": "Woodbury MFA scoring (guardrail)",
+      "n": 1000,
+      "mean_ms": 0.1740105007775128,
+      "p50_ms": 0.1585999270901084,
+      "p95_ms": 0.27285498799756164,
+      "p99_ms": 0.4203631705604492
+    },
+    {
+      "component": "Dense precomputed precision",
+      "n": 1000,
+      "mean_ms": 0.10116790072061121,
+      "p50_ms": 0.09919994045048952,
+      "p95_ms": 0.12840982526540756,
+      "p99_ms": 0.27012507896870375
+    },
+    {
+      "component": "Naive full inversion per query",
+      "n": 50,
+      "mean_ms": 126.8534939782694,
+      "p50_ms": 133.58589995186776,
+      "p95_ms": 170.0404099887237,
+      "p99_ms": 177.456129938364
+    },
+    {
+      "component": "Query embedding (MiniLM, CPU)",
+      "n": 200,
+      "mean_ms": 34.50777750113048,
+      "p50_ms": 33.213249989785254,
+      "p95_ms": 59.755880176089676,
+      "p99_ms": 80.61598519561805
+    }
+  ]
+}
