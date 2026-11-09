@@ -9,14 +9,32 @@ A pre-retrieval out-of-distribution (OOD) guardrail for Retrieval-Augmented Gene
 
 ## Pipeline
 
+```mermaid
+flowchart TB
+    subgraph OFF["Offline (run once)"]
+        direction LR
+        A["SEC 10-K HTML<br/>(7 filings)"] --> B["Clean + RecursiveCharacterTextSplitter<br/>(500 chars, 50 overlap)"]
+        B --> C["MiniLM-L6 embeddings<br/>(d = 384)"]
+        C -->|"80% train"| D["MFA via EM<br/>(K, r chosen by BIC)"]
+        C -->|"20% validation"| E["Weibull tail on<br/>validation D² (EVT)"]
+        D --> E
+        C --> F[("FAISS index")]
+    end
+    subgraph ON["Online (per query)"]
+        direction LR
+        Q["User query"] --> QE["Embed"]
+        QE --> W["Woodbury D²(q) =<br/>min over k of (q − μₖ)ᵀ Σₖ⁻¹ (q − μₖ)"]
+        W --> S["S(q) = exp(−((D² − τ₀)/λ)^κ)"]
+        S --> G{"S(q) below α?"}
+        G -->|"yes"| R["Refuse: 'Query outside<br/>knowledge base'"]
+        G -->|"no"| T["FAISS top-k"] --> L["LLM answer"]
+    end
+    D -.-> W
+    E -.-> S
+    F -.-> T
 ```
-SEC 10-K HTML ──► clean + RecursiveCharacterTextSplitter(500, 50) ──► MiniLM embeddings ──► FAISS
-                                                              │
-                         offline: MFA (K, r by BIC) + Weibull tail on validation D²
-                                                              │
-user query ──► embed ──► Woodbury D²_M(q) = min_k (q-μ_k)ᵀ Σ_k⁻¹ (q-μ_k) ──► S(q) = exp(-((D²-τ₀)/λ)^κ)
-                     S(q) < α : refuse ("Query outside knowledge base")      S(q) ≥ α : FAISS top-k ──► LLM
-```
+
+New to the project? Start with **[PROJECT_GUIDE.md](PROJECT_GUIDE.md)**: a full walkthrough of the problem, data, concepts, implementation, results and likely review questions.
 
 ## Key results (passage-fit, BIC-selected K = 2, r = 64)
 
@@ -33,6 +51,28 @@ user query ──► embed ──► Woodbury D²_M(q) = min_k (q-μ_k)ᵀ Σ_k�
 - **Latency:** guardrail scoring takes 0.16 ms p50 / 0.27 ms p95 (target < 10 ms). Naive per-query inversion takes 134 ms.
 - **Downstream RAG:** with a plain RAG prompt, the local Qwen2.5-1.5B gives ungrounded answers to 39% of OOD queries. The guardrail lowers this to **7%** (α = 0.01, no ID queries blocked) or **2.5%** (question-calibrated, α = 0.1). With a strict abstention prompt the LLM already refuses 98.5% of OOD queries, and the guardrail mainly saves the LLM call. ID faithfulness (NLI) is unchanged at 0.51.
 - **Honest takeaways:** Far-OOD is solved. Near-OOD is hard for every embedding-density method, and the MFA does not beat cosine-NN or full-covariance GMM at this scale. See the report for discussion.
+
+## Guardrail flow for a single query
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant G as GuardrailRetriever
+    participant M as MFA + EVT
+    participant F as FAISS
+    participant L as Qwen2.5-1.5B
+    U->>G: question
+    G->>M: embedding q
+    M-->>G: D²(q), S(q)  (0.27 ms p95)
+    alt S(q) below α
+        G-->>U: fixed refusal (LLM not called)
+    else in distribution
+        G->>F: top-3 search with q
+        F-->>G: 3 chunks
+        G->>L: question + chunks
+        L-->>U: grounded answer
+    end
+```
 
 ## Repository layout
 
@@ -56,6 +96,22 @@ results/    metrics CSVs, evt_params.json, latency_report.csv, figures, saved mo
 report/     final_report.md / .pdf and build_report.py
 tests/      unit tests (Woodbury vs dense, EM monotonicity, BIC, EVT)
 data/       raw 10-Ks, chunks, embeddings, query sets, synthetic questions
+```
+
+## Module dependencies
+
+```mermaid
+flowchart LR
+    cfg[config] --> dp[data_pipeline] --> emb[embeddings]
+    wb[woodbury] --> mfa[mfa]
+    mfa --> gr[guardrail]
+    evt[evt] --> gr
+    emb --> gr --> pipe[pipeline] --> hal[hallucination_eval]
+    mfa --> run[run_experiments]
+    evt --> run
+    base[baselines] --> run
+    met[metrics] --> run
+    emb --> syn[synthetic_queries] --> run
 ```
 
 ## Reproduce

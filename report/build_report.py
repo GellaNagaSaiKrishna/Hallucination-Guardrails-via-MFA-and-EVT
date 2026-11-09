@@ -2,13 +2,24 @@
 
 Supports: # / ## / ### headings, paragraphs, - bullets, 1. numbered items, | tables |,
 ![caption](path) images, ``` code blocks ```, $$ display equations $$ (rendered as monospace),
-**bold**, *italic*, `code`, [links](url).
+**bold**, *italic*, `code`, [links](url), *Figure N. ...* caption lines and ```mermaid diagrams```.
+
+Mermaid blocks are rendered to PNG with mermaid-cli (`mmdc`, from `npm i -g @mermaid-js/mermaid-cli`) and
+cached in report/figures/ under a hash of the diagram source, so cached images are reused when mmdc is not
+installed.  A diagram with neither a cached image nor mmdc is left out of the PDF together with its
+caption (the Markdown version on GitHub still shows it).
 
 Usage:  python report/build_report.py
 """
 from __future__ import annotations
 
+import hashlib
+import json
+import os
 import re
+import shutil
+import subprocess
+import tempfile
 from pathlib import Path
 
 from PIL import Image as PILImage
@@ -24,6 +35,9 @@ from reportlab.platypus import (HRFlowable, Image, KeepTogether, PageBreak, Para
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+FIG_DIR = HERE / "figures"
+CHROME_CANDIDATES = ["C:/Program Files/Google/Chrome/Application/chrome.exe",
+                     "/usr/bin/google-chrome", "/usr/bin/chromium"]
 PRIMARY = colors.HexColor("#1E3A8A")
 INK = colors.HexColor("#1F2937")
 MUTED = colors.HexColor("#52514e")
@@ -117,6 +131,43 @@ def make_image(path: Path, caption: str, width: float):
     return KeepTogether([Image(str(path), width=tw, height=th), Paragraph(inline(caption), S["caption"])])
 
 
+def render_mermaid(src: str) -> Path | None:
+    """Return a PNG for a Mermaid diagram (cached by source hash), or None if it cannot be rendered."""
+    png = FIG_DIR / f"mermaid_{hashlib.sha1(src.strip().encode('utf-8')).hexdigest()[:12]}.png"
+    if png.exists():
+        return png
+    mmdc = shutil.which("mmdc")
+    if mmdc is None:
+        return None
+    FIG_DIR.mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory() as tmp:
+        mmd, cfg = Path(tmp) / "d.mmd", Path(tmp) / "puppeteer.json"
+        mmd.write_text(src, encoding="utf-8")
+        cmd = [mmdc, "-i", str(mmd), "-o", str(png), "-s", "3", "-b", "white"]
+        chrome = next((c for c in CHROME_CANDIDATES if Path(c).exists()), None)
+        if chrome and not os.environ.get("PUPPETEER_EXECUTABLE_PATH"):
+            cfg.write_text(json.dumps({"executablePath": chrome}))
+            cmd += ["-p", str(cfg)]
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, timeout=180)
+        except (subprocess.SubprocessError, OSError) as e:
+            print("mermaid render failed:", e)
+            return None
+    return png if png.exists() else None
+
+
+def make_diagram(path: Path, width: float):
+    """Mermaid PNGs are rendered at 3x; show them near natural size, capped to the text width."""
+    with PILImage.open(path) as im:
+        w, h = im.size
+    tw = min(width, w / 3 * 0.8)
+    th = tw * h / w
+    max_h = 5.2 * inch
+    if th > max_h:
+        th, tw = max_h, max_h * w / h
+    return Image(str(path), width=tw, height=th)
+
+
 def build(md_path: Path, pdf_path: Path):
     doc = SimpleDocTemplate(str(pdf_path), pagesize=A4, leftMargin=0.7 * inch, rightMargin=0.7 * inch,
                             topMargin=0.6 * inch, bottomMargin=0.6 * inch, title="Final Report",
@@ -155,7 +206,21 @@ def build(md_path: Path, pdf_path: Path):
             while i < len(lines) and lines[i].strip() != end and not lines[i].strip().startswith(end if end == "$$" else "```"):
                 buf.append(lines[i])
                 i += 1
-            flow.append(Preformatted("\n".join(buf), S["code"]))
+            if s == "```mermaid":
+                png = render_mermaid("\n".join(buf))
+                if png is not None:
+                    flow.append(Spacer(1, 4))
+                    flow.append(make_diagram(png, W))
+                else:
+                    # no renderer: omit the diagram and its caption line from the PDF
+                    print("skipped a Mermaid diagram (install mermaid-cli to include it)")
+                    j = i + 1
+                    while j < len(lines) and not lines[j].strip():
+                        j += 1
+                    if j < len(lines) and re.fullmatch(r"\*Figure \d+\..*\*", lines[j].strip()):
+                        i = j
+            else:
+                flow.append(Preformatted("\n".join(buf), S["code"]))
             i += 1
             continue
         if s.startswith("|") and s.endswith("|"):
@@ -179,6 +244,9 @@ def build(md_path: Path, pdf_path: Path):
         elif s.startswith("### "):
             flush_para()
             flow.append(Paragraph(inline(s[4:]), S["h3"]))
+        elif re.fullmatch(r"\*Figure \d+\..*\*", s):
+            flush_para()
+            flow.append(Paragraph(inline(s[1:-1]), S["caption"]))
         elif s.startswith("> "):
             flush_para()
             flow.append(Paragraph(inline(s[2:]), S["subtitle"]))

@@ -1,10 +1,22 @@
 # Latent Manifold Density Estimation via Mixture of Factor Analyzers for OOD Hallucination Guardrails in RAG
 
-> Final report · Gella Naga Sai Krishna · Data Science (Semester 5) · November 2026 · Code: github.com/GellaNagaSaiKrishna/mfa-evt-rag-guardrail
+> Final report · Gella Naga Sai Krishna · Data Science (Semester 5) · November 2026 · Code: github.com/GellaNagaSaiKrishna/Hallucination-Guardrails-via-MFA-and-EVT
 
 ## 1. Introduction & Motivation
 
 Retrieval-Augmented Generation (RAG) systems retrieve the nearest chunks for *every* query, including queries the knowledge base cannot answer. If the language model then receives irrelevant context, it can produce fluent but ungrounded answers. This project builds and evaluates a **pre-retrieval statistical guardrail**. The guardrail models the density of in-distribution (ID) embeddings with a **Mixture of Factor Analyzers (MFA)**, scores queries with a **Woodbury low-rank Mahalanobis distance**, and turns that distance into a p-value with an **Extreme Value Theory (EVT)** Weibull tail. Queries with S(q) < α are rejected before retrieval and generation.
+
+```mermaid
+flowchart LR
+    Q["User query"] --> E["MiniLM embedding<br/>q in R^384"]
+    E --> M["MFA (K = 2, r = 64)<br/>Woodbury D²(q) = min over k"]
+    M --> V["EVT Weibull tail<br/>S(q) = exp(−((D² − τ₀)/λ)^κ)"]
+    V --> G{"S(q) below α?"}
+    G -->|"yes: OOD"| R["Fixed refusal<br/>(no retrieval, no LLM call)"]
+    G -->|"no: ID"| F["FAISS top-3"] --> L["LLM answer<br/>(Qwen2.5-1.5B)"]
+```
+
+*Figure 1. The pre-retrieval guardrail. The MFA and the EVT tail are fitted offline on corpus embeddings; at query time only the embedding, K Woodbury distances and one survival-function evaluation are computed.*
 
 The work follows the four-week plan of the proposal: data pipeline and baselines, a from-scratch MFA/EM implementation, EVT calibration with a LangChain guardrail retriever, and benchmarking (AUROC, FPR@95%TPR, faithfulness/hallucination, latency). Along the way, the experiments produced findings that partly *contradict* the proposal's hypotheses, and these are reported as found (Sections 4–5).
 
@@ -25,6 +37,14 @@ Each component explains a d-dimensional embedding through an r-dimensional laten
 y ~ N(0, I_r),   x | y, z=k ~ N(mu_k + W_k y, Psi_k)
 p(x) = sum_k pi_k N(x | mu_k, W_k W_k^T + Psi_k),    Psi_k diagonal
 ```
+
+```mermaid
+flowchart LR
+    Z["z ~ Categorical(π)<br/>choose component k"] --> X["x = μ_k + W_k y + ε<br/>ε ~ N(0, Ψ_k)"]
+    Y["y ~ N(0, I_r)<br/>r latent factors"] --> X
+```
+
+*Figure 2. Generative view of the MFA: a component is chosen, r latent factors are drawn, and the observation is the component mean plus a low-rank projection of the factors plus diagonal noise.*
 
 Each component then has d·r + 2d − r(r−1)/2 free parameters instead of d(d+3)/2. For the selected model (d = 384, K = 2, r = 64), that is **46,657 parameters versus 148,609 for a full-covariance GMM**, a 69% reduction that still captures the 64 dominant correlated directions per component.
 
@@ -47,6 +67,16 @@ W_k  = [sum_i gamma_ik (x_i-mu_k) E[y_i]^T] [sum_i gamma_ik E[y_i y_i^T]]^-1
 Psi_k = diag(S_k - W_k beta_k S_k),   Psi_k >= 1e-4 * Var(X)
 ```
 
+```mermaid
+flowchart LR
+    I["Init: K-Means (10 restarts)<br/>+ per-cluster PPCA"] --> E["E-step<br/>γ, E[y], E[yyᵀ]"]
+    E --> C{"Δ log L / |log L|<br/>below 1e-5?"}
+    C -->|"no"| M["M-step (AECM)<br/>π, μ, then W, Ψ"] --> E
+    C -->|"yes, or 50 iterations"| D["Fitted MFA"]
+```
+
+*Figure 3. The EM loop implemented in `src/mfa.py`.*
+
 All sufficient statistics are formed as N×r products, so no d×d matrix is ever built. Initialisation uses K-Means (10 restarts) followed by a per-cluster PPCA solution (top-r singular vectors). Convergence is declared when the relative change in log-likelihood is below 1e-5 (maximum 50 iterations). Unit tests (`tests/test_core.py`) verify that the log-likelihood never decreases, that the component weights are recovered on synthetic data, and that BIC recovers the true K.
 
 ### 2.3 Woodbury low-rank inversion
@@ -56,6 +86,22 @@ Sigma^-1 = Psi^-1 - Psi^-1 W (I_r + W^T Psi^-1 W)^-1 W^T Psi^-1
 log|Sigma| = sum_j log psi_j + 2 sum_i log L_ii,   L = chol(I_r + W^T Psi^-1 W)
 D_M^2(q) = min_k (q - mu_k)^T Sigma_k^-1 (q - mu_k)
 ```
+
+```mermaid
+flowchart LR
+    subgraph SETUP["Once per component: O(d r² + r³)"]
+        A["Ψ⁻¹W (d × r)"] --> B["M = I + WᵀΨ⁻¹W (r × r)"] --> C["L = chol(M)"]
+    end
+    subgraph QUERY["Per query: O(d r)"]
+        D["δ = q − μ"] --> T1["t₁ = δᵀΨ⁻¹δ"]
+        D --> V["v = WᵀΨ⁻¹δ"] --> U["solve L u = v"] --> T2["t₂ = ‖u‖²"]
+        T1 --> R["D² = t₁ − t₂"]
+        T2 --> R
+    end
+    C -.-> U
+```
+
+*Figure 4. Woodbury scoring: only an r × r Cholesky factor is ever formed, so no d × d matrix is built or inverted.*
 
 Each component costs O(d r²+r³) once, and each query costs O(d r). The implementation matches dense inversion to within 1e-13, as checked by the unit tests.
 
@@ -67,11 +113,34 @@ Following the peaks-over-threshold approach (Pickands–Balkema–de Haan), the 
 S(q) = exp( -( max(0, D_M^2(q) - tau_0) / lambda )^kappa ),   reject if S(q) < alpha (= 0.01)
 ```
 
+```mermaid
+flowchart LR
+    A["D² of 1,273<br/>validation chunks"] --> B["τ₀ = 90th percentile<br/>(584.0)"]
+    B --> C["128 exceedances<br/>e = D² − τ₀"]
+    C --> D["MLE Weibull fit<br/>κ = 1.01, λ = 92.5"]
+    D --> E["D* = τ₀ + λ(−ln α)^(1/κ)<br/>≈ 1,003 at α = 0.01"]
+```
+
+*Figure 5. Peaks-over-threshold calibration (passage-fit). The distance threshold is the point where the fitted tail survival equals α.*
+
 S(q) is the survival probability *conditional on exceeding τ₀*, as in the proposal. Because S is a monotone function of D², EVT does not change any threshold-free metric (AUROC/AUPR). Its job is to set a principled operating point that extrapolates beyond the empirical validation quantiles.
 
 ## 3. Dataset & Experimental Setup
 
 **Corpus.** The corpus consists of seven SEC 10-K filings (Apple FY2025, Microsoft FY2026, Alphabet FY2025, NVIDIA FY2026, Amazon FY2025, Meta FY2025, Tesla FY2025) downloaded from EDGAR. The original pipeline used regex HTML stripping plus very aggressive filters and kept only 2,534 chunks. It was rewritten (`src/data_pipeline.py`) to parse the inline-XBRL HTML with BeautifulSoup, drop the hidden XBRL header, render tables row by row, remove page numbers and running headers, and split with LangChain `RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)`. Chunks shorter than 100 characters or containing fewer than 8 words were dropped, along with exact duplicates. The result is **6,368 chunks** (mean 360 characters), split 80/20 into train (5,095) and validation (1,273).
+
+```mermaid
+flowchart LR
+    A["7 × 10-K HTML<br/>(EDGAR)"] --> B["BeautifulSoup: drop XBRL header,<br/>tables row by row"]
+    B --> C["Remove page numbers,<br/>running headers"]
+    C --> D["Split 500 / 50"]
+    D --> E["Filter short, junk,<br/>duplicate chunks"]
+    E --> F["6,368 chunks"]
+    F -->|"80%"| G["Train 5,095<br/>(fit MFA + baselines)"]
+    F -->|"20%"| H["Validation 1,273<br/>(EVT + thresholds)"]
+```
+
+*Figure 6. Corpus construction and the train/validation split.*
 
 **Embeddings.** `all-MiniLM-L6-v2` (d = 384), L2-normalised, indexed with FAISS `IndexFlatIP` (cosine similarity).
 
@@ -175,6 +244,17 @@ The metrics are defined as follows:
 - **Faithfulness (Ragas-style, judged by NLI):** the fraction of answer sentences entailed by a retrieved chunk.
 - **Hallucination rate (OOD):** the fraction of OOD queries that receive a substantive, non-refusing answer. The knowledge base cannot support any such answer.
 - **Unsupported answers:** substantive answers that NLI also judges unsupported (faithfulness < 0.5).
+
+```mermaid
+flowchart TB
+    Q["350 test queries"] --> R["FAISS top-3 + Qwen2.5-1.5B<br/>(greedy, generated once per prompt)"]
+    R --> U["Unguarded:<br/>all answers kept"]
+    R --> G1["Guarded α = 0.01:<br/>blocked queries → fixed refusal"]
+    R --> G2["Question-calibrated α = 0.1:<br/>blocked queries → fixed refusal"]
+    U & G1 & G2 --> N["NLI faithfulness +<br/>abstention detection"]
+```
+
+*Figure 7. Downstream evaluation design. Because decoding is greedy, a query that passes the gate gets exactly its unguarded answer, so differences between conditions come only from the gate.*
 
 **Table 4. Downstream RAG evaluation** (150 ID, 100 Near-OOD, 100 Far-OOD queries).
 
