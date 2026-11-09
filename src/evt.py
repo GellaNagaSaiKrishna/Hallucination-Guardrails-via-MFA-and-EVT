@@ -58,6 +58,21 @@ class WeibullTail:
         """Distance D* at which S(D*) = alpha."""
         return self.tau0 + self.lam * (-np.log(alpha)) ** (1.0 / self.kappa)
 
+    def bootstrap_ks_pvalue(self, distances: np.ndarray, n_boot: int = 2000, seed: int = 0) -> float:
+        """Parametric-bootstrap (Lilliefors-type) KS p-value.  The plain ``ks_pvalue`` is optimistic
+        because kappa and lambda are estimated from the same exceedances; here the fit is repeated on
+        every simulated sample so the null distribution of the KS statistic accounts for it."""
+        d = np.asarray(distances, dtype=np.float64)
+        E = d[d > self.tau0] - self.tau0
+        ks0 = stats.kstest(E, "weibull_min", args=(self.kappa, 0, self.lam)).statistic
+        rng = np.random.default_rng(seed)
+        hits = 0
+        for _ in range(n_boot):
+            sim = stats.weibull_min.rvs(self.kappa, 0, self.lam, size=E.size, random_state=rng)
+            k, _, lam = stats.weibull_min.fit(sim, floc=0)
+            hits += stats.kstest(sim, "weibull_min", args=(k, 0, lam)).statistic >= ks0
+        return (hits + 1) / (n_boot + 1)
+
     def save(self, path: str | Path) -> None:
         d = asdict(self)
         d["lambda"] = d.pop("lam")

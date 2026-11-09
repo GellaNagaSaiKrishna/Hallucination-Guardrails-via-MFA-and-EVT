@@ -29,7 +29,7 @@ user query ──► embed ──► Woodbury D²_M(q) = min_k (q-μ_k)ᵀ Σ_k�
 | Full-cov GMM (extra) | 0.962 | 0.924 | 1.000 | 0.140 |
 
 - **Operating point, α = 0.01 (passage-calibrated EVT):** 100% of ID queries pass, 89% of Far-OOD and 1% of Near-OOD are rejected.
-- **Operating point, α = 0.1 (EVT calibrated on held-out ID questions, 3-fold CV):** 95.3% of ID queries pass, 47% of Near-OOD and 100% of Far-OOD are rejected.
+- **Operating point, α = 0.1 (EVT calibrated on ID questions with 3-fold cross-fitting over the ID test set):** 95.3% of ID queries pass, 47% of Near-OOD and 100% of Far-OOD are rejected.
 - **Latency:** guardrail scoring takes 0.16 ms p50 / 0.27 ms p95 (target < 10 ms). Naive per-query inversion takes 134 ms.
 - **Downstream RAG:** with a plain RAG prompt, the local Qwen2.5-1.5B gives ungrounded answers to 39% of OOD queries. The guardrail lowers this to **7%** (α = 0.01, no ID queries blocked) or **2.5%** (question-calibrated, α = 0.1). With a strict abstention prompt the LLM already refuses 98.5% of OOD queries, and the guardrail mainly saves the LLM call. ID faithfulness (NLI) is unchanged at 0.51.
 - **Honest takeaways:** Far-OOD is solved. Near-OOD is hard for every embedding-density method, and the MFA does not beat cosine-NN or full-covariance GMM at this scale. See the report for discussion.
