@@ -24,8 +24,10 @@ def color_for(name: str) -> str:
     return METHOD_COLORS[name]
 
 
-SPLIT_COLORS = {"IN_DISTRIBUTION": SERIES[0], "NEAR_OOD": SERIES[1], "FAR_OOD": SERIES[2]}
-SPLIT_NAMES = {"IN_DISTRIBUTION": "ID", "NEAR_OOD": "Near-OOD", "FAR_OOD": "Far-OOD"}
+SPLIT_COLORS = {"IN_DISTRIBUTION": SERIES[0], "NEAR_OOD": SERIES[1], "NEAR_OOD_ADV": SERIES[3],
+                "FAR_OOD": SERIES[2]}
+SPLIT_NAMES = {"IN_DISTRIBUTION": "ID", "NEAR_OOD": "Near-OOD", "NEAR_OOD_ADV": "Near-OOD adv.",
+               "FAR_OOD": "Far-OOD"}
 
 
 def apply_style() -> None:

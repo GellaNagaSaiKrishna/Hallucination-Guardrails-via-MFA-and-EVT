@@ -1,0 +1,642 @@
+[
+ {
+  "company": "3M",
+  "edgar_name": "3M CO",
+  "cik": 66740,
+  "doc_name": "3M_2018_10K",
+  "fiscal_year": 2018,
+  "period_end": "2018-12-31",
+  "filed": "2019-02-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/66740/000155837019000470/mmm-20181231x10k.htm"
+ },
+ {
+  "company": "3M",
+  "edgar_name": "3M CO",
+  "cik": 66740,
+  "doc_name": "3M_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/66740/000006674023000014/mmm-20221231.htm"
+ },
+ {
+  "company": "AES Corporation",
+  "edgar_name": "AES CORP",
+  "cik": 874761,
+  "doc_name": "AES_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-03-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476123000010/aes-20221231.htm"
+ },
+ {
+  "company": "AMD",
+  "edgar_name": "ADVANCED MICRO DEVICES INC",
+  "cik": 2488,
+  "doc_name": "AMD_2015_10K",
+  "fiscal_year": 2015,
+  "period_end": "2015-12-26",
+  "filed": "2016-02-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248816000111/amd-12262015x10k.htm"
+ },
+ {
+  "company": "AMD",
+  "edgar_name": "ADVANCED MICRO DEVICES INC",
+  "cik": 2488,
+  "doc_name": "AMD_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248823000047/amd-20221231.htm"
+ },
+ {
+  "company": "Activision Blizzard",
+  "edgar_name": "Activision Blizzard, Inc.",
+  "cik": 718877,
+  "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+  "fiscal_year": 2019,
+  "period_end": "2019-12-31",
+  "filed": "2020-02-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/718877/000071887720000003/atvi-12312019x10xk.htm"
+ },
+ {
+  "company": "Adobe",
+  "edgar_name": "ADOBE INC.",
+  "cik": 796343,
+  "doc_name": "ADOBE_2015_10K",
+  "fiscal_year": 2015,
+  "period_end": "2015-11-27",
+  "filed": "2016-01-19",
+  "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634316000224/adbe10kfy15.htm"
+ },
+ {
+  "company": "Adobe",
+  "edgar_name": "ADOBE INC.",
+  "cik": 796343,
+  "doc_name": "ADOBE_2016_10K",
+  "fiscal_year": 2016,
+  "period_end": "2016-12-02",
+  "filed": "2017-01-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634317000031/adbe10kfy16.htm"
+ },
+ {
+  "company": "Adobe",
+  "edgar_name": "ADOBE INC.",
+  "cik": 796343,
+  "doc_name": "ADOBE_2017_10K",
+  "fiscal_year": 2017,
+  "period_end": "2017-12-01",
+  "filed": "2018-01-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634318000015/adbe10kfy17.htm"
+ },
+ {
+  "company": "Adobe",
+  "edgar_name": "ADOBE INC.",
+  "cik": 796343,
+  "doc_name": "ADOBE_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-02",
+  "filed": "2023-01-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634323000007/adbe-20221202.htm"
+ },
+ {
+  "company": "Amazon",
+  "edgar_name": "AMAZON COM INC",
+  "cik": 1018724,
+  "doc_name": "AMAZON_2017_10K",
+  "fiscal_year": 2017,
+  "period_end": "2017-12-31",
+  "filed": "2018-02-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872418000005/amzn-20171231x10k.htm"
+ },
+ {
+  "company": "Amazon",
+  "edgar_name": "AMAZON COM INC",
+  "cik": 1018724,
+  "doc_name": "AMAZON_2019_10K",
+  "fiscal_year": 2019,
+  "period_end": "2019-12-31",
+  "filed": "2020-01-31",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000004/amzn-20191231x10k.htm"
+ },
+ {
+  "company": "Amcor",
+  "edgar_name": "Amcor plc",
+  "cik": 1748790,
+  "doc_name": "AMCOR_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-06-30",
+  "filed": "2020-08-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/1748790/000174879020000025/amcr-20200630.htm"
+ },
+ {
+  "company": "Amcor",
+  "edgar_name": "Amcor plc",
+  "cik": 1748790,
+  "doc_name": "AMCOR_2023_10K",
+  "fiscal_year": 2023,
+  "period_end": "2023-06-30",
+  "filed": "2023-08-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1748790/000174879023000030/amcr-20230630.htm"
+ },
+ {
+  "company": "American Express",
+  "edgar_name": "AMERICAN EXPRESS CO",
+  "cik": 4962,
+  "doc_name": "AMERICANEXPRESS_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496223000006/axp-20221231.htm"
+ },
+ {
+  "company": "American Water Works",
+  "edgar_name": "American Water Works Company, Inc.",
+  "cik": 1410636,
+  "doc_name": "AMERICANWATERWORKS_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-12-31",
+  "filed": "2021-02-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/1410636/000141063621000101/awk-20201231.htm"
+ },
+ {
+  "company": "American Water Works",
+  "edgar_name": "American Water Works Company, Inc.",
+  "cik": 1410636,
+  "doc_name": "AMERICANWATERWORKS_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-12-31",
+  "filed": "2022-02-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/1410636/000141063622000048/awk-20211231.htm"
+ },
+ {
+  "company": "American Water Works",
+  "edgar_name": "American Water Works Company, Inc.",
+  "cik": 1410636,
+  "doc_name": "AMERICANWATERWORKS_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1410636/000141063623000020/awk-20221231.htm"
+ },
+ {
+  "company": "Best Buy",
+  "edgar_name": "BEST BUY CO INC",
+  "cik": 764478,
+  "doc_name": "BESTBUY_2017_10K",
+  "fiscal_year": 2017,
+  "period_end": "2017-01-28",
+  "filed": "2017-03-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447817000008/bby-2017x10k.htm"
+ },
+ {
+  "company": "Best Buy",
+  "edgar_name": "BEST BUY CO INC",
+  "cik": 764478,
+  "doc_name": "BESTBUY_2019_10K",
+  "fiscal_year": 2019,
+  "period_end": "2019-02-02",
+  "filed": "2019-03-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447819000009/bby-2019x10k.htm"
+ },
+ {
+  "company": "Best Buy",
+  "edgar_name": "BEST BUY CO INC",
+  "cik": 764478,
+  "doc_name": "BESTBUY_2023_10K",
+  "fiscal_year": 2023,
+  "period_end": "2023-01-28",
+  "filed": "2023-03-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/764478/000076447823000006/bby-20230128x10k.htm"
+ },
+ {
+  "company": "Block",
+  "edgar_name": "Block, Inc.",
+  "cik": 1512673,
+  "doc_name": "BLOCK_2016_10K",
+  "fiscal_year": 2016,
+  "period_end": "2016-12-31",
+  "filed": "2017-02-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828017001754/a10-kfilingsquareinc2016.htm"
+ },
+ {
+  "company": "Block",
+  "edgar_name": "Block, Inc.",
+  "cik": 1512673,
+  "doc_name": "BLOCK_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-12-31",
+  "filed": "2021-02-23",
+  "url": "https://www.sec.gov/Archives/edgar/data/1512673/000151267321000008/sq-20201231.htm"
+ },
+ {
+  "company": "Boeing",
+  "edgar_name": "BOEING CO",
+  "cik": 12927,
+  "doc_name": "BOEING_2018_10K",
+  "fiscal_year": 2018,
+  "period_end": "2018-12-31",
+  "filed": "2019-02-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/12927/000001292719000010/a201812dec3110k.htm"
+ },
+ {
+  "company": "Boeing",
+  "edgar_name": "BOEING CO",
+  "cik": 12927,
+  "doc_name": "BOEING_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-01-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/12927/000001292723000007/ba-20221231.htm"
+ },
+ {
+  "company": "CVS Health",
+  "edgar_name": "CVS HEALTH Corp",
+  "cik": 64803,
+  "doc_name": "CVSHEALTH_2018_10K",
+  "fiscal_year": 2018,
+  "period_end": "2018-12-31",
+  "filed": "2019-02-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/64803/000006480319000013/cvs-2018231x10k.htm"
+ },
+ {
+  "company": "CVS Health",
+  "edgar_name": "CVS HEALTH Corp",
+  "cik": 64803,
+  "doc_name": "CVSHEALTH_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/64803/000006480323000009/cvs-20221231.htm"
+ },
+ {
+  "company": "Coca-Cola",
+  "edgar_name": "COCA COLA CO",
+  "cik": 21344,
+  "doc_name": "COCACOLA_2017_10K",
+  "fiscal_year": 2017,
+  "period_end": "2017-12-31",
+  "filed": "2018-02-23",
+  "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134418000008/a2017123110-k.htm"
+ },
+ {
+  "company": "Coca-Cola",
+  "edgar_name": "COCA COLA CO",
+  "cik": 21344,
+  "doc_name": "COCACOLA_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-12-31",
+  "filed": "2022-02-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134422000009/ko-20211231.htm"
+ },
+ {
+  "company": "Coca-Cola",
+  "edgar_name": "COCA COLA CO",
+  "cik": 21344,
+  "doc_name": "COCACOLA_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-21",
+  "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134423000011/ko-20221231.htm"
+ },
+ {
+  "company": "Corning",
+  "edgar_name": "CORNING INC /NY",
+  "cik": 24741,
+  "doc_name": "CORNING_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-12-31",
+  "filed": "2021-02-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/24741/000156276221000023/glw-20201231x10k.htm"
+ },
+ {
+  "company": "Corning",
+  "edgar_name": "CORNING INC /NY",
+  "cik": 24741,
+  "doc_name": "CORNING_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-12-31",
+  "filed": "2022-02-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/24741/000143774922003247/glw20211231_10k.htm"
+ },
+ {
+  "company": "Corning",
+  "edgar_name": "CORNING INC /NY",
+  "cik": 24741,
+  "doc_name": "CORNING_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/24741/000143774923003123/glw20221231_10k.htm"
+ },
+ {
+  "company": "Costco",
+  "edgar_name": "COSTCO WHOLESALE CORP /NEW",
+  "cik": 909832,
+  "doc_name": "COSTCO_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-08-29",
+  "filed": "2021-10-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983221000014/cost-20210829.htm"
+ },
+ {
+  "company": "General Mills",
+  "edgar_name": "GENERAL MILLS INC",
+  "cik": 40704,
+  "doc_name": "GENERALMILLS_2019_10K",
+  "fiscal_year": 2019,
+  "period_end": "2019-05-26",
+  "filed": "2019-06-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm"
+ },
+ {
+  "company": "General Mills",
+  "edgar_name": "GENERAL MILLS INC",
+  "cik": 40704,
+  "doc_name": "GENERALMILLS_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-05-31",
+  "filed": "2020-07-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/40704/000119312520186469/d89717d10k.htm"
+ },
+ {
+  "company": "General Mills",
+  "edgar_name": "GENERAL MILLS INC",
+  "cik": 40704,
+  "doc_name": "GENERALMILLS_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-05-29",
+  "filed": "2022-06-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/40704/000119312522185257/d313744d10k.htm"
+ },
+ {
+  "company": "JPMorgan",
+  "edgar_name": "JPMORGAN CHASE & CO",
+  "cik": 19617,
+  "doc_name": "JPMORGAN_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-21",
+  "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000231/jpm-20221231.htm"
+ },
+ {
+  "company": "Johnson & Johnson",
+  "edgar_name": "JOHNSON & JOHNSON",
+  "cik": 200406,
+  "doc_name": "JOHNSON_JOHNSON_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2023-01-01",
+  "filed": "2023-02-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000016/jnj-20230101.htm"
+ },
+ {
+  "company": "Kraft Heinz",
+  "edgar_name": "Kraft Heinz Co",
+  "cik": 1637459,
+  "doc_name": "KRAFTHEINZ_2019_10K",
+  "fiscal_year": 2019,
+  "period_end": "2019-12-28",
+  "filed": "2020-02-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745920000027/form10-k2019.htm"
+ },
+ {
+  "company": "Lockheed Martin",
+  "edgar_name": "LOCKHEED MARTIN CORP",
+  "cik": 936468,
+  "doc_name": "LOCKHEEDMARTIN_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-12-31",
+  "filed": "2021-01-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000013/lmt-20201231.htm"
+ },
+ {
+  "company": "Lockheed Martin",
+  "edgar_name": "LOCKHEED MARTIN CORP",
+  "cik": 936468,
+  "doc_name": "LOCKHEEDMARTIN_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-12-31",
+  "filed": "2022-01-25",
+  "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646822000008/lmt-20211231.htm"
+ },
+ {
+  "company": "Lockheed Martin",
+  "edgar_name": "LOCKHEED MARTIN CORP",
+  "cik": 936468,
+  "doc_name": "LOCKHEEDMARTIN_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-01-26",
+  "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646823000009/lmt-20221231.htm"
+ },
+ {
+  "company": "MGM Resorts",
+  "edgar_name": "MGM Resorts International",
+  "cik": 789570,
+  "doc_name": "MGMRESORTS_2018_10K",
+  "fiscal_year": 2018,
+  "period_end": "2018-12-31",
+  "filed": "2019-02-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/789570/000156459019004807/mgm-10k_20181231.htm"
+ },
+ {
+  "company": "MGM Resorts",
+  "edgar_name": "MGM Resorts International",
+  "cik": 789570,
+  "doc_name": "MGMRESORTS_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-12-31",
+  "filed": "2021-02-26",
+  "url": "https://www.sec.gov/Archives/edgar/data/789570/000156459021009205/mgm-10k_20201231.htm"
+ },
+ {
+  "company": "MGM Resorts",
+  "edgar_name": "MGM Resorts International",
+  "cik": 789570,
+  "doc_name": "MGMRESORTS_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/789570/000078957023000008/mgm-20221231.htm"
+ },
+ {
+  "company": "Microsoft",
+  "edgar_name": "MICROSOFT CORP",
+  "cik": 789019,
+  "doc_name": "MICROSOFT_2016_10K",
+  "fiscal_year": 2016,
+  "period_end": "2016-06-30",
+  "filed": "2016-07-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516662209/d187868d10k.htm"
+ },
+ {
+  "company": "Microsoft",
+  "edgar_name": "MICROSOFT CORP",
+  "cik": 789019,
+  "doc_name": "MICROSOFT_2023_10K",
+  "fiscal_year": 2023,
+  "period_end": "2023-06-30",
+  "filed": "2023-07-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/msft-20230630.htm"
+ },
+ {
+  "company": "Netflix",
+  "edgar_name": "NETFLIX INC",
+  "cik": 1065280,
+  "doc_name": "NETFLIX_2015_10K",
+  "fiscal_year": 2015,
+  "period_end": "2015-12-31",
+  "filed": "2016-01-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528016000047/nflx201510k.htm"
+ },
+ {
+  "company": "Netflix",
+  "edgar_name": "NETFLIX INC",
+  "cik": 1065280,
+  "doc_name": "NETFLIX_2017_10K",
+  "fiscal_year": 2017,
+  "period_end": "2017-12-31",
+  "filed": "2018-01-29",
+  "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528018000069/q4nflx201710k.htm"
+ },
+ {
+  "company": "Nike",
+  "edgar_name": "NIKE, Inc.",
+  "cik": 320187,
+  "doc_name": "NIKE_2018_10K",
+  "fiscal_year": 2018,
+  "period_end": "2018-05-31",
+  "filed": "2018-07-25",
+  "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018718000142/nke-5312018x10k.htm"
+ },
+ {
+  "company": "Nike",
+  "edgar_name": "NIKE, Inc.",
+  "cik": 320187,
+  "doc_name": "NIKE_2019_10K",
+  "fiscal_year": 2019,
+  "period_end": "2019-05-31",
+  "filed": "2019-07-23",
+  "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018719000051/nke-531201910k.htm"
+ },
+ {
+  "company": "Nike",
+  "edgar_name": "NIKE, Inc.",
+  "cik": 320187,
+  "doc_name": "NIKE_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-05-31",
+  "filed": "2021-07-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018721000028/nke-20210531.htm"
+ },
+ {
+  "company": "Nike",
+  "edgar_name": "NIKE, Inc.",
+  "cik": 320187,
+  "doc_name": "NIKE_2023_10K",
+  "fiscal_year": 2023,
+  "period_end": "2023-05-31",
+  "filed": "2023-07-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018723000039/nke-20230531.htm"
+ },
+ {
+  "company": "Paypal",
+  "edgar_name": "PayPal Holdings, Inc.",
+  "cik": 1633917,
+  "doc_name": "PAYPAL_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391723000033/pypl-20221231.htm"
+ },
+ {
+  "company": "PepsiCo",
+  "edgar_name": "PEPSICO INC",
+  "cik": 77476,
+  "doc_name": "PEPSICO_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-12-25",
+  "filed": "2022-02-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+ },
+ {
+  "company": "PepsiCo",
+  "edgar_name": "PEPSICO INC",
+  "cik": 77476,
+  "doc_name": "PEPSICO_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-09",
+  "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm"
+ },
+ {
+  "company": "Pfizer",
+  "edgar_name": "PFIZER INC",
+  "cik": 78003,
+  "doc_name": "PFIZER_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-12-31",
+  "filed": "2022-02-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000027/pfe-20211231.htm"
+ },
+ {
+  "company": "Ulta Beauty",
+  "edgar_name": "Ulta Beauty, Inc.",
+  "cik": 1403568,
+  "doc_name": "ULTABEAUTY_2023_10K",
+  "fiscal_year": 2023,
+  "period_end": "2023-01-28",
+  "filed": "2023-03-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/1403568/000155837023004581/ulta-20230128x10k.htm"
+ },
+ {
+  "company": "Verizon",
+  "edgar_name": "VERIZON COMMUNICATIONS INC",
+  "cik": 732712,
+  "doc_name": "VERIZON_2021_10K",
+  "fiscal_year": 2021,
+  "period_end": "2021-12-31",
+  "filed": "2022-02-11",
+  "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000008/vz-20211231.htm"
+ },
+ {
+  "company": "Verizon",
+  "edgar_name": "VERIZON COMMUNICATIONS INC",
+  "cik": 732712,
+  "doc_name": "VERIZON_2022_10K",
+  "fiscal_year": 2022,
+  "period_end": "2022-12-31",
+  "filed": "2023-02-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271223000012/vz-20221231.htm"
+ },
+ {
+  "company": "Walmart",
+  "edgar_name": "Walmart Inc.",
+  "cik": 104169,
+  "doc_name": "WALMART_2018_10K",
+  "fiscal_year": 2018,
+  "period_end": "2018-01-31",
+  "filed": "2018-03-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000028/wmtform10-kx1312018.htm"
+ },
+ {
+  "company": "Walmart",
+  "edgar_name": "Walmart Inc.",
+  "cik": 104169,
+  "doc_name": "WALMART_2019_10K",
+  "fiscal_year": 2019,
+  "period_end": "2019-01-31",
+  "filed": "2019-03-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416919000016/wmtform10-kx1312019.htm"
+ },
+ {
+  "company": "Walmart",
+  "edgar_name": "Walmart Inc.",
+  "cik": 104169,
+  "doc_name": "WALMART_2020_10K",
+  "fiscal_year": 2020,
+  "period_end": "2020-01-31",
+  "filed": "2020-03-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416920000011/wmtform10-kx1312020.htm"
+ }
+]

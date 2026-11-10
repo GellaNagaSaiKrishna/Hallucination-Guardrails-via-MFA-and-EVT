@@ -1,7 +1,14 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.pytest_cache/
 .venv/
 venv/
 .env
 *.log
+
+# local-only: raw FinanceBench filings (rebuild with scripts/fetch_financebench_filings.py),
+# the Kaggle bundle and exploratory work
+data/raw/fb/
+kaggle/
+phase-2/

@@ -1,14 +1,16 @@
 Prompt,Metric,Unguarded RAG,"Guarded (EVT, α=0.01)","Guarded (question-calibrated EVT, α=0.1)"
-strict,"Faithfulness, ID (answered queries)",0.5082089552238805,0.5082089552238805,0.50859375
-strict,ID answer rate,0.9,0.9,0.8533333333333334
-strict,ID queries wrongly blocked,0.0,0.0,0.04666666666666667
-strict,OOD queries blocked by guardrail,0.0,0.45,0.735
-strict,"Hallucination rate, all OOD",0.015,0.01,0.01
-strict,"Hallucination rate, Near-OOD",0.02,0.02,0.02
-strict,"Hallucination rate, Far-OOD",0.01,0.0,0.0
-strict,"Unsupported answers (NLI), all OOD",0.01,0.005,0.005
-naive,OOD queries blocked by guardrail,0.0,0.45,0.735
-naive,"Hallucination rate, all OOD",0.39,0.07,0.025
-naive,"Hallucination rate, Near-OOD",0.08,0.08,0.05
-naive,"Hallucination rate, Far-OOD",0.7,0.06,0.0
-naive,"Unsupported answers (NLI), all OOD",0.35,0.065,0.02
+strict,"Faithfulness, ID (answered queries)",0.43209876543209874,0.43209876543209874,0.43209876543209874
+strict,ID answer rate,0.47058823529411764,0.47058823529411764,0.4411764705882353
+strict,ID queries wrongly blocked,0.0,0.0,0.07352941176470588
+strict,OOD queries blocked by guardrail,0.0,0.35390946502057613,0.4691358024691358
+strict,"Hallucination rate, all OOD",0.11522633744855967,0.09465020576131687,0.07407407407407407
+strict,"Hallucination rate, Near-OOD",0.4418604651162791,0.4418604651162791,0.32558139534883723
+strict,"Hallucination rate, Near-OOD adv.",0.04,0.04,0.04
+strict,"Hallucination rate, Far-OOD",0.05,0.0,0.0
+strict,"Unsupported answers (NLI), all OOD",0.0823045267489712,0.06995884773662552,0.04938271604938271
+naive,OOD queries blocked by guardrail,0.0,0.35390946502057613,0.4691358024691358
+naive,"Hallucination rate, all OOD",0.4444444444444444,0.20164609053497942,0.14814814814814814
+naive,"Hallucination rate, Near-OOD",0.7209302325581395,0.7209302325581395,0.5813953488372093
+naive,"Hallucination rate, Near-OOD adv.",0.1,0.1,0.09
+naive,"Hallucination rate, Far-OOD",0.67,0.08,0.02
+naive,"Unsupported answers (NLI), all OOD",0.38271604938271603,0.16872427983539096,0.12345679012345678

@@ -38,7 +38,10 @@ NAIVE_SYSTEM_PROMPT = (
 def _load_llm():
     from transformers import AutoModelForCausalLM, AutoTokenizer
     tok = AutoTokenizer.from_pretrained(LLM_MODEL)
-    model = AutoModelForCausalLM.from_pretrained(LLM_MODEL, dtype=torch.float32).eval()
+    if torch.cuda.is_available():          # e.g. a Kaggle/Colab GPU: fp16 on the first GPU
+        model = AutoModelForCausalLM.from_pretrained(LLM_MODEL, dtype=torch.float16).to("cuda").eval()
+    else:
+        model = AutoModelForCausalLM.from_pretrained(LLM_MODEL, dtype=torch.float32).eval()
     return tok, model
 
 
@@ -49,7 +52,7 @@ def generate_answer(question: str, contexts: list[str], max_new_tokens: int = 96
     messages = [{"role": "system", "content": system_prompt},
                 {"role": "user", "content": f"Context:\n{ctx}\n\nQuestion: {question}"}]
     prompt = tok.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    enc = tok(prompt, return_tensors="pt")
+    enc = tok(prompt, return_tensors="pt").to(model.device)
     with torch.inference_mode():
         out = model.generate(**enc, max_new_tokens=max_new_tokens, do_sample=False,
                              pad_token_id=tok.eos_token_id)

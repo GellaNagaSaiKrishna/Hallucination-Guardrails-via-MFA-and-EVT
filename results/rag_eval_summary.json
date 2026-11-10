@@ -4,184 +4,232 @@
   "strict": {
     "unguarded": {
       "ID": {
-        "n": 150,
-        "answered": 135,
-        "answer_rate": 0.9,
+        "n": 68,
+        "answered": 32,
+        "answer_rate": 0.47058823529411764,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.5082089552238805,
-        "unsupported_answer_rate": 0.3466666666666667
+        "faithfulness_answered": 0.43209876543209874,
+        "unsupported_answer_rate": 0.27941176470588236
       },
       "Near-OOD": {
-        "n": 100,
-        "answered": 2,
-        "answer_rate": 0.02,
+        "n": 43,
+        "answered": 19,
+        "answer_rate": 0.4418604651162791,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.5,
-        "unsupported_answer_rate": 0.01
+        "faithfulness_answered": 0.25,
+        "unsupported_answer_rate": 0.32558139534883723
+      },
+      "Near-OOD adv.": {
+        "n": 100,
+        "answered": 4,
+        "answer_rate": 0.04,
+        "blocked_rate": 0.0,
+        "faithfulness_answered": 0.3333333333333333,
+        "unsupported_answer_rate": 0.03
       },
       "Far-OOD": {
         "n": 100,
-        "answered": 1,
-        "answer_rate": 0.01,
+        "answered": 5,
+        "answer_rate": 0.05,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.0,
-        "unsupported_answer_rate": 0.01
+        "faithfulness_answered": 0.4,
+        "unsupported_answer_rate": 0.03
       },
       "All OOD": {
-        "n": 200,
-        "answered": 3,
-        "answer_rate": 0.015,
+        "n": 243,
+        "answered": 28,
+        "answer_rate": 0.11522633744855967,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.3333333333333333,
-        "unsupported_answer_rate": 0.01
+        "faithfulness_answered": 0.28703703703703703,
+        "unsupported_answer_rate": 0.0823045267489712
       }
     },
     "guarded": {
       "ID": {
-        "n": 150,
-        "answered": 135,
-        "answer_rate": 0.9,
+        "n": 68,
+        "answered": 32,
+        "answer_rate": 0.47058823529411764,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.5082089552238805,
-        "unsupported_answer_rate": 0.3466666666666667
+        "faithfulness_answered": 0.43209876543209874,
+        "unsupported_answer_rate": 0.27941176470588236
       },
       "Near-OOD": {
+        "n": 43,
+        "answered": 19,
+        "answer_rate": 0.4418604651162791,
+        "blocked_rate": 0.046511627906976744,
+        "faithfulness_answered": 0.25,
+        "unsupported_answer_rate": 0.32558139534883723
+      },
+      "Near-OOD adv.": {
         "n": 100,
-        "answered": 2,
-        "answer_rate": 0.02,
-        "blocked_rate": 0.01,
-        "faithfulness_answered": 0.5,
-        "unsupported_answer_rate": 0.01
+        "answered": 4,
+        "answer_rate": 0.04,
+        "blocked_rate": 0.0,
+        "faithfulness_answered": 0.3333333333333333,
+        "unsupported_answer_rate": 0.03
       },
       "Far-OOD": {
         "n": 100,
         "answered": 0,
         "answer_rate": 0.0,
-        "blocked_rate": 0.89,
+        "blocked_rate": 0.84,
         "faithfulness_answered": NaN,
         "unsupported_answer_rate": 0.0
       },
       "All OOD": {
-        "n": 200,
-        "answered": 2,
-        "answer_rate": 0.01,
-        "blocked_rate": 0.45,
-        "faithfulness_answered": 0.5,
-        "unsupported_answer_rate": 0.005
+        "n": 243,
+        "answered": 23,
+        "answer_rate": 0.09465020576131687,
+        "blocked_rate": 0.35390946502057613,
+        "faithfulness_answered": 0.26136363636363635,
+        "unsupported_answer_rate": 0.06995884773662552
       }
     },
     "guarded_qcal": {
       "ID": {
-        "n": 150,
-        "answered": 128,
-        "answer_rate": 0.8533333333333334,
-        "blocked_rate": 0.04666666666666667,
-        "faithfulness_answered": 0.50859375,
-        "unsupported_answer_rate": 0.32666666666666666
+        "n": 68,
+        "answered": 30,
+        "answer_rate": 0.4411764705882353,
+        "blocked_rate": 0.07352941176470588,
+        "faithfulness_answered": 0.43209876543209874,
+        "unsupported_answer_rate": 0.25
       },
       "Near-OOD": {
+        "n": 43,
+        "answered": 14,
+        "answer_rate": 0.32558139534883723,
+        "blocked_rate": 0.3023255813953488,
+        "faithfulness_answered": 0.3154761904761904,
+        "unsupported_answer_rate": 0.20930232558139536
+      },
+      "Near-OOD adv.": {
         "n": 100,
-        "answered": 2,
-        "answer_rate": 0.02,
-        "blocked_rate": 0.47,
-        "faithfulness_answered": 0.5,
-        "unsupported_answer_rate": 0.01
+        "answered": 4,
+        "answer_rate": 0.04,
+        "blocked_rate": 0.04,
+        "faithfulness_answered": 0.3333333333333333,
+        "unsupported_answer_rate": 0.03
       },
       "Far-OOD": {
         "n": 100,
         "answered": 0,
         "answer_rate": 0.0,
-        "blocked_rate": 1.0,
+        "blocked_rate": 0.97,
         "faithfulness_answered": NaN,
         "unsupported_answer_rate": 0.0
       },
       "All OOD": {
-        "n": 200,
-        "answered": 2,
-        "answer_rate": 0.01,
-        "blocked_rate": 0.735,
-        "faithfulness_answered": 0.5,
-        "unsupported_answer_rate": 0.005
+        "n": 243,
+        "answered": 18,
+        "answer_rate": 0.07407407407407407,
+        "blocked_rate": 0.4691358024691358,
+        "faithfulness_answered": 0.31862745098039214,
+        "unsupported_answer_rate": 0.04938271604938271
       }
     }
   },
   "naive": {
     "unguarded": {
       "Near-OOD": {
-        "n": 100,
-        "answered": 8,
-        "answer_rate": 0.08,
+        "n": 43,
+        "answered": 31,
+        "answer_rate": 0.7209302325581395,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.0625,
-        "unsupported_answer_rate": 0.07
+        "faithfulness_answered": 0.12903225806451613,
+        "unsupported_answer_rate": 0.627906976744186
+      },
+      "Near-OOD adv.": {
+        "n": 100,
+        "answered": 10,
+        "answer_rate": 0.1,
+        "blocked_rate": 0.0,
+        "faithfulness_answered": 0.15,
+        "unsupported_answer_rate": 0.08
       },
       "Far-OOD": {
         "n": 100,
-        "answered": 70,
-        "answer_rate": 0.7,
+        "answered": 67,
+        "answer_rate": 0.67,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.09285714285714286,
-        "unsupported_answer_rate": 0.63
+        "faithfulness_answered": 0.11194029850746269,
+        "unsupported_answer_rate": 0.58
       },
       "All OOD": {
-        "n": 200,
-        "answered": 78,
-        "answer_rate": 0.39,
+        "n": 243,
+        "answered": 108,
+        "answer_rate": 0.4444444444444444,
         "blocked_rate": 0.0,
-        "faithfulness_answered": 0.08974358974358974,
-        "unsupported_answer_rate": 0.35
+        "faithfulness_answered": 0.12037037037037036,
+        "unsupported_answer_rate": 0.38271604938271603
       }
     },
     "guarded": {
       "Near-OOD": {
+        "n": 43,
+        "answered": 31,
+        "answer_rate": 0.7209302325581395,
+        "blocked_rate": 0.046511627906976744,
+        "faithfulness_answered": 0.12903225806451613,
+        "unsupported_answer_rate": 0.627906976744186
+      },
+      "Near-OOD adv.": {
         "n": 100,
-        "answered": 8,
-        "answer_rate": 0.08,
-        "blocked_rate": 0.01,
-        "faithfulness_answered": 0.0625,
-        "unsupported_answer_rate": 0.07
+        "answered": 10,
+        "answer_rate": 0.1,
+        "blocked_rate": 0.0,
+        "faithfulness_answered": 0.15,
+        "unsupported_answer_rate": 0.08
       },
       "Far-OOD": {
         "n": 100,
-        "answered": 6,
-        "answer_rate": 0.06,
-        "blocked_rate": 0.89,
-        "faithfulness_answered": 0.0,
+        "answered": 8,
+        "answer_rate": 0.08,
+        "blocked_rate": 0.84,
+        "faithfulness_answered": 0.1875,
         "unsupported_answer_rate": 0.06
       },
       "All OOD": {
-        "n": 200,
-        "answered": 14,
-        "answer_rate": 0.07,
-        "blocked_rate": 0.45,
-        "faithfulness_answered": 0.03571428571428571,
-        "unsupported_answer_rate": 0.065
+        "n": 243,
+        "answered": 49,
+        "answer_rate": 0.20164609053497942,
+        "blocked_rate": 0.35390946502057613,
+        "faithfulness_answered": 0.14285714285714285,
+        "unsupported_answer_rate": 0.16872427983539096
       }
     },
     "guarded_qcal": {
       "Near-OOD": {
+        "n": 43,
+        "answered": 25,
+        "answer_rate": 0.5813953488372093,
+        "blocked_rate": 0.3023255813953488,
+        "faithfulness_answered": 0.15,
+        "unsupported_answer_rate": 0.4883720930232558
+      },
+      "Near-OOD adv.": {
         "n": 100,
-        "answered": 5,
-        "answer_rate": 0.05,
-        "blocked_rate": 0.47,
-        "faithfulness_answered": 0.1,
-        "unsupported_answer_rate": 0.04
+        "answered": 9,
+        "answer_rate": 0.09,
+        "blocked_rate": 0.04,
+        "faithfulness_answered": 0.16666666666666666,
+        "unsupported_answer_rate": 0.07
       },
       "Far-OOD": {
         "n": 100,
-        "answered": 0,
-        "answer_rate": 0.0,
-        "blocked_rate": 1.0,
-        "faithfulness_answered": NaN,
-        "unsupported_answer_rate": 0.0
+        "answered": 2,
+        "answer_rate": 0.02,
+        "blocked_rate": 0.97,
+        "faithfulness_answered": 0.0,
+        "unsupported_answer_rate": 0.02
       },
       "All OOD": {
-        "n": 200,
-        "answered": 5,
-        "answer_rate": 0.025,
-        "blocked_rate": 0.735,
-        "faithfulness_answered": 0.1,
-        "unsupported_answer_rate": 0.02
+        "n": 243,
+        "answered": 36,
+        "answer_rate": 0.14814814814814814,
+        "blocked_rate": 0.4691358024691358,
+        "faithfulness_answered": 0.14583333333333334,
+        "unsupported_answer_rate": 0.12345679012345678
       }
     }
   }

@@ -40,7 +40,7 @@ ALPHA_QCAL = 0.1   # question-calibrated EVT: tail starts at the median -> 5% ex
 REGIMES = {
     "strict": {"prompt": SYSTEM_PROMPT, "cache": RESULTS / "rag_generations.jsonl", "labels": None},
     "naive": {"prompt": NAIVE_SYSTEM_PROMPT, "cache": RESULTS / "rag_generations_naive.jsonl",
-              "labels": ("NEAR_OOD", "FAR_OOD")},
+              "labels": ("NEAR_OOD", "NEAR_OOD_ADV", "FAR_OOD")},
 }
 ABSTAIN_RE = re.compile(
     r"(don'?t|do not|does not|doesn'?t|did not|didn'?t) (specifically )?"
@@ -149,7 +149,8 @@ def summarise(df: pd.DataFrame) -> dict:
     for cond in ("unguarded", "guarded", "guarded_qcal"):
         out[cond] = {}
         for name, mask in [("ID", df.label == "IN_DISTRIBUTION"), ("Near-OOD", df.label == "NEAR_OOD"),
-                           ("Far-OOD", df.label == "FAR_OOD"), ("All OOD", df.label != "IN_DISTRIBUTION")]:
+                           ("Near-OOD adv.", df.label == "NEAR_OOD_ADV"), ("Far-OOD", df.label == "FAR_OOD"),
+                           ("All OOD", df.label != "IN_DISTRIBUTION")]:
             if mask.any():
                 out[cond][name] = block(cond, df[mask])
     return out
@@ -164,9 +165,34 @@ METRICS = [
     ("OOD queries blocked by guardrail", "blocked_rate", "All OOD"),
     ("Hallucination rate, all OOD", "answer_rate", "All OOD"),
     ("Hallucination rate, Near-OOD", "answer_rate", "Near-OOD"),
+    ("Hallucination rate, Near-OOD adv.", "answer_rate", "Near-OOD adv."),
     ("Hallucination rate, Far-OOD", "answer_rate", "Far-OOD"),
     ("Unsupported answers (NLI), all OOD", "unsupported_answer_rate", "All OOD"),
 ]
+
+
+def plot_hallucination(summary: dict) -> None:
+    """Grouped bars: share of OOD questions that get a substantive (ungrounded) answer, per prompt
+    regime and OOD type, without and with the guardrail."""
+    from .plotting import SERIES, TEXT2, apply_style, plt
+    apply_style()
+    groups = ["Near-OOD", "Near-OOD adv.", "Far-OOD", "All OOD"]
+    fig, axes = plt.subplots(1, 2, figsize=(11, 3.8), sharey=True)
+    for ax, regime in zip(axes, ("naive", "strict")):
+        x = np.arange(len(groups))
+        for i, (cond, color) in enumerate(zip(COLS, SERIES)):
+            vals = [summary[regime][cond].get(g, {}).get("answer_rate", np.nan) for g in groups]
+            bars = ax.bar(x + (i - 1) * 0.27, vals, width=0.25, color=color, label=COLS[cond])
+            for b, v in zip(bars, vals):
+                ax.text(b.get_x() + b.get_width() / 2, v + 0.01, f"{v:.0%}", ha="center", fontsize=7, color=TEXT2)
+        ax.set_xticks(x, groups)
+        ax.set_title(f"{regime} prompt")
+    axes[0].set_ylabel("OOD questions answered\n(= hallucination rate)")
+    axes[0].set_ylim(0, 0.85)
+    axes[1].legend(fontsize=8, loc="upper right")
+    fig.tight_layout()
+    fig.savefig(RESULTS / "hallucination_rates.png")
+    plt.close(fig)
 
 
 def main() -> None:
@@ -196,6 +222,7 @@ def main() -> None:
     (RESULTS / "rag_eval_summary.json").write_text(json.dumps(summary, indent=2))
     tdf = pd.DataFrame(table)
     tdf.to_csv(RESULTS / "rag_comparison.csv", index=False)
+    plot_hallucination(summary)
     pd.set_option("display.width", 250)
     print(tdf.round(3).to_string(index=False))
 

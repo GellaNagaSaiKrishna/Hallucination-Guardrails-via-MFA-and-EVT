@@ -22,14 +22,14 @@ CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50
 SEED = 0
 VAL_FRACTION = 0.2
-K_GRID = (2, 4, 8, 16)
+K_GRID = (2, 4, 8, 16, 32)   # 32 added for the 50-filing v2 knowledge base (~40 companies)
 R_GRID = (8, 16, 32, 64)   # proposal grid {8,16,32} extended with 64 (BIC still decreasing at 32)
 EVT_TAIL_PERCENTILE = 90.0
 ALPHA = 0.01
 TOP_K = 3
 
 # Labels used throughout: ID = 0 (negative), OOD = 1 (positive)
-LABELS = ("IN_DISTRIBUTION", "NEAR_OOD", "FAR_OOD")
+LABELS = ("IN_DISTRIBUTION", "NEAR_OOD", "NEAR_OOD_ADV", "FAR_OOD")
 
 for _p in (RESULTS, MODELS):
     _p.mkdir(parents=True, exist_ok=True)

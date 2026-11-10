@@ -1,12 +1,9 @@
 """Weeks 2-4 - Full benchmark: BIC model selection, EVT calibration, baselines,
 OOD metrics, operating points, plots and latency profiling.
 
-Two density-fitting sources are compared for every method:
-  * passage : embeddings of the training corpus chunks (as in the proposal)
-  * query   : embeddings of doc2query questions generated from the training chunks
-EVT / thresholds are always calibrated on the matching *validation* split (held-out chunks
-or questions generated from held-out chunks).  The hand-curated test queries are used only
-for evaluation.
+The MFA and every baseline are fitted on the training chunks; EVT and empirical thresholds
+are calibrated on the held-out validation chunks.  The test questions are used only for
+evaluation (plus a clearly separated question-calibrated EVT ablation with 3-fold cross-fitting).
 
 Usage:  python -m src.run_experiments [--fast]
 """
@@ -28,11 +25,10 @@ from .evt import WeibullTail
 from .metrics import roc_points, split_metrics
 from .mfa import MFA
 from .plotting import SPLIT_COLORS, SPLIT_NAMES, TEXT2, color_for, plt
-from .synthetic_queries import SYN_EMB, SYN_JSON
 from .woodbury import naive_mahalanobis_sq
 
-MAIN_SOURCE = "passage"   # query-fit was evaluated as an ablation and found worse (see report)
-SOURCE_NAMES = {"passage": "Passage-fit", "query": "Query-fit"}
+MAIN_SOURCE = "passage"
+SOURCE_NAMES = {"passage": "Passage-fit"}
 EVT_NAME = "MFA + EVT (proposed)"
 ALPHAS = (0.5, 0.2, 0.1, 0.05, 0.01, 0.001)
 
@@ -50,11 +46,6 @@ def load_data():
     np.savez(SPLIT_NPZ, train_idx=train_idx, val_idx=val_idx)
 
     sources = {"passage": (X[train_idx], X[val_idx])}
-    if SYN_EMB.exists():
-        S = np.load(SYN_EMB).astype(np.float64)
-        chunk_of = np.array([r["chunk_index"] for r in json.loads(SYN_JSON.read_text(encoding="utf-8"))])
-        is_val = np.isin(chunk_of, val_idx)
-        sources["query"] = (S[~is_val], S[is_val])
     return sources, Q, labels, queries
 
 
@@ -218,7 +209,9 @@ def plot_roc_pr(scores, labels, source):
     methods = [m for m in scores if m != EVT_NAME]
     panels = [("ID vs all OOD", np.ones_like(is_id)), ("ID vs Near-OOD", is_id | (labels == "NEAR_OOD")),
               ("ID vs Far-OOD", is_id | (labels == "FAR_OOD"))]
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.6))
+    if np.any(labels == "NEAR_OOD_ADV"):
+        panels.insert(2, ("ID vs Near-OOD adv.", is_id | (labels == "NEAR_OOD_ADV")))
+    fig, axes = plt.subplots(1, len(panels), figsize=(5 * len(panels), 4.6))
     for ax, (title, mask) in zip(axes, panels):
         y = (~is_id[mask]).astype(int)
         for m in methods:
@@ -312,9 +305,14 @@ def plot_auroc_bars(metrics_df):
     methods = list(d.index)
     fig, ax = plt.subplots(figsize=(8, 4.2))
     y = np.arange(len(methods))
-    for i, (col, name, off) in enumerate([("Near AUROC", "Near-OOD", -0.2), ("Far AUROC", "Far-OOD", 0.2)]):
-        ax.barh(y + off, d[col], height=0.38, color=SPLIT_COLORS["NEAR_OOD" if i == 0 else "FAR_OOD"],
-                label=name, edgecolor="white", lw=2)
+    bars = [("Near AUROC", "NEAR_OOD"), ("Far AUROC", "FAR_OOD")]
+    if "Adv AUROC" in d:
+        bars.insert(1, ("Adv AUROC", "NEAR_OOD_ADV"))
+    h = 0.8 / len(bars)
+    for i, (col, split) in enumerate(bars):
+        off = (i - (len(bars) - 1) / 2) * h
+        ax.barh(y + off, d[col], height=h * 0.95, color=SPLIT_COLORS[split], label=SPLIT_NAMES[split],
+                edgecolor="white", lw=1)
         for yy, v in zip(y + off, d[col]):
             ax.text(v + 0.005, yy, f"{v:.3f}", va="center", fontsize=8, color=TEXT2)
     ax.set_yticks(y, methods)
@@ -322,7 +320,7 @@ def plot_auroc_bars(metrics_df):
     ax.set_xlim(0.5, 1.06)
     ax.set_xlabel("AUROC")
     ax.set_title(f"AUROC by OOD type — {SOURCE_NAMES[MAIN_SOURCE]}")
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=2, fontsize=8, frameon=False)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=len(bars), fontsize=8, frameon=False)
     fig.tight_layout()
     fig.savefig(RESULTS / "auroc_bars.png")
     plt.close(fig)
@@ -409,8 +407,8 @@ def main() -> None:
     pd.set_option("display.width", 220)
     pd.set_option("display.max_columns", 30)
     print("\n", bic_df.round(1).to_string(index=False))
-    print("\n", metrics_df[["source", "method", "All AUROC", "Near AUROC", "Far AUROC", "All FPR@95TPR",
-                            "Near FPR@95TPR"]].round(3).to_string(index=False))
+    cols = ["source", "method", "All AUROC", "Near AUROC", "Adv AUROC", "Far AUROC", "All FPR@95TPR", "Near FPR@95TPR"]
+    print("\n", metrics_df[[c for c in cols if c in metrics_df]].round(3).to_string(index=False))
     print("\n", op_df.round(3).to_string(index=False))
     print("\n", lat.round(3).to_string(index=False))
 

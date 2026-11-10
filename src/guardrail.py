@@ -89,7 +89,7 @@ class FaissRetriever(BaseRetriever):
         for s, i in zip(sims[0], idx[0]):
             c = self.chunks[int(i)]
             docs.append(Document(page_content=c["text"],
-                                 metadata={"chunk_id": c["chunk_id"], "ticker": c["ticker"],
+                                 metadata={"chunk_id": c["chunk_id"], "company": c.get("company", c.get("ticker")),
                                            "score": float(s)}))
         return docs
 

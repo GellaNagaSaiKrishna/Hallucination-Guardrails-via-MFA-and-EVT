@@ -24,11 +24,15 @@ def detection_metrics(y_ood: np.ndarray, score: np.ndarray) -> dict:
 
 
 def split_metrics(labels: np.ndarray, score: np.ndarray) -> dict:
-    """Metrics for ID vs all-OOD, ID vs Near-OOD, ID vs Far-OOD."""
+    """Metrics for ID vs all-OOD, ID vs Near-OOD, ID vs Far-OOD and (if present) ID vs the
+    adversarial counterfactual Near-OOD stress test ("Adv")."""
     out = {}
     is_id = labels == "IN_DISTRIBUTION"
-    for name, mask in [("All", np.ones_like(is_id)), ("Near", is_id | (labels == "NEAR_OOD")),
-                       ("Far", is_id | (labels == "FAR_OOD"))]:
+    splits = [("All", np.ones_like(is_id)), ("Near", is_id | (labels == "NEAR_OOD")),
+              ("Far", is_id | (labels == "FAR_OOD"))]
+    if np.any(labels == "NEAR_OOD_ADV"):
+        splits.append(("Adv", is_id | (labels == "NEAR_OOD_ADV")))
+    for name, mask in splits:
         y = (~is_id[mask]).astype(int)
         for k, v in detection_metrics(y, score[mask]).items():
             out[f"{name} {k}"] = v

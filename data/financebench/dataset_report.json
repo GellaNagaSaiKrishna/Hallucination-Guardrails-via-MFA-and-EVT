@@ -1,0 +1,1375 @@
+{
+ "held_out_companies": [
+  "AMD",
+  "Adobe",
+  "Block",
+  "Boeing",
+  "General Mills",
+  "MGM Resorts",
+  "Netflix",
+  "Paypal",
+  "Verizon"
+ ],
+ "kb_companies": [
+  "3M",
+  "AES Corporation",
+  "Activision Blizzard",
+  "Amazon",
+  "Amcor",
+  "American Express",
+  "American Water Works",
+  "Best Buy",
+  "CVS Health",
+  "Coca-Cola",
+  "Corning",
+  "Costco",
+  "JPMorgan",
+  "Johnson & Johnson",
+  "Kraft Heinz",
+  "Lockheed Martin",
+  "Microsoft",
+  "Nike",
+  "PepsiCo",
+  "Pfizer",
+  "Ulta Beauty",
+  "Walmart",
+  "Apple Inc.",
+  "Microsoft Corp.",
+  "Alphabet Inc.",
+  "NVIDIA Corp.",
+  "Amazon.com Inc.",
+  "Meta Platforms Inc.",
+  "Tesla Inc."
+ ],
+ "documents": [
+  {
+   "doc_name": "AAPL_10K_latest",
+   "company": "Apple Inc.",
+   "year": "2025/26",
+   "source": "Phase 1 big-tech 10-K (EDGAR)",
+   "chunks": 555
+  },
+  {
+   "doc_name": "MSFT_10K_latest",
+   "company": "Microsoft Corp.",
+   "year": "2025/26",
+   "source": "Phase 1 big-tech 10-K (EDGAR)",
+   "chunks": 853
+  },
+  {
+   "doc_name": "GOOGL_10K_latest",
+   "company": "Alphabet Inc.",
+   "year": "2025/26",
+   "source": "Phase 1 big-tech 10-K (EDGAR)",
+   "chunks": 920
+  },
+  {
+   "doc_name": "NVDA_10K_latest",
+   "company": "NVIDIA Corp.",
+   "year": "2025/26",
+   "source": "Phase 1 big-tech 10-K (EDGAR)",
+   "chunks": 916
+  },
+  {
+   "doc_name": "AMZN_10K_latest",
+   "company": "Amazon.com Inc.",
+   "year": "2025/26",
+   "source": "Phase 1 big-tech 10-K (EDGAR)",
+   "chunks": 754
+  },
+  {
+   "doc_name": "META_10K_latest",
+   "company": "Meta Platforms Inc.",
+   "year": "2025/26",
+   "source": "Phase 1 big-tech 10-K (EDGAR)",
+   "chunks": 1305
+  },
+  {
+   "doc_name": "TSLA_10K_latest",
+   "company": "Tesla Inc.",
+   "year": "2025/26",
+   "source": "Phase 1 big-tech 10-K (EDGAR)",
+   "chunks": 1065
+  },
+  {
+   "doc_name": "3M_2018_10K",
+   "company": "3M",
+   "year": 2018,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1311
+  },
+  {
+   "doc_name": "3M_2022_10K",
+   "company": "3M",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1208
+  },
+  {
+   "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+   "company": "Activision Blizzard",
+   "year": 2019,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1096
+  },
+  {
+   "doc_name": "AES_2022_10K",
+   "company": "AES Corporation",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 2281
+  },
+  {
+   "doc_name": "AMAZON_2017_10K",
+   "company": "Amazon",
+   "year": 2017,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 698
+  },
+  {
+   "doc_name": "AMAZON_2019_10K",
+   "company": "Amazon",
+   "year": 2019,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 484
+  },
+  {
+   "doc_name": "AMCOR_2020_10K",
+   "company": "Amcor",
+   "year": 2020,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 983
+  },
+  {
+   "doc_name": "AMCOR_2023_10K",
+   "company": "Amcor",
+   "year": 2023,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 866
+  },
+  {
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "company": "American Express",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1516
+  },
+  {
+   "doc_name": "AMERICANWATERWORKS_2020_10K",
+   "company": "American Water Works",
+   "year": 2020,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1569
+  },
+  {
+   "doc_name": "AMERICANWATERWORKS_2021_10K",
+   "company": "American Water Works",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 986
+  },
+  {
+   "doc_name": "AMERICANWATERWORKS_2022_10K",
+   "company": "American Water Works",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1004
+  },
+  {
+   "doc_name": "BESTBUY_2017_10K",
+   "company": "Best Buy",
+   "year": 2017,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 899
+  },
+  {
+   "doc_name": "BESTBUY_2019_10K",
+   "company": "Best Buy",
+   "year": 2019,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 792
+  },
+  {
+   "doc_name": "BESTBUY_2023_10K",
+   "company": "Best Buy",
+   "year": 2023,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 677
+  },
+  {
+   "doc_name": "COCACOLA_2017_10K",
+   "company": "Coca-Cola",
+   "year": 2017,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1815
+  },
+  {
+   "doc_name": "COCACOLA_2021_10K",
+   "company": "Coca-Cola",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1519
+  },
+  {
+   "doc_name": "COCACOLA_2022_10K",
+   "company": "Coca-Cola",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 996
+  },
+  {
+   "doc_name": "CORNING_2020_10K",
+   "company": "Corning",
+   "year": 2020,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1046
+  },
+  {
+   "doc_name": "CORNING_2021_10K",
+   "company": "Corning",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 773
+  },
+  {
+   "doc_name": "CORNING_2022_10K",
+   "company": "Corning",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 749
+  },
+  {
+   "doc_name": "COSTCO_2021_10K",
+   "company": "Costco",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 567
+  },
+  {
+   "doc_name": "CVSHEALTH_2018_10K",
+   "company": "CVS Health",
+   "year": 2018,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1065
+  },
+  {
+   "doc_name": "CVSHEALTH_2022_10K",
+   "company": "CVS Health",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1966
+  },
+  {
+   "doc_name": "JOHNSON_JOHNSON_2022_10K",
+   "company": "Johnson & Johnson",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1175
+  },
+  {
+   "doc_name": "JPMORGAN_2022_10K",
+   "company": "JPMorgan",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 2944
+  },
+  {
+   "doc_name": "KRAFTHEINZ_2019_10K",
+   "company": "Kraft Heinz",
+   "year": 2019,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1282
+  },
+  {
+   "doc_name": "LOCKHEEDMARTIN_2020_10K",
+   "company": "Lockheed Martin",
+   "year": 2020,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1283
+  },
+  {
+   "doc_name": "LOCKHEEDMARTIN_2021_10K",
+   "company": "Lockheed Martin",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 913
+  },
+  {
+   "doc_name": "LOCKHEEDMARTIN_2022_10K",
+   "company": "Lockheed Martin",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 859
+  },
+  {
+   "doc_name": "MICROSOFT_2016_10K",
+   "company": "Microsoft",
+   "year": 2016,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 881
+  },
+  {
+   "doc_name": "MICROSOFT_2023_10K",
+   "company": "Microsoft",
+   "year": 2023,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 704
+  },
+  {
+   "doc_name": "NIKE_2018_10K",
+   "company": "Nike",
+   "year": 2018,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 995
+  },
+  {
+   "doc_name": "NIKE_2019_10K",
+   "company": "Nike",
+   "year": 2019,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 662
+  },
+  {
+   "doc_name": "NIKE_2021_10K",
+   "company": "Nike",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 833
+  },
+  {
+   "doc_name": "NIKE_2023_10K",
+   "company": "Nike",
+   "year": 2023,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 704
+  },
+  {
+   "doc_name": "PEPSICO_2021_10K",
+   "company": "PepsiCo",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1074
+  },
+  {
+   "doc_name": "PEPSICO_2022_10K",
+   "company": "PepsiCo",
+   "year": 2022,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 703
+  },
+  {
+   "doc_name": "PFIZER_2021_10K",
+   "company": "Pfizer",
+   "year": 2021,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 1678
+  },
+  {
+   "doc_name": "ULTABEAUTY_2023_10K",
+   "company": "Ulta Beauty",
+   "year": 2023,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 695
+  },
+  {
+   "doc_name": "WALMART_2018_10K",
+   "company": "Walmart",
+   "year": 2018,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 962
+  },
+  {
+   "doc_name": "WALMART_2019_10K",
+   "company": "Walmart",
+   "year": 2019,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 718
+  },
+  {
+   "doc_name": "WALMART_2020_10K",
+   "company": "Walmart",
+   "year": 2020,
+   "source": "FinanceBench 10-K (EDGAR)",
+   "chunks": 644
+  }
+ ],
+ "n_chunks": 52943,
+ "label_counts": {
+  "IN_DISTRIBUTION": 68,
+  "NEAR_OOD": 43,
+  "NEAR_OOD_ADV": 100,
+  "FAR_OOD": 100
+ },
+ "excluded_questions": [
+  {
+   "query_text": "Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00807",
+   "company": "3M",
+   "doc_name": "3M_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "domain-relevant",
+   "answer": "No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00941",
+   "company": "3M",
+   "doc_name": "3M_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "domain-relevant",
+   "answer": "Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:\n-1.500% Notes due 2026 (Trading Symbol: MMM26)\n-1.750% Notes due 2030 (Trading Symbol: MMM30)\n-1.500% Notes due 2031 (Trading Symbol: MMM31)",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Does 3M maintain a stable trend of dividend distribution?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01858",
+   "company": "3M",
+   "doc_name": "3M_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What was the key agenda of the AMCOR's 8k filing dated 1st July 2022?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01935",
+   "company": "Amcor",
+   "doc_name": "AMCOR_2022_8K_dated-2022-07-01",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "Amcor Finance (USA), Inc. and Amcor Flexibles North America, Inc., entered into supplemental indentures relating to Guaranteed Senior Notes due 2026 and 2028. This involved the substitution of the Substitute Issuer (Amcor Flexibles North America) for the Former Issuer (Amcor Finance) and the assumption of covenants under the indentures. (In essence a novation agreement)",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What is the nature & purpose of AMCOR's restructuring liability as oF Q2 of FY2023 close?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01936",
+   "company": "Amcor",
+   "doc_name": "AMCOR_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "87% of the total restructuring liability is related Employee liabilities.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What Was AMCOR's Adjusted Non GAAP EBITDA for FY 2023",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01928",
+   "company": "Amcor",
+   "doc_name": "AMCOR_2023Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "AMCOR's Adj. EBITDA was $2,018mn in FY 2023",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "How much was the Real change in Sales for AMCOR in FY 2023 vs FY 2022, if we exclude the impact of FX movement, passthrough costs and one-off items?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01930",
+   "company": "Amcor",
+   "doc_name": "AMCOR_2023Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "The Real Growth was flat in FY 2023 vs FY 2022.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "In agreement with the information outlined in the income statement, what is the FY2015 - FY2017 3 year average net profit margin (as a %) for Best Buy? Answer in units of percents and round to one decimal place.",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_02608",
+   "company": "Best Buy",
+   "doc_name": "BESTBUY_2017_10K",
+   "doc_type": "10k",
+   "question_type": "metrics-generated",
+   "answer": "2.8%",
+   "reason": "evidence not found in extracted filing (coverage 0.55)"
+  },
+  {
+   "query_text": "What is the year end FY2019 total amount of inventories for Best Buy? Answer in USD millions. Base your judgments on the information provided primarily in the balance sheet.",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_04417",
+   "company": "Best Buy",
+   "doc_name": "BESTBUY_2019_10K",
+   "doc_type": "10k",
+   "question_type": "metrics-generated",
+   "answer": "$5409.00",
+   "reason": "evidence not found in extracted filing (coverage 0.48)"
+  },
+  {
+   "query_text": "Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00288",
+   "company": "Best Buy",
+   "doc_name": "BESTBUY_2024Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00460",
+   "company": "Best Buy",
+   "doc_name": "BESTBUY_2024Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Which Best Buy product category performed the best (by top line) in the domestic (USA) Market during Q2 of FY2024?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01902",
+   "company": "Best Buy",
+   "doc_name": "BESTBUY_2024Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "The entertainment segment experienced the highest growth of 9% during Q2 FY2024, primarily from gaming division.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Based on the information provided primarily in the balance sheet and the statement of income, what is FY2020 days payable outstanding (DPO) for Corning? DPO is defined as: 365 * (average accounts payable between FY2019 and FY2020) / (FY2020 COGS + change in inventory between FY2019 and FY2020). Round your answer to two decimal places.",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_10130",
+   "company": "Corning",
+   "doc_name": "CORNING_2020_10K",
+   "doc_type": "10k",
+   "question_type": "metrics-generated",
+   "answer": "63.86",
+   "reason": "evidence not found in extracted filing (coverage 0.42)"
+  },
+  {
+   "query_text": "Taking into account the information outlined in the income statement, what is the FY2019 - FY2021 3 year average unadjusted operating income % margin for Corning? Answer in units of percents and round to one decimal place.",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_02981",
+   "company": "Corning",
+   "doc_name": "CORNING_2021_10K",
+   "doc_type": "10k",
+   "question_type": "metrics-generated",
+   "answer": "10.3%",
+   "reason": "evidence not found in extracted filing (coverage 0.38)"
+  },
+  {
+   "query_text": "What is the FY2018 fixed asset turnover ratio for CVS Health? Fixed asset turnover ratio is defined as: FY2018 revenue / (average PP&E between FY2017 and FY2018). Round your answer to two decimal places. Calculate what was asked by utilizing the line items clearly shown in the P&L statement and the balance sheet.",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_05915",
+   "company": "CVS Health",
+   "doc_name": "CVSHEALTH_2018_10K",
+   "doc_type": "10k",
+   "question_type": "metrics-generated",
+   "answer": "17.98",
+   "reason": "evidence not found in extracted filing (coverage 0.01)"
+  },
+  {
+   "query_text": "Does Foot Locker's new CEO have previous CEO experience in a similar company to Footlocker?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00839",
+   "company": "Foot Locker",
+   "doc_name": "FOOTLOCKER_2022_8K_dated_2022-08-19",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "Yes. She was previous CEO of Ulta Beauty which means she had to manage a large retail company that has brick and mortar + online business. So yes she was a CEO in a similar company to Foot Locker before this.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Were there any board member nominees who had substantially more votes against joining than the other nominees?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00822",
+   "company": "Foot Locker",
+   "doc_name": "FOOTLOCKER_2022_8K_dated-2022-05-20",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "Yes, his name is Richard A. Johnson",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Is growth in JnJ's adjusted EPS expected to accelerate in FY2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00651",
+   "company": "Johnson & Johnson",
+   "doc_name": "JOHNSON_JOHNSON_2022Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "No, rate of growth in adjusted EPS is expected to decelerate slightly from 3.6% in FY2022 to 3.5% in FY2023.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "How did JnJ's US sales growth compare to international sales growth in FY2022?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01484",
+   "company": "Johnson & Johnson",
+   "doc_name": "JOHNSON_JOHNSON_2022Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "US sales increased 3.0% vs international sales decline of 0.6%.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Which business segment of JnJ will be treated as a discontinued operation from August 30, 2023 onward?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01488",
+   "company": "Johnson & Johnson",
+   "doc_name": "JOHNSON_JOHNSON_2023_8K_dated-2023-08-30",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "The Consumer Health business segment will be treated as a discontinued operation from August 30, 2023 onward.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What is the amount of the gain accruing to JnJ as a result of the separation of its Consumer Health business segment, as of August 30, 2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01490",
+   "company": "Johnson & Johnson",
+   "doc_name": "JOHNSON_JOHNSON_2023_8K_dated-2023-08-30",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "JnJ will make a gain of approximately $20 billion from the separation of its Consumer Health business segment.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What is the amount of the cash proceeds that JnJ realised from the separation of Kenvue (formerly Consumer Health business segment), as of August 30, 2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01491",
+   "company": "Johnson & Johnson",
+   "doc_name": "JOHNSON_JOHNSON_2023_8K_dated-2023-08-30",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "JnJ realised $13.2 billion in cash proceeds from the separation of Kenvue.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Did JnJ's net earnings as a percent of sales increase in Q2 of FY2023 compared to Q2 of FY2022?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01487",
+   "company": "Johnson & Johnson",
+   "doc_name": "JOHNSON_JOHNSON_2023Q2_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "Yes, net earnings as a percent of sales increased from 20% in Q2 of FY2022 to 20.1% in Q2 of FY2023.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Which of JPM's business segments had the lowest net revenue in 2021 Q1?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00299",
+   "company": "JPMorgan",
+   "doc_name": "JPMORGAN_2021Q1_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Corporate. Its net revenue was -$473 million.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "If JPM went bankrupted by the end by 2021 Q1 and liquidated all of its assets to pay its shareholders, how much could each shareholder get?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_02119",
+   "company": "JPMorgan",
+   "doc_name": "JPMORGAN_2021Q1_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "They could receive $66.56 per share.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "In 2022 Q2, which of JPM's business segments had the highest net income?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00394",
+   "company": "JPMorgan",
+   "doc_name": "JPMORGAN_2022Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Corporate & Investment Bank. Its net income was $3725 million.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Looking at VaR, did the risk that JPM faced in the second fiscal quarter of 2023 decrease compared to the same period in the prior year?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_02049",
+   "company": "JPMorgan",
+   "doc_name": "JPMORGAN_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Yes. It decreased.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "At the Pepsico AGM held on May 3, 2023, what was the outcome of the shareholder vote on the shareholder proposal for a congruency report by Pepsico on net-zero emissions policies?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01482",
+   "company": "PepsiCo",
+   "doc_name": "PEPSICO_2023_8K_dated-2023-05-05",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "The shareholder proposal for a congruency report by Pepsico on net-zero emissions policies was defeated.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "By how much did Pepsico increase its unsecured five year revolving credit agreement on May 26, 2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00705",
+   "company": "PepsiCo",
+   "doc_name": "PEPSICO_2023_8K_dated-2023-05-30",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "$400,000,000 increase.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "As of May 26, 2023, what is the total amount Pepsico may borrow under its unsecured revolving credit agreements?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00882",
+   "company": "PepsiCo",
+   "doc_name": "PEPSICO_2023_8K_dated-2023-05-30",
+   "doc_type": "8k",
+   "question_type": "novel-generated",
+   "answer": "Total amount Pepsico may borrow under unsecured revolving credit agreements = $8,400,000,000.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "As of FY2023Q1, why did Pepsico raise full year guidance for FY2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01474",
+   "company": "PepsiCo",
+   "doc_name": "PEPSICO_2023Q1_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "Pepsico experienced a strong start to FY2023.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "As of FY2023Q1, by how many percentage points did Pepsico raise full year guidance in respect of core constant currency EPS growth?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_01476",
+   "company": "PepsiCo",
+   "doc_name": "PEPSICO_2023Q1_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "Pepsico raised full year guidance in respect of core constant currency EPS growth by 1 percentage point.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "How much does Pfizer expect to pay to spin off Upjohn in the future in USD million?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00283",
+   "company": "Pfizer",
+   "doc_name": "Pfizer_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "77.78",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "For Pfizer, which geographic region had the biggest drop in Q22023 year over year revenues (on a percentage basis)?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00724",
+   "company": "Pfizer",
+   "doc_name": "Pfizer_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Developed Rest of the World",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "As of Q2'2023, is Pfizer spinning off any large business segments?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_02419",
+   "company": "Pfizer",
+   "doc_name": "Pfizer_2023Q2_10Q",
+   "doc_type": "10q",
+   "question_type": "novel-generated",
+   "answer": "Yes, it's spinning off Upjohn.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What drove the reduction in SG&A expense as a percent of net sales in FY2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00601",
+   "company": "Ulta Beauty",
+   "doc_name": "ULTABEAUTY_2023Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "Lower marketing expenses and leverage of incentive compensation due to higher sales. The answer here assumes FY2023 refers to the 12 months ended on January 28, 2023 (although the company refers to this period as its fiscal 2022.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What drove the increase in Ulta Beauty's merchandise inventories balance at end of FY2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00603",
+   "company": "Ulta Beauty",
+   "doc_name": "ULTABEAUTY_2023Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "Increase in Merchandise inventories balance was driven by the opening of 47 new stores. The answer here assumes FY2023 refers to the 12 months ended on January 28, 2023 (although the company refers to this period as its fiscal 2022.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "What percent of Ulta Beauty's total spend on stock repurchases for FY 2023 occurred in Q4 of FY2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00605",
+   "company": "Ulta Beauty",
+   "doc_name": "ULTABEAUTY_2023Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "36%. The answer here assumes FY2023 refers to the 12 months ended on January 28, 2023 (although the company refers to this period as its fiscal 2022.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  },
+  {
+   "query_text": "Did Ulta Beauty's wages expense as a percent of net sales increase or decrease in FY2023?",
+   "source": "FinanceBench",
+   "financebench_id": "financebench_id_00606",
+   "company": "Ulta Beauty",
+   "doc_name": "ULTABEAUTY_2023Q4_EARNINGS",
+   "doc_type": "Earnings",
+   "question_type": "novel-generated",
+   "answer": "Wages expense as a percent of net sales increased in FY2023. The answer here assumes FY2023 refers to the 12 months ended on January 28, 2023 (although the company refers to this period as its fiscal 2022.",
+   "reason": "KB company, but the cited document is not a 10-K"
+  }
+ ],
+ "evidence_coverage": [
+  {
+   "financebench_id": "financebench_id_03029",
+   "doc_name": "3M_2018_10K",
+   "coverage": 0.9727520435967303
+  },
+  {
+   "financebench_id": "financebench_id_04672",
+   "doc_name": "3M_2018_10K",
+   "coverage": 0.9806451612903225
+  },
+  {
+   "financebench_id": "financebench_id_00499",
+   "doc_name": "3M_2022_10K",
+   "coverage": 0.986013986013986
+  },
+  {
+   "financebench_id": "financebench_id_01226",
+   "doc_name": "3M_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_01865",
+   "doc_name": "3M_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_02987",
+   "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+   "coverage": 0.9529411764705882
+  },
+  {
+   "financebench_id": "financebench_id_07966",
+   "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+   "coverage": 0.978021978021978
+  },
+  {
+   "financebench_id": "financebench_id_01319",
+   "doc_name": "AES_2022_10K",
+   "coverage": 0.991701244813278
+  },
+  {
+   "financebench_id": "financebench_id_00540",
+   "doc_name": "AES_2022_10K",
+   "coverage": 0.9714285714285714
+  },
+  {
+   "financebench_id": "financebench_id_10420",
+   "doc_name": "AES_2022_10K",
+   "coverage": 0.9847826086956522
+  },
+  {
+   "financebench_id": "financebench_id_06655",
+   "doc_name": "AMAZON_2017_10K",
+   "coverage": 0.944954128440367
+  },
+  {
+   "financebench_id": "financebench_id_08135",
+   "doc_name": "AMAZON_2017_10K",
+   "coverage": 0.944954128440367
+  },
+  {
+   "financebench_id": "financebench_id_08286",
+   "doc_name": "AMAZON_2019_10K",
+   "coverage": 0.9464285714285714
+  },
+  {
+   "financebench_id": "financebench_id_03882",
+   "doc_name": "AMCOR_2020_10K",
+   "coverage": 0.9680851063829787
+  },
+  {
+   "financebench_id": "financebench_id_00799",
+   "doc_name": "AMCOR_2023_10K",
+   "coverage": 0.9692307692307692
+  },
+  {
+   "financebench_id": "financebench_id_01079",
+   "doc_name": "AMCOR_2023_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_01148",
+   "doc_name": "AMCOR_2023_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_00684",
+   "doc_name": "AMCOR_2023_10K",
+   "coverage": 0.9347826086956522
+  },
+  {
+   "financebench_id": "financebench_id_00476",
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "coverage": 0.9
+  },
+  {
+   "financebench_id": "financebench_id_01028",
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "coverage": 0.8426966292134831
+  },
+  {
+   "financebench_id": "financebench_id_00723",
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "coverage": 0.9646302250803859
+  },
+  {
+   "financebench_id": "financebench_id_00720",
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "coverage": 0.9646302250803859
+  },
+  {
+   "financebench_id": "financebench_id_01351",
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "coverage": 0.9655172413793104
+  },
+  {
+   "financebench_id": "financebench_id_01964",
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "coverage": 0.9939024390243902
+  },
+  {
+   "financebench_id": "financebench_id_01981",
+   "doc_name": "AMERICANEXPRESS_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_05718",
+   "doc_name": "AMERICANWATERWORKS_2020_10K",
+   "coverage": 0.9691211401425178
+  },
+  {
+   "financebench_id": "financebench_id_04254",
+   "doc_name": "AMERICANWATERWORKS_2021_10K",
+   "coverage": 0.9699074074074074
+  },
+  {
+   "financebench_id": "financebench_id_00070",
+   "doc_name": "AMERICANWATERWORKS_2022_10K",
+   "coverage": 0.9760479041916168
+  },
+  {
+   "financebench_id": "financebench_id_02608",
+   "doc_name": "BESTBUY_2017_10K",
+   "coverage": 0.5489130434782609
+  },
+  {
+   "financebench_id": "financebench_id_04417",
+   "doc_name": "BESTBUY_2019_10K",
+   "coverage": 0.4816753926701571
+  },
+  {
+   "financebench_id": "financebench_id_00685",
+   "doc_name": "BESTBUY_2023_10K",
+   "coverage": 0.9491525423728814
+  },
+  {
+   "financebench_id": "financebench_id_01077",
+   "doc_name": "BESTBUY_2023_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_01275",
+   "doc_name": "BESTBUY_2023_10K",
+   "coverage": 0.9694656488549618
+  },
+  {
+   "financebench_id": "financebench_id_03473",
+   "doc_name": "COCACOLA_2017_10K",
+   "coverage": 0.9756838905775076
+  },
+  {
+   "financebench_id": "financebench_id_09724",
+   "doc_name": "COCACOLA_2021_10K",
+   "coverage": 0.9252336448598131
+  },
+  {
+   "financebench_id": "financebench_id_06272",
+   "doc_name": "COCACOLA_2022_10K",
+   "coverage": 0.972972972972973
+  },
+  {
+   "financebench_id": "financebench_id_10130",
+   "doc_name": "CORNING_2020_10K",
+   "coverage": 0.421875
+  },
+  {
+   "financebench_id": "financebench_id_02981",
+   "doc_name": "CORNING_2021_10K",
+   "coverage": 0.3841059602649007
+  },
+  {
+   "financebench_id": "financebench_id_01346",
+   "doc_name": "CORNING_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_00005",
+   "doc_name": "CORNING_2022_10K",
+   "coverage": 0.9848484848484849
+  },
+  {
+   "financebench_id": "financebench_id_04209",
+   "doc_name": "COSTCO_2021_10K",
+   "coverage": 0.9787234042553191
+  },
+  {
+   "financebench_id": "financebench_id_05915",
+   "doc_name": "CVSHEALTH_2018_10K",
+   "coverage": 0.005050505050505051
+  },
+  {
+   "financebench_id": "financebench_id_00790",
+   "doc_name": "CVSHEALTH_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_01107",
+   "doc_name": "CVSHEALTH_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_01244",
+   "doc_name": "CVSHEALTH_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_00956",
+   "doc_name": "JOHNSON_JOHNSON_2022_10K",
+   "coverage": 0.970873786407767
+  },
+  {
+   "financebench_id": "financebench_id_00669",
+   "doc_name": "JOHNSON_JOHNSON_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_00711",
+   "doc_name": "JOHNSON_JOHNSON_2022_10K",
+   "coverage": 0.8472222222222222
+  },
+  {
+   "financebench_id": "financebench_id_00206",
+   "doc_name": "JPMORGAN_2022_10K",
+   "coverage": 0.9732142857142857
+  },
+  {
+   "financebench_id": "financebench_id_10499",
+   "doc_name": "KRAFTHEINZ_2019_10K",
+   "coverage": 0.9504950495049505
+  },
+  {
+   "financebench_id": "financebench_id_04412",
+   "doc_name": "LOCKHEEDMARTIN_2020_10K",
+   "coverage": 0.9708333333333333
+  },
+  {
+   "financebench_id": "financebench_id_03031",
+   "doc_name": "LOCKHEEDMARTIN_2021_10K",
+   "coverage": 0.9703389830508474
+  },
+  {
+   "financebench_id": "financebench_id_03718",
+   "doc_name": "LOCKHEEDMARTIN_2022_10K",
+   "coverage": 0.9606986899563319
+  },
+  {
+   "financebench_id": "financebench_id_04700",
+   "doc_name": "MICROSOFT_2016_10K",
+   "coverage": 0.9493087557603687
+  },
+  {
+   "financebench_id": "financebench_id_00552",
+   "doc_name": "MICROSOFT_2023_10K",
+   "coverage": 0.9823943661971831
+  },
+  {
+   "financebench_id": "financebench_id_04302",
+   "doc_name": "NIKE_2018_10K",
+   "coverage": 0.967741935483871
+  },
+  {
+   "financebench_id": "financebench_id_03531",
+   "doc_name": "NIKE_2019_10K",
+   "coverage": 0.9742489270386266
+  },
+  {
+   "financebench_id": "financebench_id_04080",
+   "doc_name": "NIKE_2021_10K",
+   "coverage": 0.9651162790697675
+  },
+  {
+   "financebench_id": "financebench_id_01163",
+   "doc_name": "NIKE_2023_10K",
+   "coverage": 0.9800664451827242
+  },
+  {
+   "financebench_id": "financebench_id_04980",
+   "doc_name": "PEPSICO_2021_10K",
+   "coverage": 0.952054794520548
+  },
+  {
+   "financebench_id": "financebench_id_01009",
+   "doc_name": "PEPSICO_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_00735",
+   "doc_name": "PEPSICO_2022_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_01328",
+   "doc_name": "PEPSICO_2022_10K",
+   "coverage": 0.9836065573770492
+  },
+  {
+   "financebench_id": "financebench_id_03620",
+   "doc_name": "PEPSICO_2022_10K",
+   "coverage": 0.9555555555555556
+  },
+  {
+   "financebench_id": "financebench_id_04481",
+   "doc_name": "PEPSICO_2022_10K",
+   "coverage": 0.9555555555555556
+  },
+  {
+   "financebench_id": "financebench_id_00302",
+   "doc_name": "PFIZER_2021_10K",
+   "coverage": 0.9888888888888889
+  },
+  {
+   "financebench_id": "financebench_id_00702",
+   "doc_name": "PFIZER_2021_10K",
+   "coverage": 0.9575757575757575
+  },
+  {
+   "financebench_id": "financebench_id_02416",
+   "doc_name": "PFIZER_2021_10K",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_00746",
+   "doc_name": "ULTABEAUTY_2023_10K",
+   "coverage": 0.9788732394366197
+  },
+  {
+   "financebench_id": "financebench_id_00521",
+   "doc_name": "ULTABEAUTY_2023_10K",
+   "coverage": 0.9815668202764977
+  },
+  {
+   "financebench_id": "financebench_id_06247",
+   "doc_name": "WALMART_2018_10K",
+   "coverage": 0.9609375
+  },
+  {
+   "financebench_id": "financebench_id_04784",
+   "doc_name": "WALMART_2019_10K",
+   "coverage": 0.7849462365591398
+  },
+  {
+   "financebench_id": "financebench_id_06741",
+   "doc_name": "WALMART_2020_10K",
+   "coverage": 0.9539295392953929
+  }
+ ],
+ "held_out_evidence_in_kb": [
+  {
+   "financebench_id": "financebench_id_04735",
+   "coverage": 0.3313840155945419
+  },
+  {
+   "financebench_id": "financebench_id_07507",
+   "coverage": 0.22039473684210525
+  },
+  {
+   "financebench_id": "financebench_id_03856",
+   "coverage": 0.34959349593495936
+  },
+  {
+   "financebench_id": "financebench_id_00438",
+   "coverage": 0.26119402985074625
+  },
+  {
+   "financebench_id": "financebench_id_00591",
+   "coverage": 0.47297297297297297
+  },
+  {
+   "financebench_id": "financebench_id_03069",
+   "coverage": 0.4931972789115646
+  },
+  {
+   "financebench_id": "financebench_id_00222",
+   "coverage": 0.39325842696629215
+  },
+  {
+   "financebench_id": "financebench_id_00995",
+   "coverage": 0.25
+  },
+  {
+   "financebench_id": "financebench_id_01198",
+   "coverage": 0.5
+  },
+  {
+   "financebench_id": "financebench_id_00917",
+   "coverage": 0.8823529411764706
+  },
+  {
+   "financebench_id": "financebench_id_01279",
+   "coverage": 0.45821325648414984
+  },
+  {
+   "financebench_id": "financebench_id_00563",
+   "coverage": 0.2463768115942029
+  },
+  {
+   "financebench_id": "financebench_id_00757",
+   "coverage": 0.7142857142857143
+  },
+  {
+   "financebench_id": "financebench_id_04660",
+   "coverage": 0.028037383177570093
+  },
+  {
+   "financebench_id": "financebench_id_03838",
+   "coverage": 0.07307692307692308
+  },
+  {
+   "financebench_id": "financebench_id_07661",
+   "coverage": 0.061046511627906974
+  },
+  {
+   "financebench_id": "financebench_id_10285",
+   "coverage": 0.2809364548494983
+  },
+  {
+   "financebench_id": "financebench_id_00517",
+   "coverage": 0.23943661971830985
+  },
+  {
+   "financebench_id": "financebench_id_01091",
+   "coverage": 0.3225806451612903
+  },
+  {
+   "financebench_id": "financebench_id_00678",
+   "coverage": 0.3181818181818182
+  },
+  {
+   "financebench_id": "financebench_id_01290",
+   "coverage": 1.0
+  },
+  {
+   "financebench_id": "financebench_id_00464",
+   "coverage": 0.22727272727272727
+  },
+  {
+   "financebench_id": "financebench_id_00494",
+   "coverage": 0.2980769230769231
+  },
+  {
+   "financebench_id": "financebench_id_00585",
+   "coverage": 0.26627218934911245
+  },
+  {
+   "financebench_id": "financebench_id_04103",
+   "coverage": 0.3165137614678899
+  },
+  {
+   "financebench_id": "financebench_id_03471",
+   "coverage": 0.30927835051546393
+  },
+  {
+   "financebench_id": "financebench_id_04854",
+   "coverage": 0.37420718816067655
+  },
+  {
+   "financebench_id": "financebench_id_10136",
+   "coverage": 0.34237995824634654
+  },
+  {
+   "financebench_id": "financebench_id_04171",
+   "coverage": 0.21328671328671328
+  },
+  {
+   "financebench_id": "financebench_id_03849",
+   "coverage": 0.15868263473053892
+  },
+  {
+   "financebench_id": "financebench_id_01254",
+   "coverage": 0.6
+  },
+  {
+   "financebench_id": "financebench_id_00382",
+   "coverage": 0.12371134020618557
+  },
+  {
+   "financebench_id": "financebench_id_01911",
+   "coverage": 0.19834710743801653
+  },
+  {
+   "financebench_id": "financebench_id_01912",
+   "coverage": 0.8636363636363636
+  },
+  {
+   "financebench_id": "financebench_id_00407",
+   "coverage": 0.375
+  },
+  {
+   "financebench_id": "financebench_id_04458",
+   "coverage": 0.2857142857142857
+  },
+  {
+   "financebench_id": "financebench_id_03282",
+   "coverage": 0.30566037735849055
+  },
+  {
+   "financebench_id": "financebench_id_00080",
+   "coverage": 0.4136690647482014
+  },
+  {
+   "financebench_id": "financebench_id_00859",
+   "coverage": 0.6330275229357798
+  },
+  {
+   "financebench_id": "financebench_id_02024",
+   "coverage": 0.7619047619047619
+  },
+  {
+   "financebench_id": "financebench_id_00216",
+   "coverage": 0.31891891891891894
+  },
+  {
+   "financebench_id": "financebench_id_00215",
+   "coverage": 0.3142857142857143
+  },
+  {
+   "financebench_id": "financebench_id_00566",
+   "coverage": 0.18556701030927836
+  }
+ ]
+}
