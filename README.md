@@ -57,7 +57,7 @@ Selected model: **MFA with K = 16 clusters, rank r = 64** (373k parameters, 69% 
 | MFA log-likelihood | **0.756** | 0.608 | 0.991 |
 | Cosine similarity (FAISS) | 0.662 | 0.762 | 0.996 |
 | K-Means / diagonal GMM | 0.481 / 0.507 | 0.669 / 0.656 | 0.996 / 0.994 |
-| Full-cov GMM / Ledoit–Wolf | 0.772 / 0.760 | 0.619 / 0.819 | 0.986 / 0.999 |
+| Full-covariance GMM | 0.772 | 0.619 | 0.986 |
 
 <p align="center"><img src="results/roc_curve.png" width="900" alt="ROC curves per OOD type"></p>
 

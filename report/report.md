@@ -65,7 +65,7 @@ equivalent distance threshold:  D* = τ₀ + λ (−ln α)^(1/κ)
 
 ## 4. Results
 
-**Baselines** are fitted on the same training chunks (K = 16): cosine similarity to the nearest chunk (FAISS), distance to the nearest K-Means centroid, diagonal and full-covariance GMMs, and a single Gaussian with Ledoit–Wolf shrinkage. Full tables: [notebook 04](https://github.com/GellaNagaSaiKrishna/Hallucination-Guardrails-via-MFA-and-EVT/blob/main/notebooks/04_benchmarking.ipynb).
+**Baselines** are fitted on the same training chunks (K = 16): cosine similarity to the nearest chunk (FAISS), distance to the nearest K-Means centroid, and diagonal and full-covariance GMMs. Full tables: [notebook 04](https://github.com/GellaNagaSaiKrishna/Hallucination-Guardrails-via-MFA-and-EVT/blob/main/notebooks/04_benchmarking.ipynb).
 
 ### 4.1 Detection
 
@@ -73,11 +73,10 @@ equivalent distance threshold:  D* = τ₀ + λ (−ln α)^(1/κ)
 |---|---|---|---|---|
 | **MFA + EVT (proposed)** | **0.736** | 0.559 | 0.988 | 0.767 |
 | MFA log-likelihood | **0.756** | 0.608 | 0.991 | 0.792 |
-| Cosine NN (FAISS) | 0.662 | 0.762 | 0.996 | 0.841 |
-| K-Means Euclidean | 0.481 | 0.669 | 0.996 | 0.770 |
+| Cosine NN (FAISS) | 0.662 | **0.762** | **0.996** | **0.841** |
+| K-Means Euclidean | 0.481 | 0.669 | **0.996** | 0.770 |
 | Diagonal GMM | 0.507 | 0.656 | 0.994 | 0.769 |
 | Full-covariance GMM | **0.772** | 0.619 | 0.986 | 0.797 |
-| Ledoit–Wolf Gaussian | 0.760 | **0.819** | **0.999** | **0.882** |
 
 <p align="center"><img src="../results/roc_curve.png" width="100%" alt="ROC curves"></p>
 
@@ -86,7 +85,7 @@ equivalent distance threshold:  D* = τ₀ + λ (−ln α)^(1/κ)
 - **Far-OOD is solved** by every method (AUROC ≥ 0.986).
 - **On real Near-OOD questions** (companies not in the knowledge base), covariance-aware densities win. A missing company shifts the embedding in a *direction*, not just a distance, which spherical K-Means and the axis-aligned diagonal GMM cannot see (≈ 0.5). The MFA beats cosine similarity by +0.09 AUROC (log-likelihood; bootstrap 95% CI [−0.004, 0.19], MFA ahead in 97% of resamples).
 - **False premises are invisible to density.** Adversarial questions use indexed companies' own vocabulary, so they look in-distribution (MFA 0.56). Cosine does better (MFA − cosine = −0.20, CI [−0.30, −0.11]) because invented entities have no close chunk.
-- **Full covariance is affordable at this scale** (~110 training points per dimension), so the full GMM and Ledoit–Wolf match or beat the MFA, which uses 69% fewer parameters.
+- **Full covariance is affordable at this scale** (~110 training points per dimension), so the full GMM is slightly ahead of the MFA on Near-OOD (0.772 vs 0.756) while the MFA uses 69% fewer parameters and fits 3× faster.
 
 ### 4.2 Operating points
 
