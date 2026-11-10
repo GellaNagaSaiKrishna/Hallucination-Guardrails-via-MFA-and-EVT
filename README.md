@@ -27,23 +27,7 @@ The architecture from the [proposal](docs/proposal.md):
 
 As implemented:
 
-```mermaid
-flowchart LR
-    subgraph OFF["Offline"]
-        A["SEC 10-K filings<br/>(EDGAR)"] --> B["Chunk + embed<br/>MiniLM, d = 384"]
-        B -->|"80% train"| C["MFA via EM<br/>K, r chosen by BIC"]
-        B -->|"20% validation"| D["EVT: Weibull tail<br/>of validation D²"]
-        C --> D
-    end
-    subgraph ON["Online, per question"]
-        Q["Question"] --> E["Embed"] --> F["D²(q): Woodbury<br/>Mahalanobis, nearest cluster"]
-        F --> G["p-value S(q)"] --> H{"S(q) below α?"}
-        H -->|"yes"| R["Refuse: 'outside<br/>knowledge base'"]
-        H -->|"no"| T["FAISS top-3 → LLM"]
-    end
-    C -.-> F
-    D -.-> G
-```
+<p align="center"><img src="docs/figures/flow_pipeline.png" width="900" alt="Implemented pipeline: offline MFA and EVT fitting, online Woodbury distance, p-value and decision"></p>
 
 - **MFA:** each topic cluster is modelled as a Gaussian with covariance `WWᵀ + Ψ` (r main directions plus per-dimension noise), trained from scratch with EM. → [src/mfa.py](src/mfa.py), [notebook 02](notebooks/02_mfa_training.ipynb)
 - **Woodbury:** inverts `WWᵀ + Ψ` through an r × r matrix, so scoring a question costs O(d·r) instead of O(d³). → [src/woodbury.py](src/woodbury.py)
