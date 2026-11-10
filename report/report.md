@@ -12,7 +12,7 @@ A Retrieval-Augmented Generation (RAG) system retrieves the closest chunks of a 
 
 ## 2. Data
 
-<p align="center"><img src="../docs/figures/flow_data.png" width="80%" alt="Data provenance"></p>
+<p align="center"><img src="../docs/figures/flow_data.png" width="92%" alt="Data provenance"></p>
 
 *Figure 2. How the knowledge base and the four question sets were built.*
 
