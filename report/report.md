@@ -129,13 +129,6 @@ Over 1,000 questions on CPU, the guardrail takes **0.77 ms (p50) / 1.45 ms (p95)
 - **Limitations:** small question sets (68 ID, 43 Near-OOD; AUROC CIs ≈ ±0.09); FinanceBench is hard for a 1.5B model with top-3 MiniLM retrieval (the right filing is retrieved for 39 of 68 ID questions); one greedy answer per question, generated in fp16 on a GPU; NLI judging is strict on paraphrased numbers; the selected rank lies on the grid edge.
 - **Next steps:** score by MFA log-likelihood, combine the density gate with cosine similarity, add a post-retrieval answerability check, and test 768-d embeddings.
 
-## 6. Related work
-
-- Lee et al. (2018), [*A Simple Unified Framework for Detecting OOD Samples and Adversarial Attacks*](https://arxiv.org/abs/1807.03888), NeurIPS: Gaussian class-conditional densities with Mahalanobis scores. This project replaces the shared covariance with per-cluster low-rank covariances.
-- Ren et al. (2023), [*Out-of-Distribution Detection and Selective Generation for Conditional Language Models*](https://arxiv.org/abs/2209.15558), ICLR: Mahalanobis-distance OOD detection on language-model embeddings to decide when to abstain, the closest analogue to this guardrail.
-- Bendale & Boult (2016), [*Towards Open Set Deep Networks*](https://arxiv.org/abs/1511.06233), CVPR: Weibull EVT on distance tails to reject unknown inputs (OpenMax).
-- Ghahramani & Hinton (1996), [*The EM Algorithm for Mixtures of Factor Analyzers*](https://www.cs.toronto.edu/~hinton/absps/tr-96-1.pdf).
-
-## 7. Data and tool references
+## 6. Data and tool references
 
 [SEC EDGAR](https://www.sec.gov/edgar/search/) and its [APIs](https://www.sec.gov/search-filings/edgar-application-programming-interfaces) · [FinanceBench](https://huggingface.co/datasets/PatronusAI/financebench) (CC-BY-NC-4.0) · [Open Trivia DB](https://opentdb.com/) · [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) · [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) · [nli-deberta-v3-base](https://huggingface.co/cross-encoder/nli-deberta-v3-base) · [FAISS](https://github.com/facebookresearch/faiss) · [RAG, Lewis et al. (2020)](https://arxiv.org/abs/2005.11401). Reproduction steps: [README](../README.md#reproduce).
