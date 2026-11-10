@@ -12,7 +12,7 @@ A Retrieval-Augmented Generation (RAG) system retrieves the closest chunks of a 
 
 ## 2. Data
 
-<p align="center"><img src="../docs/figures/flow_data.png" width="92%" alt="Data provenance"></p>
+<p align="center"><img src="../docs/figures/flow_data.png" width="80%" alt="Data provenance"></p>
 
 *Figure 2. How the knowledge base and the four question sets were built.*
 
@@ -119,7 +119,7 @@ With the naive prompt, the guardrail **halves OOD hallucinations at no cost to I
 
 ### 4.4 Latency
 
-Over 1,000 questions on CPU, the guardrail takes **0.77 ms (p50) / 1.45 ms (p95)**, well under the 10 ms target. That is ~2,000× faster than inverting Σ_k per question (2.9 s), faster than pre-computed dense precision matrices (1.0 ms), and less than the MiniLM embedding (7.7 ms) that RAG already pays.
+Over 1,000 questions on CPU the guardrail takes **0.77 ms (p50) / 1.45 ms (p95)**, under the 10 ms target: ~2,000× faster than inverting Σ_k per question (2.9 s) and less than the MiniLM embedding (7.7 ms) that RAG already pays.
 
 ## 5. Discussion and limitations
 
@@ -129,6 +129,11 @@ Over 1,000 questions on CPU, the guardrail takes **0.77 ms (p50) / 1.45 ms (p95)
 - **Limitations:** small question sets (68 ID, 43 Near-OOD; AUROC CIs ≈ ±0.09); FinanceBench is hard for a 1.5B model with top-3 MiniLM retrieval (the right filing is retrieved for 39 of 68 ID questions); one greedy answer per question, generated in fp16 on a GPU; NLI judging is strict on paraphrased numbers; the selected rank lies on the grid edge.
 - **Next steps:** score by MFA log-likelihood, combine the density gate with cosine similarity, add a post-retrieval answerability check, and test 768-d embeddings.
 
-## 6. Data and tool references
+## 6. Related work
+
+- Lee et al. (2018), [*A Simple Unified Framework for Detecting OOD Samples and Adversarial Attacks*](https://arxiv.org/abs/1807.03888), NeurIPS: Gaussian class-conditional densities with Mahalanobis scores. This project replaces the shared covariance with per-cluster low-rank covariances.
+- Ren et al. (2023), [*Out-of-Distribution Detection and Selective Generation for Conditional Language Models*](https://arxiv.org/abs/2209.15558), ICLR: Mahalanobis-distance OOD detection on language-model embeddings to decide when to abstain, the closest analogue to this guardrail.
+
+## 7. Data and tool references
 
 [SEC EDGAR](https://www.sec.gov/edgar/search/) and its [APIs](https://www.sec.gov/search-filings/edgar-application-programming-interfaces) · [FinanceBench](https://huggingface.co/datasets/PatronusAI/financebench) (CC-BY-NC-4.0) · [Open Trivia DB](https://opentdb.com/) · [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) · [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) · [nli-deberta-v3-base](https://huggingface.co/cross-encoder/nli-deberta-v3-base) · [FAISS](https://github.com/facebookresearch/faiss) · [RAG, Lewis et al. (2020)](https://arxiv.org/abs/2005.11401). Reproduction steps: [README](../README.md#reproduce).
