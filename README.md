@@ -2,7 +2,7 @@
 
 **A pre-retrieval statistical guardrail for Retrieval-Augmented Generation (RAG).** Before a question reaches the retriever and the LLM, the guardrail checks whether it lies inside the knowledge base's embedding distribution. It uses a **Mixture of Factor Analyzers (MFA)** density with fast **Woodbury** low-rank algebra, and calibrates the decision threshold with **Extreme Value Theory (EVT)**. Out-of-scope questions are refused, so the LLM never gets the chance to hallucinate an answer to them.
 
-📄 **[Final report](report/report.md)** ([PDF](report/report.pdf)) · 📝 [Proposal](docs/proposal.md) · 📓 [Notebooks](notebooks/)
+📄 **[Final report](report/updated_report.md)** ([PDF](report/updated_report.pdf)) · 📝 [Proposal](docs/proposal.md) · 📓 [Notebooks](notebooks/)
 
 ---
 
@@ -43,7 +43,7 @@ As implemented:
 | Near-OOD (adversarial) | 100 counterfactual questions (entity perturbation), a stress test | constructed for this project |
 | Far-OOD | 100 general-knowledge trivia questions | [Open Trivia DB](https://opentdb.com/) |
 
-The full data description, including how the split was made and the checks performed, is in [report §2](report/report.md#2-data).
+The full data description, including how the split was made and the checks performed, is in [report §1.1](report/updated_report.md#11-data-and-benchmark).
 
 ## Key results
 
@@ -82,7 +82,7 @@ Selected model: **MFA with K = 16 clusters, rank r = 64** (373k parameters, 69% 
 
 ```
 ├── README.md
-├── report/            final report (report.md, report.pdf)
+├── report/            final report (updated_report.md, updated_report.pdf)
 ├── docs/              proposal and its figure
 ├── src/               library code
 │   ├── data_pipeline.py      HTML cleaning and chunking (500 chars, 50 overlap)
