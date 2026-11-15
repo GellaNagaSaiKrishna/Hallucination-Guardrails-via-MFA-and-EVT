@@ -1,0 +1,34 @@
+[
+ {
+  "q": "What is the FY2018 capital expenditure amount (in USD millions) for 3M?",
+  "type": "ID",
+  "d2": 446.1596857996417,
+  "S": 1.0,
+  "cluster": 0,
+  "ms": 8.910300035495311
+ },
+ {
+  "q": "What drove operating margin change as of FY22 for AMD?",
+  "type": "Near-OOD",
+  "d2": 655.1043386635379,
+  "S": 0.027121345425916276,
+  "cluster": 12,
+  "ms": 0.895200006198138
+ },
+ {
+  "q": "What was Microsoft's revenue from its lunar data centers in 2019?",
+  "type": "Adversarial",
+  "d2": 454.36854428180965,
+  "S": 1.0,
+  "cluster": 12,
+  "ms": 0.8169999928213656
+ },
+ {
+  "q": "Who painted the Mona Lisa?",
+  "type": "Far-OOD",
+  "d2": 890.6585269848193,
+  "S": 0.00013020519804328028,
+  "cluster": 12,
+  "ms": 0.8355000172741711
+ }
+]

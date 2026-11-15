@@ -124,4 +124,13 @@ g = MFAEVTGuardrail.load()
 print(g.check("Who painted the Mona Lisa?"))       # → OOD, refused before retrieval
 ```
 
+Live demo (four example questions, optional full RAG answer, interactive mode): see [presentation/DEMO.md](presentation/DEMO.md).
+
+```bash
+python presentation/demo.py              # guardrail decisions at α = 0.01 and 0.1
+python presentation/demo.py --rag "..."  # full guarded RAG answer (loads the LLM)
+python presentation/demo.py -i           # type your own questions
+python presentation/demo.py --offline    # saved results, no models needed
+```
+
 The earlier pilot version (7 big-tech filings, generated ID questions) is kept on the [`old` branch](https://github.com/GellaNagaSaiKrishna/Hallucination-Guardrails-via-MFA-and-EVT/tree/old).
