@@ -24,8 +24,8 @@ class Settings:
         "VECTOR_STORE", "pgvector" if os.environ.get("DATABASE_URL") else "memory"))
     table: str = field(default_factory=lambda: os.environ.get("PGVECTOR_TABLE", "chunks"))
     top_k: int = field(default_factory=lambda: _i("TOP_K", 5))
-    # HNSW search breadth; 200 gives recall@5 = 0.985 vs exact search on the 311 test questions
-    # (index m=32, ef_construction=200; see README)
+    # HNSW search breadth per query: 200 gives recall@5 = 0.985 vs exact search on the 311 test
+    # questions (index m=32, ef_construction=200)
     ef_search: int = field(default_factory=lambda: _i("HNSW_EF_SEARCH", 200))
     # restrict retrieval to the filings of a company named in the question (service/companies.py)
     company_filter: bool = field(default_factory=lambda: os.environ.get("COMPANY_FILTER", "1") == "1")
@@ -36,7 +36,7 @@ class Settings:
     # scripts/eval_false_premise.py; the threshold is read from results/false_premise/calibration.json
     premise_check: str = field(default_factory=lambda: os.environ.get("PREMISE_CHECK", "nli"))
     premise_model: str = field(default_factory=lambda: os.environ.get(
-        "PREMISE_MODEL", "cross-encoder/nli-MiniLM2-L6-H768"))
+        "PREMISE_MODEL", "cross-encoder/nli-deberta-v3-base"))
     premise_threshold: float = field(default_factory=lambda: _f("PREMISE_THRESHOLD", float("nan")))
     # generator: "extractive" (default, CPU, no LLM), "stub" (tests), "hf:<model id>" (local HF LLM)
     generator: str = field(default_factory=lambda: os.environ.get("GENERATOR", "extractive"))

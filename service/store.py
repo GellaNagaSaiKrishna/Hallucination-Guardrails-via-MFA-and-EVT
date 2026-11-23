@@ -64,6 +64,8 @@ class PgVectorStore:
     (docker `pgvector/pgvector`, Neon, Supabase, Cloud SQL, Azure Flexible Server)."""
 
     def __init__(self, database_url: str, table: str = "chunks", ef_search: int = 200):
+        """Every search is a single network round trip (it matters on a remote database: about
+        250 ms per round trip from the development laptop to Neon, versus 1 ms of query execution)."""
         from pgvector.psycopg import register_vector
         from psycopg_pool import ConnectionPool
 
@@ -82,17 +84,26 @@ class PgVectorStore:
         v = q.astype(np.float32).ravel()
         cols = f"SELECT chunk_id, company, year, text, 1 - (embedding <=> %s) AS score FROM {self.table}"
         with self.pool.connection() as conn:
-            with conn.transaction():      # SET LOCAL is transaction-scoped: safe behind PgBouncer
-                if companies:
-                    # exact search inside the named companies' filings (<= ~4k rows): btree on
-                    # company + sort. HNSW is disabled for this query because a post-filtered
-                    # approximate scan can return fewer than k rows.
-                    conn.execute("SET LOCAL enable_indexscan = off")
-                    rows = conn.execute(f"{cols} WHERE company = ANY(%s) ORDER BY embedding <=> %s LIMIT %s",
-                                        (v, list(companies), v, k)).fetchall()
-                else:
-                    conn.execute(f"SET LOCAL hnsw.ef_search = {self.ef_search}")
-                    rows = conn.execute(f"{cols} ORDER BY embedding <=> %s LIMIT %s", (v, v, k)).fetchall()
+            if companies:
+                # Exact search inside the named companies' filings (<= ~4k rows): btree on company
+                # + sort. Ordering by "distance + 0" keeps the planner off the HNSW index, whose
+                # post-filtered approximate scan could return fewer than k rows.
+                rows = conn.execute(f"{cols} WHERE company = ANY(%s) ORDER BY (embedding <=> %s) + 0 LIMIT %s",
+                                    (v, list(companies), v, k)).fetchall()
+            else:
+                # HNSW with a per-query ef_search. "SET LOCAL ...; SELECT ..." is sent as ONE
+                # simple-protocol query string, which Postgres runs as a single implicit
+                # transaction: SET LOCAL applies to the SELECT, nothing leaks into the pooled
+                # session (PgBouncer-safe), and it costs one round trip instead of four
+                # (BEGIN/SET/SELECT/COMMIT). The simple protocol has no bind parameters, so the
+                # vector is inlined as a literal built only from formatted floats.
+                lit = "'[" + ",".join(f"{x:.8g}" for x in v.tolist()) + "]'"   # typed by the column (vector/halfvec)
+                sql = (f"SET LOCAL hnsw.ef_search = {self.ef_search}; "
+                       f"SELECT chunk_id, company, year, text, 1 - (embedding <=> {lit}) AS score "
+                       f"FROM {self.table} ORDER BY embedding <=> {lit} LIMIT {int(k)}")
+                cur = conn.execute(sql)
+                cur.nextset()
+                rows = cur.fetchall()
         return [Hit(r[0], r[1], r[2], r[3], float(r[4])) for r in rows]
 
     def ping(self) -> bool:

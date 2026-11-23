@@ -47,8 +47,9 @@ def test_pgvector_matches_exact_search():
             assert got[0].score > 0.999          # the chunk itself (or an identical duplicate chunk)
             recall.append(len(exact & {h.chunk_id for h in got}) / 5)
             comp = mem.chunks[i]["company"]          # filtered search is exact
-            assert ([h.chunk_id for h in pg.search(q, 5, [comp])]
-                    == [h.chunk_id for h in mem.search(q, 5, [comp])])
+            # same scores (ids may differ only between identical duplicate chunks, e.g. Nike 2018/2019)
+            np.testing.assert_allclose([h.score for h in pg.search(q, 5, [comp])],
+                                       [h.score for h in mem.search(q, 5, [comp])], atol=1e-5)
         assert np.mean(recall) >= 0.9          # HNSW is approximate
     finally:
         pg.close()

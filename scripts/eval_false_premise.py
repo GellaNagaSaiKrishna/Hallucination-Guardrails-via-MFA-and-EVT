@@ -175,25 +175,26 @@ def main() -> None:
                             "check_flagged": float(flag[mask].mean()),
                             "gate_plus_check_refused": float(refused[mask].mean())}
         summary["methods"][name] = m
+    # selection rule (fixed before looking at the test split): best calibration AUROC
     best = max(summary["methods"], key=lambda n: summary["methods"][n]["auroc_calib"])
-    # service default: best calibration AUROC among checkers within a CPU latency budget
-    # (free CPU hosting). NOTE: this budget was added after the first run had been inspected.
+    # informational only: best calibration AUROC among checkers within a CPU latency budget
     fast = [n for n in summary["methods"] if latency[n]["p50_ms"] <= args.latency_budget_ms]
-    default = max(fast, key=lambda n: summary["methods"][n]["auroc_calib"]) if fast else best
-    summary["selected_by_calib_auroc"] = best
-    summary["service_default"] = default
+    fast_alt = max(fast, key=lambda n: summary["methods"][n]["auroc_calib"]) if fast else None
+    summary["selected_by_calib_auroc"] = summary["service_default"] = best
+    summary["fast_alternative"] = fast_alt
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2))
     (out_dir / "calibration.json").write_text(json.dumps(
-        {"service_default": {"method": default, "kind": METHODS[default][0], "model": METHODS[default][1],
-                             "threshold": summary["methods"][default]["threshold"]},
+        {"service_default": {"method": best, "kind": METHODS[best][0], "model": METHODS[best][1],
+                             "threshold": summary["methods"][best]["threshold"]},
+         "fast_alternative": fast_alt and {"method": fast_alt, "model": METHODS[fast_alt][1],
+                                           "latency_budget_ms": args.latency_budget_ms},
          "thresholds": {METHODS[n][1]: summary["methods"][n]["threshold"] for n in summary["methods"]},
-         "k": args.k, "company_filter": not args.no_company_filter, "target_frr": args.target_frr, "latency_budget_ms": args.latency_budget_ms,
-         "selected_by_calib_auroc": best,
+         "k": args.k, "company_filter": not args.no_company_filter, "target_frr": args.target_frr,
          "calibrated_on": "even-indexed FinanceBench ID questions (answerable scores only); "
                           "threshold = target_frr quantile"}, indent=2))
 
-    print(f"\nselected on calibration AUROC: {best}; service default "
-          f"(p50 <= {args.latency_budget_ms:.0f} ms): {default}")
+    print(f"\nselected on calibration AUROC (service default): {best}; "
+          f"fastest-good alternative (p50 <= {args.latency_budget_ms:.0f} ms): {fast_alt}")
     for name, m in summary["methods"].items():
         print(f"\n== {name}: calib AUROC {m['auroc_calib']:.3f}, test AUROC all {m['auroc_test_all']:.3f}, "
               f"FP-pairs {m['auroc_test_FP-pairs']:.3f}, threshold {m['threshold']:.3f}")
