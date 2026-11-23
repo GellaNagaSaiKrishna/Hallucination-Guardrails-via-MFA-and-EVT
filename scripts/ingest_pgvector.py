@@ -106,6 +106,7 @@ def main() -> None:
             conn.execute(f"SET maintenance_work_mem = '{args.maintenance_work_mem}'")
             conn.execute(index_sql(args.table, args.halfvec, args.hnsw_m, args.hnsw_ef_construction))
             print(f"built HNSW index in {time.perf_counter() - t0:.1f}s")
+        conn.execute(f"CREATE INDEX IF NOT EXISTS {args.table}_company ON {args.table} (company)")
         conn.execute(f"ANALYZE {args.table}")
         report_sizes(conn, args.table)
 

@@ -26,7 +26,7 @@ class Hit:
 
 
 class VectorStore(Protocol):
-    def search(self, q: np.ndarray, k: int) -> list[Hit]: ...
+    def search(self, q: np.ndarray, k: int, companies: list[str] | None = None) -> list[Hit]: ...
     def ping(self) -> bool: ...
 
 
@@ -36,6 +36,7 @@ class MemoryStore:
     def __init__(self, X: np.ndarray, chunks: list[dict]):
         self.X = np.ascontiguousarray(X, dtype=np.float32)
         self.chunks = chunks
+        self.company = np.array([c["company"] for c in chunks])
 
     @classmethod
     def from_disk(cls) -> "MemoryStore":
@@ -43,8 +44,11 @@ class MemoryStore:
         chunks = json.loads((ROOT / "data" / "chunk_texts.json").read_text(encoding="utf-8"))
         return cls(X, chunks)
 
-    def search(self, q: np.ndarray, k: int) -> list[Hit]:
+    def search(self, q: np.ndarray, k: int, companies: list[str] | None = None) -> list[Hit]:
         sims = self.X @ q.astype(np.float32).ravel()
+        if companies:
+            sims = np.where(np.isin(self.company, companies), sims, -np.inf)
+            k = min(k, int(np.isfinite(sims).sum())) or k
         k = min(k, len(sims))
         idx = np.argpartition(-sims, k - 1)[:k]
         idx = idx[np.argsort(-sims[idx])]
@@ -74,14 +78,21 @@ class PgVectorStore:
         self.pool = ConnectionPool(database_url, min_size=1, max_size=4, configure=_configure,
                                    kwargs={"autocommit": True, "prepare_threshold": None}, open=True)
 
-    def search(self, q: np.ndarray, k: int) -> list[Hit]:
-        sql = (f"SELECT chunk_id, company, year, text, 1 - (embedding <=> %s) AS score "
-               f"FROM {self.table} ORDER BY embedding <=> %s LIMIT %s")
+    def search(self, q: np.ndarray, k: int, companies: list[str] | None = None) -> list[Hit]:
         v = q.astype(np.float32).ravel()
+        cols = f"SELECT chunk_id, company, year, text, 1 - (embedding <=> %s) AS score FROM {self.table}"
         with self.pool.connection() as conn:
             with conn.transaction():      # SET LOCAL is transaction-scoped: safe behind PgBouncer
-                conn.execute(f"SET LOCAL hnsw.ef_search = {self.ef_search}")
-                rows = conn.execute(sql, (v, v, k)).fetchall()
+                if companies:
+                    # exact search inside the named companies' filings (<= ~4k rows): btree on
+                    # company + sort. HNSW is disabled for this query because a post-filtered
+                    # approximate scan can return fewer than k rows.
+                    conn.execute("SET LOCAL enable_indexscan = off")
+                    rows = conn.execute(f"{cols} WHERE company = ANY(%s) ORDER BY embedding <=> %s LIMIT %s",
+                                        (v, list(companies), v, k)).fetchall()
+                else:
+                    conn.execute(f"SET LOCAL hnsw.ef_search = {self.ef_search}")
+                    rows = conn.execute(f"{cols} ORDER BY embedding <=> %s LIMIT %s", (v, v, k)).fetchall()
         return [Hit(r[0], r[1], r[2], r[3], float(r[4])) for r in rows]
 
     def ping(self) -> bool:

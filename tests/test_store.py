@@ -24,6 +24,13 @@ def test_memory_store_exact_topk():
     assert len(s.search(X[0], 500)) == 50
 
 
+def test_memory_store_company_filter():
+    X, s = _store()
+    s.company[:10] = "A"
+    hits = s.search(X[30], 5, companies=["A"])
+    assert len(hits) == 5 and all(h.chunk_id in {f"c{i}" for i in range(10)} for h in hits)
+
+
 @pytest.mark.skipif(not os.environ.get("TEST_DATABASE_URL"), reason="TEST_DATABASE_URL not set")
 def test_pgvector_matches_exact_search():
     from service.store import PgVectorStore
@@ -39,6 +46,9 @@ def test_pgvector_matches_exact_search():
             got = pg.search(q, 5)
             assert got[0].score > 0.999          # the chunk itself (or an identical duplicate chunk)
             recall.append(len(exact & {h.chunk_id for h in got}) / 5)
+            comp = mem.chunks[i]["company"]          # filtered search is exact
+            assert ([h.chunk_id for h in pg.search(q, 5, [comp])]
+                    == [h.chunk_id for h in mem.search(q, 5, [comp])])
         assert np.mean(recall) >= 0.9          # HNSW is approximate
     finally:
         pg.close()
