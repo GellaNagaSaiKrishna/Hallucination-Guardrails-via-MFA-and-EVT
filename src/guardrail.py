@@ -12,7 +12,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import faiss
 import numpy as np
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
 from langchain_core.documents import Document
@@ -77,6 +76,7 @@ class FaissRetriever(BaseRetriever):
 
     @classmethod
     def from_disk(cls, k: int = TOP_K) -> "FaissRetriever":
+        import faiss  # lazy: the pgvector service does not need FAISS
         X = np.ascontiguousarray(np.load(CORPUS_EMB), dtype=np.float32)
         index = faiss.IndexFlatIP(X.shape[1])
         index.add(X)

@@ -1,0 +1,39 @@
+# Local stack: pgvector Postgres + the guardrail API.
+#
+#   docker compose up -d db
+#   python scripts/ingest_pgvector.py --database-url postgresql://guard:guard@localhost:5433/guardrail
+#   docker compose up --build api
+#   curl -s localhost:7860/ask -H 'content-type: application/json' -d '{"question":"..."}'
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    shm_size: 512mb                     # HNSW build uses parallel workers + shared memory
+    environment:
+      POSTGRES_USER: guard
+      POSTGRES_PASSWORD: guard          # local only; never used outside this compose file
+      POSTGRES_DB: guardrail
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U guard -d guardrail"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://guard:guard@db:5432/guardrail
+      PORT: "7860"
+      GENERATOR: ${GENERATOR:-extractive}
+      PREMISE_CHECK: ${PREMISE_CHECK:-qa}
+    ports:
+      - "7860:7860"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
