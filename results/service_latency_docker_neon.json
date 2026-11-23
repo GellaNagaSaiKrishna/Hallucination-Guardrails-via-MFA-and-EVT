@@ -1,0 +1,64 @@
+{
+  "url": "http://localhost:7861",
+  "health": {
+    "status": "ok",
+    "models_loaded": true,
+    "vector_store_ok": true,
+    "error": null,
+    "generator": "extractive",
+    "premise_check": "nli"
+  },
+  "stages": {
+    "embed": {
+      "n": 114,
+      "p50_ms": 9.69,
+      "p95_ms": 17.98
+    },
+    "gate": {
+      "n": 114,
+      "p50_ms": 0.92,
+      "p95_ms": 1.48
+    },
+    "retrieve": {
+      "n": 96,
+      "p50_ms": 249.41,
+      "p95_ms": 256.11
+    },
+    "premise_check": {
+      "n": 96,
+      "p50_ms": 1213.2,
+      "p95_ms": 1688.34
+    },
+    "generate": {
+      "n": 72,
+      "p50_ms": 0.04,
+      "p95_ms": 0.07
+    },
+    "refuse": {
+      "n": 42,
+      "p50_ms": 0.0,
+      "p95_ms": 0.0
+    }
+  },
+  "server_total": {
+    "n": 114,
+    "p50_ms": 1339.17,
+    "p95_ms": 1949.19
+  },
+  "client_round_trip": {
+    "n": 114,
+    "p50_ms": 1342.67,
+    "p95_ms": 1952.69
+  },
+  "outcomes": {
+    "FB-ID -> answered": 31,
+    "FB-ID -> unsupported_premise": 3,
+    "FP-pairs answerable -> answered": 29,
+    "FP-pairs answerable -> unsupported_premise": 1,
+    "FP-pairs false_premise -> answered": 11,
+    "FP-pairs false_premise -> unsupported_premise": 19,
+    "Far-OOD -> answered": 1,
+    "Far-OOD -> out_of_distribution": 18,
+    "Far-OOD -> unsupported_premise": 1
+  }
+}

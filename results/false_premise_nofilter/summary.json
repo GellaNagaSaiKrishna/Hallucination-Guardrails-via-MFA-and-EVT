@@ -1,0 +1,322 @@
+{
+  "k": 5,
+  "alpha": 0.01,
+  "company_filter": false,
+  "target_frr": 0.05,
+  "latency": {
+    "qa-minilm": {
+      "p50_ms": 209.35155000188388,
+      "p95_ms": 350.37756500241807
+    },
+    "qa-tinyroberta": {
+      "p50_ms": 401.2135000011767,
+      "p95_ms": 561.7329349995998
+    },
+    "nli-xsmall": {
+      "p50_ms": 327.89819999743486,
+      "p95_ms": 470.1865099916175
+    },
+    "nli-minilm2": {
+      "p50_ms": 409.5801500006928,
+      "p95_ms": 583.3327599997573
+    },
+    "ce-relevance": {
+      "p50_ms": 115.55859999498352,
+      "p95_ms": 160.31062999682032
+    },
+    "nli-deberta-base": {
+      "p50_ms": 1196.00669999636,
+      "p95_ms": 2526.3314900010296
+    }
+  },
+  "n": [
+    {
+      "set": "ADV",
+      "split": "calib",
+      "kind": "absent",
+      "n": 50
+    },
+    {
+      "set": "ADV",
+      "split": "test",
+      "kind": "absent",
+      "n": 50
+    },
+    {
+      "set": "FB-ID",
+      "split": "calib",
+      "kind": "answerable",
+      "n": 34
+    },
+    {
+      "set": "FB-ID",
+      "split": "test",
+      "kind": "answerable",
+      "n": 34
+    },
+    {
+      "set": "FP-pairs",
+      "split": "test",
+      "kind": "absent",
+      "n": 10
+    },
+    {
+      "set": "FP-pairs",
+      "split": "test",
+      "kind": "answerable",
+      "n": 30
+    },
+    {
+      "set": "FP-pairs",
+      "split": "test",
+      "kind": "contradicted",
+      "n": 20
+    }
+  ],
+  "evidence_retrieved_fp_pairs": 0.43333333333333335,
+  "methods": {
+    "qa-minilm": {
+      "auroc_calib": 0.5952941176470589,
+      "threshold": -12.394209957122802,
+      "auroc_test_FB-ID": null,
+      "auroc_test_ADV": null,
+      "auroc_test_FP-pairs": 0.8,
+      "auroc_test_all": 0.7730468749999999,
+      "test": {
+        "FB-ID answerable": {
+          "n": 34,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.058823529411764705,
+          "gate_plus_check_refused": 0.058823529411764705
+        },
+        "FP-pairs answerable": {
+          "n": 30,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        },
+        "FP-pairs contradicted": {
+          "n": 20,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        },
+        "FP-pairs absent": {
+          "n": 10,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        },
+        "ADV absent": {
+          "n": 50,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        }
+      }
+    },
+    "qa-tinyroberta": {
+      "auroc_calib": 0.6470588235294118,
+      "threshold": -15.337766122817992,
+      "auroc_test_FB-ID": null,
+      "auroc_test_ADV": null,
+      "auroc_test_FP-pairs": 0.7566666666666667,
+      "auroc_test_all": 0.7013671875,
+      "test": {
+        "FB-ID answerable": {
+          "n": 34,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.058823529411764705,
+          "gate_plus_check_refused": 0.058823529411764705
+        },
+        "FP-pairs answerable": {
+          "n": 30,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.03333333333333333,
+          "gate_plus_check_refused": 0.03333333333333333
+        },
+        "FP-pairs contradicted": {
+          "n": 20,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.2,
+          "gate_plus_check_refused": 0.2
+        },
+        "FP-pairs absent": {
+          "n": 10,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.2,
+          "gate_plus_check_refused": 0.2
+        },
+        "ADV absent": {
+          "n": 50,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.12,
+          "gate_plus_check_refused": 0.12
+        }
+      }
+    },
+    "nli-xsmall": {
+      "auroc_calib": 0.6270588235294118,
+      "threshold": -0.9668233931064606,
+      "auroc_test_FB-ID": null,
+      "auroc_test_ADV": null,
+      "auroc_test_FP-pairs": 0.8333333333333333,
+      "auroc_test_all": 0.7458984375000001,
+      "test": {
+        "FB-ID answerable": {
+          "n": 34,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.029411764705882353,
+          "gate_plus_check_refused": 0.029411764705882353
+        },
+        "FP-pairs answerable": {
+          "n": 30,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.03333333333333333,
+          "gate_plus_check_refused": 0.03333333333333333
+        },
+        "FP-pairs contradicted": {
+          "n": 20,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.25,
+          "gate_plus_check_refused": 0.25
+        },
+        "FP-pairs absent": {
+          "n": 10,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.4,
+          "gate_plus_check_refused": 0.4
+        },
+        "ADV absent": {
+          "n": 50,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.28,
+          "gate_plus_check_refused": 0.28
+        }
+      }
+    },
+    "nli-minilm2": {
+      "auroc_calib": 0.6741176470588235,
+      "threshold": -0.819384416937828,
+      "auroc_test_FB-ID": null,
+      "auroc_test_ADV": null,
+      "auroc_test_FP-pairs": 0.9044444444444444,
+      "auroc_test_all": 0.807421875,
+      "test": {
+        "FB-ID answerable": {
+          "n": 34,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.058823529411764705,
+          "gate_plus_check_refused": 0.058823529411764705
+        },
+        "FP-pairs answerable": {
+          "n": 30,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        },
+        "FP-pairs contradicted": {
+          "n": 20,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.6,
+          "gate_plus_check_refused": 0.6
+        },
+        "FP-pairs absent": {
+          "n": 10,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.4,
+          "gate_plus_check_refused": 0.4
+        },
+        "ADV absent": {
+          "n": 50,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.22,
+          "gate_plus_check_refused": 0.22
+        }
+      }
+    },
+    "nli-deberta-base": {
+      "auroc_calib": 0.8723529411764707,
+      "threshold": -0.9947551846504211,
+      "auroc_test_FB-ID": null,
+      "auroc_test_ADV": null,
+      "auroc_test_FP-pairs": 0.8555555555555555,
+      "auroc_test_all": 0.8146484375,
+      "test": {
+        "FB-ID answerable": {
+          "n": 34,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.17647058823529413,
+          "gate_plus_check_refused": 0.17647058823529413
+        },
+        "FP-pairs answerable": {
+          "n": 30,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.03333333333333333,
+          "gate_plus_check_refused": 0.03333333333333333
+        },
+        "FP-pairs contradicted": {
+          "n": 20,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.4,
+          "gate_plus_check_refused": 0.4
+        },
+        "FP-pairs absent": {
+          "n": 10,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.7,
+          "gate_plus_check_refused": 0.7
+        },
+        "ADV absent": {
+          "n": 50,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.58,
+          "gate_plus_check_refused": 0.58
+        }
+      }
+    },
+    "ce-relevance": {
+      "auroc_calib": 0.5076470588235295,
+      "threshold": -8.105609703063966,
+      "auroc_test_FB-ID": null,
+      "auroc_test_ADV": null,
+      "auroc_test_FP-pairs": 0.7566666666666667,
+      "auroc_test_all": 0.6201171875,
+      "test": {
+        "FB-ID answerable": {
+          "n": 34,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.058823529411764705,
+          "gate_plus_check_refused": 0.058823529411764705
+        },
+        "FP-pairs answerable": {
+          "n": 30,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        },
+        "FP-pairs contradicted": {
+          "n": 20,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        },
+        "FP-pairs absent": {
+          "n": 10,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.0,
+          "gate_plus_check_refused": 0.0
+        },
+        "ADV absent": {
+          "n": 50,
+          "gate_only_refused": 0.0,
+          "check_flagged": 0.06,
+          "gate_plus_check_refused": 0.06
+        }
+      }
+    }
+  },
+  "selected_by_calib_auroc": "nli-deberta-base",
+  "service_default": "nli-deberta-base",
+  "fast_alternative": "nli-minilm2"
+}

@@ -2,8 +2,8 @@
 
 | Piece | Service | Free-tier limits | What we use |
 |---|---|---|---|
-| API container | Hugging Face Spaces, Docker SDK, CPU basic | 2 vCPU, 16 GB RAM, 50 GB ephemeral disk; sleeps after 48 h without traffic | about 470 MiB RSS after loading the models (measured with `docker stats` on the local container) |
-| Vector DB | Neon Postgres (pgvector 0.8.x) | 0.5 GB storage per project; compute scales to zero when idle | 223.8 MiB table incl. HNSW index (231.4 MiB database), measured on Neon after ingestion |
+| API container | Hugging Face Spaces, Docker SDK, CPU basic | 2 vCPU, 16 GB RAM, 50 GB ephemeral disk; sleeps after 48 h without traffic | 640–790 MiB under load with the DeBERTa-v3-base NLI checker (measured with `docker stats`); image 3.75 GB |
+| Vector DB | Neon Postgres (pgvector 0.8.x) | 0.5 GB storage per project; compute scales to zero when idle | 224 MiB table incl. HNSW + company indexes (about 232 MiB database), measured on Neon after ingestion |
 
 Nothing here costs money. Neither service needs a credit card for these tiers.
 
@@ -23,7 +23,7 @@ Nothing here costs money. Neither service needs a credit card for these tiers.
    python -m venv .venv && .venv/bin/pip install numpy "psycopg[binary]" pgvector
    DATABASE_URL="$(sed 's/-pooler\././' ../neon_url.txt)" .venv/bin/python scripts/ingest_pgvector.py
    ```
-   Measured on the free tier: COPY 138.6 s, HNSW build 45.4 s, 223.8 MiB total. If the project
+   Measured on the free tier: COPY 138.6 s, HNSW build 45.4 s, 224 MiB total. If the project
    ever runs short of space, `--halfvec` stores float16 vectors (132.8 MiB measured locally).
 5. Check: `python scripts/ingest_pgvector.py --size-only --database-url "$(cat ../neon_url.txt)"`.
 
@@ -77,7 +77,8 @@ curl -s $SPACE/ask -H 'content-type: application/json' \
 | `PREMISE_THRESHOLD` | from `results/false_premise/calibration.json` | override the calibrated threshold |
 | `COMPANY_FILTER` | 1 | restrict retrieval to a company named in the question |
 | `GENERATOR` | `extractive` | `extractive`, `stub` or `hf:<model id>` (an LLM on 2 vCPU is slow) |
-| `TOP_K` / `HNSW_EF_SEARCH` | 5 / 200 | retrieval depth and HNSW search breadth |
+| `TOP_K` | 5 | retrieval depth |
+| `HNSW_EF_SEARCH` | 200 | HNSW search breadth per query (sent with the query, one round trip) |
 
 ## Stopping / tearing down
 
