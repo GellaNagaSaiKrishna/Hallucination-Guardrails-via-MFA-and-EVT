@@ -12,3 +12,4 @@ venv/
 data/raw/fb/
 kaggle/
 phase-2/
+deploy/huggingface/_space/

@@ -28,7 +28,7 @@ services:
       DATABASE_URL: postgresql://guard:guard@db:5432/guardrail
       PORT: "7860"
       GENERATOR: ${GENERATOR:-extractive}
-      PREMISE_CHECK: ${PREMISE_CHECK:-qa}
+      PREMISE_CHECK: ${PREMISE_CHECK:-nli}
     ports:
       - "7860:7860"
     depends_on:

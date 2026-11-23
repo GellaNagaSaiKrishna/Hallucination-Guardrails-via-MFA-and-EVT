@@ -1,0 +1,17 @@
+# Runtime dependencies of the FastAPI + LangGraph service (torch CPU is installed separately in
+# the Dockerfile from the PyTorch CPU index to keep the image small). Versions are the ones the
+# tests and measurements in README were run with.
+numpy==2.5.5
+scipy==1.18.1
+scikit-learn==1.9.1
+sentence-transformers==6.3.0
+transformers==5.24.0
+huggingface_hub==2.4.0
+langchain-core==1.8.4
+langgraph==1.2.24
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic==2.14.4
+psycopg[binary]==3.3.9
+psycopg-pool==3.3.3
+pgvector==0.5.1
