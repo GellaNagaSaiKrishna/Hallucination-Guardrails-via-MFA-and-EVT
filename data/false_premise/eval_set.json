@@ -1,0 +1,652 @@
+[
+  {
+    "pair_id": "P01",
+    "company": "Costco",
+    "evidence_chunk_id": "COSTCO_2021_10K_chunk_00243",
+    "evidence_text": "Net sales increased $28,832 or 18% during 2021. The improvement was attributable to an increase in comparable sales of 16%, and sales at new warehouses opened in 2020 and 2021. While sales in all core merchandise categories increased, sales were particularly strong in non-foods. Sales increases were also strong in our warehouse ancillary and other businesses, predominantly e-commerce and gasoline.",
+    "id": "P01_A",
+    "question": "What drove the increase in Costco's net sales in 2021?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P01",
+    "company": "Costco",
+    "evidence_chunk_id": "COSTCO_2021_10K_chunk_00243",
+    "evidence_text": "Net sales increased $28,832 or 18% during 2021. The improvement was attributable to an increase in comparable sales of 16%, and sales at new warehouses opened in 2020 and 2021. While sales in all core merchandise categories increased, sales were particularly strong in non-foods. Sales increases were also strong in our warehouse ancillary and other businesses, predominantly e-commerce and gasoline.",
+    "id": "P01_F",
+    "question": "Why did Costco's net sales decline in 2021?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P02",
+    "company": "Ulta Beauty",
+    "evidence_chunk_id": "ULTABEAUTY_2023_10K_chunk_00403",
+    "evidence_text": "Net sales increased $1.6 billion, or 18.3%, to $10.2 billion in fiscal 2022 compared to $8.6 billion in fiscal 2021. The net sales increase was primarily due to the favorable impact from the continued resilience of the beauty category, retail price increases, the impact of new brands and product innovation, increased social occasions and fewer COVID-19 limitations compared to fiscal 2021, and an increase of $77.3 million in other revenue.",
+    "id": "P02_A",
+    "question": "Why did Ulta Beauty's net sales increase in fiscal 2022?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P02",
+    "company": "Ulta Beauty",
+    "evidence_chunk_id": "ULTABEAUTY_2023_10K_chunk_00403",
+    "evidence_text": "Net sales increased $1.6 billion, or 18.3%, to $10.2 billion in fiscal 2022 compared to $8.6 billion in fiscal 2021. The net sales increase was primarily due to the favorable impact from the continued resilience of the beauty category, retail price increases, the impact of new brands and product innovation, increased social occasions and fewer COVID-19 limitations compared to fiscal 2021, and an increase of $77.3 million in other revenue.",
+    "id": "P02_F",
+    "question": "What caused Ulta Beauty's net sales to fall in fiscal 2022?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P03",
+    "company": "Ulta Beauty",
+    "evidence_chunk_id": "ULTABEAUTY_2023_10K_chunk_00405",
+    "evidence_text": "Gross profit\nGross profit increased $676.0 million, or 20.1%, to $4.0 billion in fiscal 2022, compared to $3.4 billion in fiscal 2021. Gross profit as a percentage of net sales increased 60 basis points to 39.6% in fiscal 2022 compared to 39.0% in fiscal 2021. The increase in gross profit margin was primarily due to:\n● | 100 basis points of leverage of fixed costs attributed to the impact of higher sales and ongoing occupancy cost optimization efforts;",
+    "id": "P03_A",
+    "question": "Why did Ulta Beauty's gross profit margin expand in fiscal 2022?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P03",
+    "company": "Ulta Beauty",
+    "evidence_chunk_id": "ULTABEAUTY_2023_10K_chunk_00405",
+    "evidence_text": "Gross profit\nGross profit increased $676.0 million, or 20.1%, to $4.0 billion in fiscal 2022, compared to $3.4 billion in fiscal 2021. Gross profit as a percentage of net sales increased 60 basis points to 39.6% in fiscal 2022 compared to 39.0% in fiscal 2021. The increase in gross profit margin was primarily due to:\n● | 100 basis points of leverage of fixed costs attributed to the impact of higher sales and ongoing occupancy cost optimization efforts;",
+    "id": "P03_F",
+    "question": "Why did Ulta Beauty's gross profit margin contract in fiscal 2022?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P04",
+    "company": "Corning",
+    "evidence_chunk_id": "CORNING_2021_10K_chunk_00262",
+    "evidence_text": "Net sales increased by $786 million, or 22%, in the year ended December 31, 2021, when compared to the same period in 2020, primarily due to higher sales in carrier products and enterprise products, up $588 million and $198 million, respectively, primarily driven by strong growth of 5G, broadband and cloud computing.",
+    "id": "P04_A",
+    "question": "Why did Corning's Optical Communications net sales increase in 2021?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P04",
+    "company": "Corning",
+    "evidence_chunk_id": "CORNING_2021_10K_chunk_00262",
+    "evidence_text": "Net sales increased by $786 million, or 22%, in the year ended December 31, 2021, when compared to the same period in 2020, primarily due to higher sales in carrier products and enterprise products, up $588 million and $198 million, respectively, primarily driven by strong growth of 5G, broadband and cloud computing.",
+    "id": "P04_F",
+    "question": "Why did Corning's Optical Communications net sales decrease in 2021?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P05",
+    "company": "Tesla Inc.",
+    "evidence_chunk_id": "TSLA_10K_latest_chunk_00521",
+    "evidence_text": "2025 compared to 2024\nAutomotive sales revenue decreased $6.66 billion, or 9%, in the year ended December 31, 2025 as compared to the year ended December 31, 2024, due a decrease of approximately 8% in cash deliveries and a lower average selling price per unit driven by sales mix and higher customer incentives such as attractive financing options.",
+    "id": "P05_A",
+    "question": "Why did Tesla's automotive sales revenue decrease in 2025 compared to 2024?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P05",
+    "company": "Tesla Inc.",
+    "evidence_chunk_id": "TSLA_10K_latest_chunk_00521",
+    "evidence_text": "2025 compared to 2024\nAutomotive sales revenue decreased $6.66 billion, or 9%, in the year ended December 31, 2025 as compared to the year ended December 31, 2024, due a decrease of approximately 8% in cash deliveries and a lower average selling price per unit driven by sales mix and higher customer incentives such as attractive financing options.",
+    "id": "P05_F",
+    "question": "What drove the strong growth in Tesla's automotive sales revenue in 2025 compared to 2024?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P06",
+    "company": "Tesla Inc.",
+    "evidence_chunk_id": "TSLA_10K_latest_chunk_00410",
+    "evidence_text": "We are headquartered in Austin, Texas. Our principal facilities include a large number of properties in North America, Europe and Asia utilized for manufacturing and assembly, warehousing, engineering, retail and service locations, Supercharger sites and administrative and sales offices. Our facilities are used to support both of our reporting segments, and are suitable and adequate for the conduct of our business.",
+    "id": "P06_A",
+    "question": "Where is Tesla headquartered according to its 10-K?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P06",
+    "company": "Tesla Inc.",
+    "evidence_chunk_id": "TSLA_10K_latest_chunk_00410",
+    "evidence_text": "We are headquartered in Austin, Texas. Our principal facilities include a large number of properties in North America, Europe and Asia utilized for manufacturing and assembly, warehousing, engineering, retail and service locations, Supercharger sites and administrative and sales offices. Our facilities are used to support both of our reporting segments, and are suitable and adequate for the conduct of our business.",
+    "id": "P06_F",
+    "question": "When did Tesla relocate its corporate headquarters to Seattle, Washington?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Seattle"
+    ]
+  },
+  {
+    "pair_id": "P07",
+    "company": "Meta Platforms Inc.",
+    "evidence_chunk_id": "META_10K_latest_chunk_00665",
+    "evidence_text": "Our corporate headquarters are located in Menlo Park, California. As of December 31, 2025, we owned and leased approximately 10 million square feet of office and building space for our corporate headquarters and in the surrounding areas, which included approximately two million square feet of unoccupied office and building space that we plan to either sublease, early terminate, or abandon.",
+    "id": "P07_A",
+    "question": "Where are Meta's corporate headquarters located?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P07",
+    "company": "Meta Platforms Inc.",
+    "evidence_chunk_id": "META_10K_latest_chunk_00665",
+    "evidence_text": "Our corporate headquarters are located in Menlo Park, California. As of December 31, 2025, we owned and leased approximately 10 million square feet of office and building space for our corporate headquarters and in the surrounding areas, which included approximately two million square feet of unoccupied office and building space that we plan to either sublease, early terminate, or abandon.",
+    "id": "P07_F",
+    "question": "How much office space does Meta own at its Boston corporate headquarters?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Boston"
+    ]
+  },
+  {
+    "pair_id": "P08",
+    "company": "Microsoft",
+    "evidence_chunk_id": "MICROSOFT_2016_10K_chunk_00365",
+    "evidence_text": "More Personal Computing\nMore Personal Computing revenue decreased $2.7 billion or 6%, mainly due to lower revenue from Devices and Windows, offset in part by higher revenue from search advertising and Gaming. Revenue included an unfavorable foreign currency impact of approximately 2%.\n | Devices revenue decreased $3.7 billion or 32%, mainly due to lower revenue from phones, driven by the change in strategy for the phone business, offset in part by higher Microsoft Surface (Surface) revenue.",
+    "id": "P08_A",
+    "question": "Why did Microsoft's Devices revenue decrease in fiscal year 2016?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P08",
+    "company": "Microsoft",
+    "evidence_chunk_id": "MICROSOFT_2016_10K_chunk_00365",
+    "evidence_text": "More Personal Computing\nMore Personal Computing revenue decreased $2.7 billion or 6%, mainly due to lower revenue from Devices and Windows, offset in part by higher revenue from search advertising and Gaming. Revenue included an unfavorable foreign currency impact of approximately 2%.\n | Devices revenue decreased $3.7 billion or 32%, mainly due to lower revenue from phones, driven by the change in strategy for the phone business, offset in part by higher Microsoft Surface (Surface) revenue.",
+    "id": "P08_F",
+    "question": "What drove the 32% growth in Microsoft's Devices revenue in fiscal year 2016?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P09",
+    "company": "Amazon.com Inc.",
+    "evidence_chunk_id": "AMZN_10K_latest_chunk_00581",
+    "evidence_text": "2023 Acquisition Activity\nOn February 22, 2023, we acquired 1Life Healthcare, Inc. (One Medical), for cash consideration of approximately $ 3.5 billion, net of cash acquired, to provide healthcare options for customers. The acquired assets primarily consist of $ 1.3 billion of intangible assets and $ 2.5 billion of goodwill, which is allocated to our North America segment.\nDuring 2023, we also completed acquisition activity for immaterial aggregate cash consideration, net of cash acquired.",
+    "id": "P09_A",
+    "question": "How much cash consideration did Amazon pay to acquire One Medical in 2023?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P09",
+    "company": "Amazon.com Inc.",
+    "evidence_chunk_id": "AMZN_10K_latest_chunk_00581",
+    "evidence_text": "2023 Acquisition Activity\nOn February 22, 2023, we acquired 1Life Healthcare, Inc. (One Medical), for cash consideration of approximately $ 3.5 billion, net of cash acquired, to provide healthcare options for customers. The acquired assets primarily consist of $ 1.3 billion of intangible assets and $ 2.5 billion of goodwill, which is allocated to our North America segment.\nDuring 2023, we also completed acquisition activity for immaterial aggregate cash consideration, net of cash acquired.",
+    "id": "P09_F",
+    "question": "How much cash consideration did Amazon pay to acquire Walgreens in 2023?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Walgreens"
+    ]
+  },
+  {
+    "pair_id": "P10",
+    "company": "Nike",
+    "evidence_chunk_id": "NIKE_2019_10K_chunk_00139",
+    "evidence_text": "The NIKE World Campus, owned by NIKE and located near Beaverton, Oregon, USA, is an approximately 400-acre site consisting of over 40 buildings which, together with adjacent leased properties, functions as our world headquarters and is occupied by approximately 12,600 employees engaged in management, research, design, development, marketing, finance and other administrative functions serving nearly all of our segments.",
+    "id": "P10_A",
+    "question": "How large is the NIKE World Campus near Beaverton, Oregon?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P10",
+    "company": "Nike",
+    "evidence_chunk_id": "NIKE_2019_10K_chunk_00139",
+    "evidence_text": "The NIKE World Campus, owned by NIKE and located near Beaverton, Oregon, USA, is an approximately 400-acre site consisting of over 40 buildings which, together with adjacent leased properties, functions as our world headquarters and is occupied by approximately 12,600 employees engaged in management, research, design, development, marketing, finance and other administrative functions serving nearly all of our segments.",
+    "id": "P10_F",
+    "question": "Why did NIKE sell its World Campus in Beaverton, Oregon to a real estate investment trust?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "real estate investment trust"
+    ]
+  },
+  {
+    "pair_id": "P11",
+    "company": "Walmart",
+    "evidence_chunk_id": "WALMART_2019_10K_chunk_00287",
+    "evidence_text": "Our total revenues, which are mostly comprised of net sales, but also include membership and other income, increased $14.1 billion or 2.8% and $14.5 billion or 3.0% for fiscal 2019 and 2018 , respectively, when compared to the previous fiscal year. Net sales increased $14.6 billion or 2.9% and $14.4 billion or 3.0% for fiscal 2019 and 2018 , respectively, when compared to the previous fiscal year.",
+    "id": "P11_A",
+    "question": "By how much did Walmart's net sales increase in fiscal 2019?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P11",
+    "company": "Walmart",
+    "evidence_chunk_id": "WALMART_2019_10K_chunk_00287",
+    "evidence_text": "Our total revenues, which are mostly comprised of net sales, but also include membership and other income, increased $14.1 billion or 2.8% and $14.5 billion or 3.0% for fiscal 2019 and 2018 , respectively, when compared to the previous fiscal year. Net sales increased $14.6 billion or 2.9% and $14.4 billion or 3.0% for fiscal 2019 and 2018 , respectively, when compared to the previous fiscal year.",
+    "id": "P11_F",
+    "question": "Why did Walmart's net sales decrease by $14.6 billion in fiscal 2019?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P12",
+    "company": "Apple Inc.",
+    "evidence_chunk_id": "AAPL_10K_latest_chunk_00312",
+    "evidence_text": "iPad\niPad net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPad Air, iPad mini and iPad, partially offset by lower net sales of iPad Pro.\nWearables, Home and Accessories\nWearables, Home and Accessories net sales decreased during 2025 compared to 2024 primarily due to lower net sales of Accessories and Wearables.\nServices",
+    "id": "P12_A",
+    "question": "Why did Apple's iPad net sales increase in 2025 compared to 2024?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P12",
+    "company": "Apple Inc.",
+    "evidence_chunk_id": "AAPL_10K_latest_chunk_00312",
+    "evidence_text": "iPad\niPad net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPad Air, iPad mini and iPad, partially offset by lower net sales of iPad Pro.\nWearables, Home and Accessories\nWearables, Home and Accessories net sales decreased during 2025 compared to 2024 primarily due to lower net sales of Accessories and Wearables.\nServices",
+    "id": "P12_F",
+    "question": "Why did Apple's iPad net sales decline in 2025 compared to 2024?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P13",
+    "company": "Best Buy",
+    "evidence_chunk_id": "BESTBUY_2017_10K_chunk_00362",
+    "evidence_text": "Fiscal 2016 Results Compared With Fiscal 2015\nIn our International segment, revenue declined 26.2% to $3.2 billion in fiscal 2016 due to (1) the loss of revenue associated with closed stores as part of the Canadian brand consolidation; (2) a negative foreign currency impact of 12.5%; and (3) ongoing softness in the Canadian economy and consumer electronics industry.\nThe components of the International segment's 26.2% revenue decrease in fiscal 2016 were as follows:",
+    "id": "P13_A",
+    "question": "Why did Best Buy's International segment revenue decline in fiscal 2016?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P13",
+    "company": "Best Buy",
+    "evidence_chunk_id": "BESTBUY_2017_10K_chunk_00362",
+    "evidence_text": "Fiscal 2016 Results Compared With Fiscal 2015\nIn our International segment, revenue declined 26.2% to $3.2 billion in fiscal 2016 due to (1) the loss of revenue associated with closed stores as part of the Canadian brand consolidation; (2) a negative foreign currency impact of 12.5%; and (3) ongoing softness in the Canadian economy and consumer electronics industry.\nThe components of the International segment's 26.2% revenue decrease in fiscal 2016 were as follows:",
+    "id": "P13_F",
+    "question": "What drove the strong growth in Best Buy's International segment revenue in fiscal 2016?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P14",
+    "company": "PepsiCo",
+    "evidence_chunk_id": "PEPSICO_2022_10K_chunk_00271",
+    "evidence_text": "Europe\nNet revenue decreased 2%, reflecting a 9-percentage-point impact of unfavorable foreign exchange, an organic volume decline and a 4.5-percentage-point unfavorable impact of the Juice Transaction, partially offset by effective net pricing.",
+    "id": "P14_A",
+    "question": "Why did PepsiCo's Europe net revenue decrease in 2022?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P14",
+    "company": "PepsiCo",
+    "evidence_chunk_id": "PEPSICO_2022_10K_chunk_00271",
+    "evidence_text": "Europe\nNet revenue decreased 2%, reflecting a 9-percentage-point impact of unfavorable foreign exchange, an organic volume decline and a 4.5-percentage-point unfavorable impact of the Juice Transaction, partially offset by effective net pricing.",
+    "id": "P14_F",
+    "question": "Why did PepsiCo's Europe net revenue grow by double digits in 2022?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P15",
+    "company": "Microsoft",
+    "evidence_chunk_id": "MICROSOFT_2023_10K_chunk_00418",
+    "evidence_text": "Operating expenses increased $4.2 billion or 21% driven by investments in Azure, 4 points of growth from the Nuance acquisition, and employee severance expenses.\nRevenue, gross margin, and operating income included an unfavorable foreign currency impact of 4%, 4%, and 6%, respectively. Operating expenses included a favorable foreign currency impact of 2%.\nMore Personal Computing\nRevenue decreased $5.2 billion or 9%.",
+    "id": "P15_A",
+    "question": "How did the Nuance acquisition affect Microsoft's operating expenses in fiscal year 2023?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P15",
+    "company": "Microsoft",
+    "evidence_chunk_id": "MICROSOFT_2023_10K_chunk_00418",
+    "evidence_text": "Operating expenses increased $4.2 billion or 21% driven by investments in Azure, 4 points of growth from the Nuance acquisition, and employee severance expenses.\nRevenue, gross margin, and operating income included an unfavorable foreign currency impact of 4%, 4%, and 6%, respectively. Operating expenses included a favorable foreign currency impact of 2%.\nMore Personal Computing\nRevenue decreased $5.2 billion or 9%.",
+    "id": "P15_F",
+    "question": "How did the Dropbox acquisition affect Microsoft's operating expenses in fiscal year 2023?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Dropbox"
+    ]
+  },
+  {
+    "pair_id": "P16",
+    "company": "Coca-Cola",
+    "evidence_chunk_id": "COCACOLA_2017_10K_chunk_00782",
+    "evidence_text": "In 2016 , equity income was $ 835 million , compared to equity income of $ 489 million in 2015 , an increase of $346 million, or 71 percent. This increase reflects, among other items, more favorable operating results reported by several of our equity method investees, the impact of the June 2015 investment in Monster, as well as our investments in CCEP, CCBA and CCBA's South African subsidiary, which were acquired in 2016.",
+    "id": "P16_A",
+    "question": "Why did Coca-Cola's equity income increase in 2016?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P16",
+    "company": "Coca-Cola",
+    "evidence_chunk_id": "COCACOLA_2017_10K_chunk_00782",
+    "evidence_text": "In 2016 , equity income was $ 835 million , compared to equity income of $ 489 million in 2015 , an increase of $346 million, or 71 percent. This increase reflects, among other items, more favorable operating results reported by several of our equity method investees, the impact of the June 2015 investment in Monster, as well as our investments in CCEP, CCBA and CCBA's South African subsidiary, which were acquired in 2016.",
+    "id": "P16_F",
+    "question": "Why did Coca-Cola's equity income fall sharply in 2016?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P17",
+    "company": "3M",
+    "evidence_chunk_id": "3M_2022_10K_chunk_00203",
+    "evidence_text": "These matters are further discussed in Note 16. In 2022, 3M also completed the split-off of its Food Safety Division business resulting in a pre-tax gain of $2.7 billion and committed to a plan to exit PFAS manufacturing by the end of 2025 resulting in a 2022 pre-tax charge of $0.8 billion related to impairment as discussed in Note 15. See Certain amounts adjusted for special items - (non-GAAP measures) section below for additional discussion of these and other special items.",
+    "id": "P17_A",
+    "question": "What did 3M commit to regarding PFAS manufacturing in 2022?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P17",
+    "company": "3M",
+    "evidence_chunk_id": "3M_2022_10K_chunk_00203",
+    "evidence_text": "These matters are further discussed in Note 16. In 2022, 3M also completed the split-off of its Food Safety Division business resulting in a pre-tax gain of $2.7 billion and committed to a plan to exit PFAS manufacturing by the end of 2025 resulting in a 2022 pre-tax charge of $0.8 billion related to impairment as discussed in Note 15. See Certain amounts adjusted for special items - (non-GAAP measures) section below for additional discussion of these and other special items.",
+    "id": "P17_F",
+    "question": "Why did 3M decide to triple its PFAS manufacturing capacity in 2022?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P18",
+    "company": "Amcor",
+    "evidence_chunk_id": "AMCOR_2020_10K_chunk_00026",
+    "evidence_text": "On June 11, 2019, we completed the acquisition of Bemis Company, Inc. (\"Bemis\"), a global manufacturer of flexible packaging products, pursuant to the definitive merger agreement (the \"Agreement\") between Amcor Limited and Bemis dated August 6, 2018. Under the terms of the Agreement, Bemis shareholders received 5.1 Amcor shares for each share of Bemis stock and Amcor shareholders received one Amcor CHESS Depositary Instrument (\"CDI\") for each share of Amcor Limited stock issued and outstanding.",
+    "id": "P18_A",
+    "question": "When did Amcor complete its acquisition of Bemis?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P18",
+    "company": "Amcor",
+    "evidence_chunk_id": "AMCOR_2020_10K_chunk_00026",
+    "evidence_text": "On June 11, 2019, we completed the acquisition of Bemis Company, Inc. (\"Bemis\"), a global manufacturer of flexible packaging products, pursuant to the definitive merger agreement (the \"Agreement\") between Amcor Limited and Bemis dated August 6, 2018. Under the terms of the Agreement, Bemis shareholders received 5.1 Amcor shares for each share of Bemis stock and Amcor shareholders received one Amcor CHESS Depositary Instrument (\"CDI\") for each share of Amcor Limited stock issued and outstanding.",
+    "id": "P18_F",
+    "question": "When did Amcor complete its acquisition of Mondi?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Mondi"
+    ]
+  },
+  {
+    "pair_id": "P19",
+    "company": "Kraft Heinz",
+    "evidence_chunk_id": "KRAFTHEINZ_2019_10K_chunk_00217",
+    "evidence_text": "As a result of our annual and interim impairment tests, we recognized goodwill impairment losses of $7.0 billion and indefinite-lived intangible asset impairment losses of $8.9 billion in 2018, and goodwill impairment losses of $1.2 billion and indefinite-lived intangible asset impairment losses of $687 million in 2019.",
+    "id": "P19_A",
+    "question": "How much goodwill impairment did Kraft Heinz recognize in 2019?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P19",
+    "company": "Kraft Heinz",
+    "evidence_chunk_id": "KRAFTHEINZ_2019_10K_chunk_00217",
+    "evidence_text": "As a result of our annual and interim impairment tests, we recognized goodwill impairment losses of $7.0 billion and indefinite-lived intangible asset impairment losses of $8.9 billion in 2018, and goodwill impairment losses of $1.2 billion and indefinite-lived intangible asset impairment losses of $687 million in 2019.",
+    "id": "P19_F",
+    "question": "Why did Kraft Heinz record no goodwill impairment in 2018 or 2019?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P20",
+    "company": "Meta Platforms Inc.",
+    "evidence_chunk_id": "META_10K_latest_chunk_00308",
+    "evidence_text": "Some of these investments, particularly our significant investments in Reality Labs, have generated only limited revenue and reduced our operating margin and profitability, and we expect the adverse financial impact of such investments to continue for the foreseeable future. For example, our investments in Reality Labs reduced our 2025 overall operating profit by approximately $19.19 billion, and we expect our 2026 Reality Labs operating losses to remain similar to 2025.",
+    "id": "P20_A",
+    "question": "By how much did Reality Labs reduce Meta's 2025 operating profit?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P20",
+    "company": "Meta Platforms Inc.",
+    "evidence_chunk_id": "META_10K_latest_chunk_00308",
+    "evidence_text": "Some of these investments, particularly our significant investments in Reality Labs, have generated only limited revenue and reduced our operating margin and profitability, and we expect the adverse financial impact of such investments to continue for the foreseeable future. For example, our investments in Reality Labs reduced our 2025 overall operating profit by approximately $19.19 billion, and we expect our 2026 Reality Labs operating losses to remain similar to 2025.",
+    "id": "P20_F",
+    "question": "How much operating profit did Meta's Reality Labs contribute in 2025 as its most profitable segment?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P21",
+    "company": "Activision Blizzard",
+    "evidence_chunk_id": "ACTIVISIONBLIZZARD_2019_10K_chunk_00394",
+    "evidence_text": "Business Results and Highlights\nFinancial Results\n2019 financial highlights included:\n• | consolidated net revenues decreased 13% to $ 6.5 billion and consolidated operating income decreased 19% to $ 1.6 billion , as compared to consolidated net revenues of $ 7.5 billion and consolidated operating income of $ 2.0 billion in 2018 ;",
+    "id": "P21_A",
+    "question": "By how much did Activision Blizzard's consolidated net revenues change in 2019?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P21",
+    "company": "Activision Blizzard",
+    "evidence_chunk_id": "ACTIVISIONBLIZZARD_2019_10K_chunk_00394",
+    "evidence_text": "Business Results and Highlights\nFinancial Results\n2019 financial highlights included:\n• | consolidated net revenues decreased 13% to $ 6.5 billion and consolidated operating income decreased 19% to $ 1.6 billion , as compared to consolidated net revenues of $ 7.5 billion and consolidated operating income of $ 2.0 billion in 2018 ;",
+    "id": "P21_F",
+    "question": "What drove the 13% increase in Activision Blizzard's consolidated net revenues in 2019?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P22",
+    "company": "Activision Blizzard",
+    "evidence_chunk_id": "ACTIVISIONBLIZZARD_2019_10K_chunk_00469",
+    "evidence_text": "Blizzard\nThe decrease in Blizzard’s net revenues for 2019, as compared to 2018, was primarily due to:\n• | lower revenues from Hearthstone ; and\n• | overall lower revenues from World of Warcraft , primarily due to World of Warcraft: Battle for Azeroth , which was released in August 2018, with no comparable release in 2019 (although revenues from subscriptions increased due to the release of World of Warcraft Classic in August 2019).\nKing",
+    "id": "P22_A",
+    "question": "Why did Blizzard's net revenues decrease in 2019?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P22",
+    "company": "Activision Blizzard",
+    "evidence_chunk_id": "ACTIVISIONBLIZZARD_2019_10K_chunk_00469",
+    "evidence_text": "Blizzard\nThe decrease in Blizzard’s net revenues for 2019, as compared to 2018, was primarily due to:\n• | lower revenues from Hearthstone ; and\n• | overall lower revenues from World of Warcraft , primarily due to World of Warcraft: Battle for Azeroth , which was released in August 2018, with no comparable release in 2019 (although revenues from subscriptions increased due to the release of World of Warcraft Classic in August 2019).\nKing",
+    "id": "P22_F",
+    "question": "How much revenue did Blizzard's Overwatch 3 release generate in 2019?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Overwatch 3"
+    ]
+  },
+  {
+    "pair_id": "P23",
+    "company": "CVS Health",
+    "evidence_chunk_id": "CVSHEALTH_2018_10K_chunk_00019",
+    "evidence_text": "The transaction valued Aetna at approximately $212 per share or approximately $70 billion. Including the assumption of Aetna’s debt, the total value of the transaction was approximately $78 billion. The Company financed the cash portion of the purchase price through a combination of cash on hand and by issuing approximately $45.0 billion of new debt, including senior notes and term loans.",
+    "id": "P23_A",
+    "question": "What was the total value of CVS Health's acquisition of Aetna?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P23",
+    "company": "CVS Health",
+    "evidence_chunk_id": "CVSHEALTH_2018_10K_chunk_00019",
+    "evidence_text": "The transaction valued Aetna at approximately $212 per share or approximately $70 billion. Including the assumption of Aetna’s debt, the total value of the transaction was approximately $78 billion. The Company financed the cash portion of the purchase price through a combination of cash on hand and by issuing approximately $45.0 billion of new debt, including senior notes and term loans.",
+    "id": "P23_F",
+    "question": "What was the total value of CVS Health's acquisition of Kroger in 2018?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Kroger"
+    ]
+  },
+  {
+    "pair_id": "P24",
+    "company": "Alphabet Inc.",
+    "evidence_chunk_id": "GOOGL_10K_latest_chunk_00423",
+    "evidence_text": "Google Cloud revenues increased $15.5 billion from 2024 to 2025, primarily driven by growth in Google Cloud Platform largely from infrastructure and platform services.\nRevenues by Geography\nThe following table presents revenues by geography as a percentage of revenues, determined based on the addresses of our customers:\nUnited States | 49 | 48\nEMEA (1) | 29 | 29\nAPAC (1) | 16 | 17\nOther Americas (1) | 6 | 6\nHedging gains (losses) | 0 | 0",
+    "id": "P24_A",
+    "question": "What drove the increase in Google Cloud revenues from 2024 to 2025?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P24",
+    "company": "Alphabet Inc.",
+    "evidence_chunk_id": "GOOGL_10K_latest_chunk_00423",
+    "evidence_text": "Google Cloud revenues increased $15.5 billion from 2024 to 2025, primarily driven by growth in Google Cloud Platform largely from infrastructure and platform services.\nRevenues by Geography\nThe following table presents revenues by geography as a percentage of revenues, determined based on the addresses of our customers:\nUnited States | 49 | 48\nEMEA (1) | 29 | 29\nAPAC (1) | 16 | 17\nOther Americas (1) | 6 | 6\nHedging gains (losses) | 0 | 0",
+    "id": "P24_F",
+    "question": "Why did Google Cloud revenues decline from 2024 to 2025?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P25",
+    "company": "Nike",
+    "evidence_chunk_id": "NIKE_2023_10K_chunk_00302",
+    "evidence_text": "• NIKE Brand footwear revenues increased 20% on a currency-neutral basis, due to higher revenues in Men's, the Jordan Brand, Women's and Kids'. Unit sales of footwear increased 13%, while higher average selling price (\"ASP\") per pair contributed approximately 7 percentage points of footwear revenue growth.",
+    "id": "P25_A",
+    "question": "Why did NIKE Brand footwear revenues increase in fiscal 2023?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P25",
+    "company": "Nike",
+    "evidence_chunk_id": "NIKE_2023_10K_chunk_00302",
+    "evidence_text": "• NIKE Brand footwear revenues increased 20% on a currency-neutral basis, due to higher revenues in Men's, the Jordan Brand, Women's and Kids'. Unit sales of footwear increased 13%, while higher average selling price (\"ASP\") per pair contributed approximately 7 percentage points of footwear revenue growth.",
+    "id": "P25_F",
+    "question": "Why did NIKE Brand footwear unit sales collapse in fiscal 2023?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P26",
+    "company": "Amazon",
+    "evidence_chunk_id": "AMAZON_2019_10K_chunk_00150",
+    "evidence_text": "North America sales increased 21% in 2019 , compared to the prior year. The sales growth primarily reflects increased unit sales, including sales by third-party sellers. Increased unit sales were driven largely by our continued efforts to reduce prices for our customers, including from our shipping offers, increased in-stock inventory availability, and increased selection.",
+    "id": "P26_A",
+    "question": "What drove North America sales growth at Amazon in 2019?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P26",
+    "company": "Amazon",
+    "evidence_chunk_id": "AMAZON_2019_10K_chunk_00150",
+    "evidence_text": "North America sales increased 21% in 2019 , compared to the prior year. The sales growth primarily reflects increased unit sales, including sales by third-party sellers. Increased unit sales were driven largely by our continued efforts to reduce prices for our customers, including from our shipping offers, increased in-stock inventory availability, and increased selection.",
+    "id": "P26_F",
+    "question": "Why did Amazon's North America sales shrink in 2019?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P27",
+    "company": "Pfizer",
+    "evidence_chunk_id": "PFIZER_2021_10K_chunk_00105",
+    "evidence_text": "* Each of Prevnar 13/Prevenar 13, Ibrance, Eliquis, Xeljanz and Enbrel recorded direct product and/or Alliance revenues of more than $1 billion in 2021, 2020 and 2019. Each of Comirnaty/BNT162b2 and Inlyta recorded direct product and/or Alliance revenues of more than $1 billion in 2021. Each of Xtandi and Vyndaqel/Vyndamax recorded direct product and/or Alliance revenues of more than $1 billion in 2021 and 2020. Comirnaty/BNT162b2, Eliquis and Xtandi include Alliance revenues and direct sales.",
+    "id": "P27_A",
+    "question": "Which Pfizer products recorded more than $1 billion in revenues in 2021?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P27",
+    "company": "Pfizer",
+    "evidence_chunk_id": "PFIZER_2021_10K_chunk_00105",
+    "evidence_text": "* Each of Prevnar 13/Prevenar 13, Ibrance, Eliquis, Xeljanz and Enbrel recorded direct product and/or Alliance revenues of more than $1 billion in 2021, 2020 and 2019. Each of Comirnaty/BNT162b2 and Inlyta recorded direct product and/or Alliance revenues of more than $1 billion in 2021. Each of Xtandi and Vyndaqel/Vyndamax recorded direct product and/or Alliance revenues of more than $1 billion in 2021 and 2020. Comirnaty/BNT162b2, Eliquis and Xtandi include Alliance revenues and direct sales.",
+    "id": "P27_F",
+    "question": "How much revenue did Pfizer's Moderna vaccine alliance generate in 2021?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Moderna"
+    ]
+  },
+  {
+    "pair_id": "P28",
+    "company": "PepsiCo",
+    "evidence_chunk_id": "PEPSICO_2021_10K_chunk_00440",
+    "evidence_text": "(c) The income amounts primarily relate to gains associated with the contingent consideration in connection with our acquisition of Rockstar Energy Beverages (Rockstar). In 2021, this impact is partially offset by divestiture-related charges associated with the Juice Transaction. See Note 13 to our consolidated financial statements for further information.\nOperating Profit Growth and Operating Profit Growth Adjusted for Items Affecting Comparability on a Constant Currency Basis",
+    "id": "P28_A",
+    "question": "What gains did PepsiCo record related to its acquisition of Rockstar Energy Beverages?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P28",
+    "company": "PepsiCo",
+    "evidence_chunk_id": "PEPSICO_2021_10K_chunk_00440",
+    "evidence_text": "(c) The income amounts primarily relate to gains associated with the contingent consideration in connection with our acquisition of Rockstar Energy Beverages (Rockstar). In 2021, this impact is partially offset by divestiture-related charges associated with the Juice Transaction. See Note 13 to our consolidated financial statements for further information.\nOperating Profit Growth and Operating Profit Growth Adjusted for Items Affecting Comparability on a Constant Currency Basis",
+    "id": "P28_F",
+    "question": "What gains did PepsiCo record related to its acquisition of Vita Coco?",
+    "label": "false_premise",
+    "fp_type": "absent",
+    "absent_terms": [
+      "Vita Coco"
+    ]
+  },
+  {
+    "pair_id": "P29",
+    "company": "AES Corporation",
+    "evidence_chunk_id": "AES_2022_10K_chunk_00083",
+    "evidence_text": "20% of the capacity of our generation fleet is coal-fired. In the U.S., most of our coal-fired plants are supplied from domestic coal. At our non-U.S. generation plants, and at our plant in Puerto Rico, we source coal from a mix of sources from the international market and in the local jurisdictions. To the extent possible, we utilize our global sourcing program to maximize the purchasing power of our fuel procurement.",
+    "id": "P29_A",
+    "question": "What share of AES's generation fleet capacity is coal-fired?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P29",
+    "company": "AES Corporation",
+    "evidence_chunk_id": "AES_2022_10K_chunk_00083",
+    "evidence_text": "20% of the capacity of our generation fleet is coal-fired. In the U.S., most of our coal-fired plants are supplied from domestic coal. At our non-U.S. generation plants, and at our plant in Puerto Rico, we source coal from a mix of sources from the international market and in the local jurisdictions. To the extent possible, we utilize our global sourcing program to maximize the purchasing power of our fuel procurement.",
+    "id": "P29_F",
+    "question": "Why did AES shut down all of its coal-fired plants in 2022?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  },
+  {
+    "pair_id": "P30",
+    "company": "Microsoft",
+    "evidence_chunk_id": "MICROSOFT_2016_10K_chunk_00368",
+    "evidence_text": " | Windows revenue decreased $871 million or 5%, mainly due to lower revenue from patent licensing, Windows OEM licensing (Windows OEM), and Windows Phone licensing. Patent licensing revenue decreased 27%, due to a decline in license revenue per unit and licensed units. Windows OEM revenue decreased 1%. Windows OEM Pro revenue declined 6%, driven by a decline in the business PC market.",
+    "id": "P30_A",
+    "question": "Why did Microsoft's Windows revenue decrease in fiscal year 2016?",
+    "label": "answerable",
+    "fp_type": null
+  },
+  {
+    "pair_id": "P30",
+    "company": "Microsoft",
+    "evidence_chunk_id": "MICROSOFT_2016_10K_chunk_00368",
+    "evidence_text": " | Windows revenue decreased $871 million or 5%, mainly due to lower revenue from patent licensing, Windows OEM licensing (Windows OEM), and Windows Phone licensing. Patent licensing revenue decreased 27%, due to a decline in license revenue per unit and licensed units. Windows OEM revenue decreased 1%. Windows OEM Pro revenue declined 6%, driven by a decline in the business PC market.",
+    "id": "P30_F",
+    "question": "What drove the increase in Microsoft's patent licensing revenue in fiscal year 2016?",
+    "label": "false_premise",
+    "fp_type": "contradicted",
+    "absent_terms": []
+  }
+]
